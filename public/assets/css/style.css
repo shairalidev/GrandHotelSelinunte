@@ -16130,7 +16130,9 @@ picture.jarallax-img img {
   max-width: 100%;
   padding-top: 15px;
 }
-
+.myclass{
+  max-width: 80%;
+}
 .ms-woocommerce-cart-form-wrapper .ms-cart-totals .woocommerce-shipping-calculator .shipping-calculator-form p .input-text {
   background-color: #f7f7f7;
   width: 100%;

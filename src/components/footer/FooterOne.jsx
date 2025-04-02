@@ -40,7 +40,7 @@ function FooterOne() {
                             <div className="rts__widget">
                                 <Link to="/">
                                     <img
-                                        className="footer__logo"
+                                        className="footer__logo myclass"
                                         src="/assets/images/logo/logo.svg"
                                         alt="footer logo"
                                     />

@@ -223,8 +223,8 @@ function HeaderDark() {
                             <div className="main__logo">
                                 <Link to="/home">
                                     <img
-                                        className="logo__class"
-                                        src="/assets/images/logo/logo__two.svg"
+                                        className="logo__class myclass"
+                                        src="/assets/images/logo/logo__two.png"
                                         alt="moonlit"
                                     />
                                 </Link>
