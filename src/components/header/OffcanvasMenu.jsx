@@ -22,7 +22,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                 </Link>
                             </div>
                             <p className="description">
-                                Welcome to Grand Hotel Selinunte, where luxury meets comfort in the heart of Canada. Since 1999, we have been dedicated to providing.
+                                Welcome to Grand Hotel Selinunte, where luxury meets comfort in the heart of Marinella, we have been dedicated to providing.
                             </p>
                         </div>
                         <div className="offcanvase__mobile__menu">

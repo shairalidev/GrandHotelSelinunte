@@ -11,7 +11,6 @@ import VideoOne from '../components/videos/VideoOne'
 import OfferOne from '../components/offer/OfferOne'
 import GalleryOne from '../components/gallery/GalleryOne'
 import FooterOne from '../components/footer/FooterOne'
-import AboutSeven from '../components/about/AboutSeven'
 
 function HomeVideo() {
   useEffect(() => {
@@ -28,7 +27,7 @@ function HomeVideo() {
       <HeaderDark />
       <BannerVideo />
       <AdvanceForm />
-      <AboutSeven />
+      <AboutOne />
       <FacilitiesOne />
       <RoomOne className="section__padding"/>
       <TestimonialThree className="is__home__one"/>
