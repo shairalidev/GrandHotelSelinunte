@@ -41,7 +41,7 @@ function BannerTwo() {
                                             </span>
                                             <h1>Luxury Stay Hotel Experience Comfort &amp; Elegance</h1>
                                             <p className="sub__text">
-                                                Choosing Bokinn was one of the best decisions we've ever
+                                                Choosing Grand Hotel Selinunte was one of the best decisions we've ever
                                                 made. They have proven to be a reliable and innovative
                                                 partner
                                             </p>
@@ -69,7 +69,7 @@ function BannerTwo() {
                                             <span className="h6 subtitle__icon">Welcome to Our Spa</span>
                                             <h1>Lavish Getaway A Blend of Comfort &amp; Style</h1>
                                             <p className="sub__text">
-                                                Choosing Bokinn was one of the best decisions we've ever
+                                                Choosing Grand Hotel Selinunte was one of the best decisions we've ever
                                                 made. They have proven to be a reliable and innovative
                                                 partner
                                             </p>

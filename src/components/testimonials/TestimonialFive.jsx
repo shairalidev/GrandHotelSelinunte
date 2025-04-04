@@ -75,7 +75,7 @@ function TestimonialFive() {
                                                         <i className="flaticon-star-sharp-half-stroke" />
                                                     </div>
                                                     <span className="slider__text d-block">
-                                                        Choosing Bokinn was one of the best decisions we've ever
+                                                        Choosing Grand Hotel Selinunte was one of the best decisions we've ever
                                                         made. They have proven to be a reliable and innovative
                                                         partner, always ready to tackle new challenges with and
                                                         expertise.Their commitment to and delivering tailored.
@@ -104,7 +104,7 @@ function TestimonialFive() {
                                                         <i className="flaticon-star-sharp-half-stroke" />
                                                     </div>
                                                     <span className="slider__text d-block">
-                                                        Choosing Bokinn was one of the best decisions we've ever
+                                                        Choosing Grand Hotel Selinunte was one of the best decisions we've ever
                                                         made. They have proven to be a reliable and innovative
                                                         partner, always ready to tackle new challenges with and
                                                         expertise.Their commitment to and delivering tailored.
@@ -133,7 +133,7 @@ function TestimonialFive() {
                                                         <i className="flaticon-star-sharp-half-stroke" />
                                                     </div>
                                                     <span className="slider__text d-block">
-                                                        Choosing Bokinn was one of the best decisions we've ever
+                                                        Choosing Grand Hotel Selinunte was one of the best decisions we've ever
                                                         made. They have proven to be a reliable and innovative
                                                         partner, always ready to tackle new challenges with and
                                                         expertise.Their commitment to and delivering tailored.

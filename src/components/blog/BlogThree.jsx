@@ -98,7 +98,7 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Bokinn
+                                                Top 10 Reasons Guests Love Staying at Grand Hotel Selinunte
                                             </Link>
                                             <span>
                                                 <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
@@ -119,7 +119,7 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Bokinn
+                                                Top 10 Reasons Guests Love Staying at Choosing Grand Hotel Selinunte
                                             </Link>
                                             <span>
                                                 <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
@@ -140,7 +140,7 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Bokinn
+                                                Top 10 Reasons Guests Love Staying at Choosing Grand Hotel Selinunte
                                             </Link>
                                             <span>
                                                 <img src="assets/images/icon/clock.svg" alt="" /> 10 Min

@@ -5,6 +5,9 @@ import LoginForm from '../form/LoginForm';
 import SignUpForm from '../form/SignUpForm';
 
 function HeaderDark() {
+
+
+
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [isSignupOpen, setIsSignupOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -43,93 +46,13 @@ function HeaderDark() {
                                                 <div className="has__mega__menu">
                                                     <div className="row g-30 row-cols-1 row-cols-md-3 row-cols-lg-5">
                                                         <div className="menu__item">
-                                                            <Link to="/">
-                                                                <img
-                                                                    src="/assets/images/menu/main.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>Luxury Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-2">
-                                                                <img
-                                                                    src="/assets/images/menu/01.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>LuxeVista Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-3">
-                                                                <img
-                                                                    src="/assets/images/menu/03.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>OceanBreeze Resort</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-4">
-                                                                <img
-                                                                    src="/assets/images/menu/04.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>Apartment Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-5">
-                                                                <img
-                                                                    src="/assets/images/menu/4.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>Mountain Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-6">
-                                                                <img
-                                                                    src="/assets/images/menu/5.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>City Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-7">
-                                                                <img
-                                                                    src="/assets/images/menu/6.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>Beach Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
-                                                            <Link to="/home-dark">
-                                                                <img
-                                                                    src="/assets/images/menu/hotel-dark.webp"
-                                                                    height={250}
-                                                                    alt=""
-                                                                />
-                                                                <span>Beach Hotel</span>
-                                                            </Link>
-                                                        </div>
-                                                        <div className="menu__item">
                                                             <Link to="/home-video">
                                                                 <img
                                                                     src="/assets/images/menu/08.webp"
                                                                     height={250}
                                                                     alt=""
                                                                 />
-                                                                <span>Hotel Seaside</span>
+                                                                <span>Grand Hotel Selinunte</span>
                                                             </Link>
                                                         </div>
                                                     </div>
@@ -178,9 +101,7 @@ function HeaderDark() {
                                                     <li role="menuitem">
                                                         <Link to="/about">About</Link>
                                                     </li>
-                                                    <li role="menuitem">
-                                                        <Link to="/resturant">Restaurant</Link>
-                                                    </li>
+                                                   
                                                     <li role="menuitem">
                                                         <Link to="/gallery">Gallery</Link>
                                                     </li>
@@ -210,7 +131,7 @@ function HeaderDark() {
                                             </li>
                                             <li className="navigation__menu--item">
                                                 <Link
-                                                    to="contact"
+                                                    to="/contact"
                                                     className="navigation__menu--item__link"
                                                 >
                                                     Contact

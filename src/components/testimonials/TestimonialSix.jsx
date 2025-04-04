@@ -7,14 +7,14 @@ import "swiper/css/effect-fade"; // Import fade effect styles
 
 const testimonials = [
   {
-    text: "Choosing Bokinn was one of the best decisions we've ever made. They have proven to be a reliable and innovative partner, always ready to tackle new challenges with and expertise. Their commitment to and delivering tailored.",
+    text: "Choosing Grand Hotel Selinunte was one of the best decisions we've ever made. They have proven to be a reliable and innovative partner, always ready to tackle new challenges with and expertise. Their commitment to and delivering tailored.",
     name: "Al Amin Khan",
     position: "COO of Apex Solutions",
     rating: 4.5,
     image: "assets/images/author/author-2x.webp",
   },
   {
-    text: "Choosing Bokinn was one of the best decisions we've ever made. They have proven to be a reliable and innovative partner, always ready to tackle new challenges with and expertise. Their commitment to and delivering tailored.",
+    text: "Choosing Grand Hotel Selinunte was one of the best decisions we've ever made. They have proven to be a reliable and innovative partner, always ready to tackle new challenges with and expertise. Their commitment to and delivering tailored.",
     name: "Sarah Martinez",
     position: "Fortune It Solutions",
     rating: 4.5,
