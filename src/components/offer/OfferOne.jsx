@@ -11,9 +11,9 @@ function OfferOne() {
                         <div className="col-lg-6 wow fadeInUp">
                             <div className="section__topbar">
                                 <span className="h6 subtitle__icon__three mx-auto">
-                                    Special Offer
+                                Offerta Speciale
                                 </span>
-                                <h2 className="section__title">Special Offer</h2>
+                                <h2 className="section__title">Offerta Speciale</h2>
                             </div>
                         </div>
                     </div>
@@ -26,23 +26,20 @@ function OfferOne() {
                                 </Link>
                                 <div className="single__offer__card__content">
                                     <Link to="/#" className="h4">
-                                        Family Fun Package
+                                    Pacchetto Famiglia
                                     </Link>
                                     <ul className="offer__included list-unstyled">
                                         <li>
-                                            <i className="flaticon-check-circle" /> 15% off on family
-                                            suites
+                                            <i className="flaticon-check-circle" /> 15% off suite famiglie
                                         </li>
                                         <li>
-                                            <i className="flaticon-check-circle" /> Free meals for kids
-                                            under 12
+                                            <i className="flaticon-check-circle" />pasto gratuito per i bambini
                                         </li>
                                         <li>
-                                            <i className="flaticon-check-circle" /> Complimentary tickets
+                                            <i className="flaticon-check-circle" /> Biglietti omaggio
                                         </li>
                                         <li>
-                                            <i className="flaticon-check-circle" /> The local amusement
-                                            park
+                                            <i className="flaticon-check-circle" /> Parco divertimenti locale
                                         </li>
                                     </ul>
                                     <h3 className="offer__price mb-0">$39.00</h3>
@@ -62,22 +59,20 @@ function OfferOne() {
                                     </Link>
                                     <div className="single__offer__card__content">
                                         <Link to="/#" className="h5">
-                                            Spa Retreat
+                                        Ritiro Spa
                                         </Link>
                                         <ul className="offer__included list-unstyled">
                                             <li>
-                                                <i className="flaticon-check-circle" /> A two-night stay in
-                                                a room
+                                                <i className="flaticon-check-circle" /> Due notti di soggiorno in camera
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Daily spa treatments
+                                                <i className="flaticon-check-circle" /> Trattamenti spa giornalieri
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Healthy breakfast
-                                                and lunch
+                                                <i className="flaticon-check-circle" /> Colazione e pranzo salutari
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Access to all spa{" "}
+                                                <i className="flaticon-check-circle" /> Accesso completo alla spa{" "}
                                             </li>
                                         </ul>
                                         <h4 className="offer__price mb-0">$39.00</h4>
@@ -94,22 +89,20 @@ function OfferOne() {
                                     </Link>
                                     <div className="single__offer__card__content">
                                         <Link to="/#" className="h5">
-                                            Romantic Getaway
+                                            Fuga Romantica
                                         </Link>
                                         <ul className="offer__included list-unstyled">
                                             <li>
-                                                <i className="flaticon-check-circle" /> A two-night stay in
-                                                a room
+                                                <i className="flaticon-check-circle" /> Due notti di soggiorno in camera
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Daily spa treatments
+                                                <i className="flaticon-check-circle" /> Trattamenti spa giornalieri
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Healthy breakfast
-                                                and lunch
+                                                <i className="flaticon-check-circle" /> Colazione e pranzo salutari
                                             </li>
                                             <li>
-                                                <i className="flaticon-check-circle" /> Access to all spa{" "}
+                                                <i className="flaticon-check-circle" /> Accesso completo alla spa
                                             </li>
                                             <h4 className="offer__price mb-0">$39.00</h4>
                                         </ul>

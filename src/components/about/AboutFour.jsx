@@ -30,18 +30,17 @@ function AboutFour() {
                         <div className="col-lg-7">
                             <div className="about__content">
                                 <span className="h6 subtitle__icon__two d-block wow fadeInUp">
-                                    About Us
+                                Chi Siamo
                                 </span>
                                 <h2 className="font-xl wow fadeInUp">
-                                    Welcome To Our Grand Hotel Selinunte &amp; Resort
+                                Benvenuti al nostro Grand Hotel Selinunte &amp; Resort
                                 </h2>
                                 <p className="font-sm mt-30 wow fadeInUp" data-wow-delay=".3s">
-                                Welcome to Italy, where luxury meets comfort in the heart of
-                                Marinella, we have been dedicated to providing an
-                                exceptional stay for our guests, blending modern amenities with
-                                timeless elegance. Our beautifully designed rooms and suites offer
-                                stunning views and plush accommodations, ensuring a restful
-                                retreat whether you're here for business or leisure.
+                                Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
+                                Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
+                                garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                                 </p>
                                 <div
                                     className="hotel__owner__sign mt-40 wow fadeInUp"

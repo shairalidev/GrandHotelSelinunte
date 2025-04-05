@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import posts from '../data/data-post.json'
 
 function BlogThree() {
-    const [visiblePosts, setVisiblePosts] = useState(4); // Initially show 6 posts
-    const postsPerLoad = 1; // Number of posts to load each time
+    const [visiblePosts, setVisiblePosts] = useState(4); // Mostra inizialmente 4 post
+    const postsPerLoad = 1; // Numero di post da caricare ogni volta
 
     const handleLoadMore = () => {
         setVisiblePosts((prev) => prev + postsPerLoad);
@@ -31,59 +31,59 @@ function BlogThree() {
                                         />
                                     </div>
                                 ))}
-                                {visiblePosts < posts.length && ( // Show "Load More" button only if there are more posts
+                                {visiblePosts < posts.length && (
                                     <div className="load__more__link">
-                                        <Link to="#" onClick={handleLoadMore}>Load More</Link>
+                                        <Link to="#" onClick={handleLoadMore}>Carica di più</Link>
                                     </div>
                                 )}
                             </div>
                         </div>
                         <div className="col-xl-4 col-lg-5 sticky-item">
                             <div className="blog__sidebar__section sticky-item">
-                                <h6 className="mb-3">Search</h6>
+                                <h6 className="mb-3">Cerca</h6>
                                 <form action="#" className="search__form">
-                                    <input type="text" name="search" placeholder="Search" />
+                                    <input type="text" name="search" placeholder="Cerca" />
                                     <i className="flaticon-search-1" />
                                 </form>
-                                <h6 className="mb-4">category</h6>
+                                <h6 className="mb-4">Categorie</h6>
                                 <div className="search__item__list">
                                     <div className="d-flex align-items-center justify-content-between list">
                                         <div className="d-flex gap-2 align-items-center checkbox is__small">
                                             <input type="checkbox" name="web" id="web" />
-                                            <label htmlFor="web">Adventure Stays</label>
+                                            <label htmlFor="web">Soggiorni Avventura</label>
                                         </div>
                                         <span>(130)</span>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-between list">
                                         <div className="d-flex gap-2 align-items-center checkbox  is__small">
                                             <input type="checkbox" name="design" id="design" />
-                                            <label htmlFor="design">Wellness &amp; Relaxation</label>
+                                            <label htmlFor="design">Benessere &amp; Relax</label>
                                         </div>
                                         <span>(80)</span>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-between list">
                                         <div className="d-flex gap-2 align-items-center checkbox is__small">
                                             <input type="checkbox" name="ux" id="ux" />
-                                            <label htmlFor="ux">Cultural Stays</label>
+                                            <label htmlFor="ux">Soggiorni Culturali</label>
                                         </div>
                                         <span>(45)</span>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-between list">
                                         <div className="d-flex gap-2 align-items-center checkbox is__small">
                                             <input type="checkbox" name="dev" id="dev" />
-                                            <label htmlFor="dev">Historic Hotels</label>
+                                            <label htmlFor="dev">Hotel Storici</label>
                                         </div>
                                         <span>(100)</span>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-between list">
                                         <div className="d-flex gap-2 align-items-center checkbox is__small">
                                             <input type="checkbox" name="business" id="business" />
-                                            <label htmlFor="business">Pet-Friendly Hotels</label>
+                                            <label htmlFor="business">Hotel Pet-Friendly</label>
                                         </div>
                                         <span>(80)</span>
                                     </div>
                                 </div>
-                                <h6 className="mb-4">Latest Post</h6>
+                                <h6 className="mb-4">Ultimi Post</h6>
                                 <div className="latest__post mb-30">
                                     <div className="single__post">
                                         <div className="single__post__thumb">
@@ -98,11 +98,10 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Grand Hotel Selinunte
+                                                Le 10 Ragioni per cui gli Ospiti Amano il Grand Hotel Selinunte
                                             </Link>
                                             <span>
-                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
-                                                Read
+                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Minuti di Lettura
                                             </span>
                                         </div>
                                     </div>
@@ -119,11 +118,10 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Choosing Grand Hotel Selinunte
+                                                10 Motivi per Scegliere il Grand Hotel Selinunte
                                             </Link>
                                             <span>
-                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
-                                                Read
+                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Minuti di Lettura
                                             </span>
                                         </div>
                                     </div>
@@ -140,23 +138,22 @@ function BlogThree() {
                                         </div>
                                         <div className="single__post__meta">
                                             <Link to="#" className="font-sm">
-                                                Top 10 Reasons Guests Love Staying at Choosing Grand Hotel Selinunte
+                                                Perché gli Ospiti Scelgono il Grand Hotel Selinunte
                                             </Link>
                                             <span>
-                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
-                                                Read
+                                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Minuti di Lettura
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <h6 className="mb-4">Tags</h6>
+                                <h6 className="mb-4">Tag</h6>
                                 <div className="tag__list">
                                     <div className="tags__list">
-                                        <Link to="#">Hotel Stay</Link>
-                                        <Link to="#">Travel Blog</Link>
-                                        <Link to="#">Guest Experience</Link>
-                                        <Link to="#"> Hotel Guide</Link>
-                                        <Link to="#">Hotel Review</Link>
+                                        <Link to="#">Soggiorno in Hotel</Link>
+                                        <Link to="#">Blog di Viaggio</Link>
+                                        <Link to="#">Esperienza dell’Ospite</Link>
+                                        <Link to="#">Guida Hotel</Link>
+                                        <Link to="#">Recensione Hotel</Link>
                                     </div>
                                 </div>
                             </div>
@@ -164,9 +161,8 @@ function BlogThree() {
                     </div>
                 </div>
             </div>
-            {/* blog end */}
+            {/* fine blog */}
         </>
-
     )
 }
 

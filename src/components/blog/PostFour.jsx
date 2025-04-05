@@ -18,16 +18,15 @@ function PostFour(props) {
                 </div>
                 <div className="single__blog__meta">
                     <Link to="#" className="category">
-                        {blogCategory ? blogCategory : "Urban Oasis Living"}
+                        {blogCategory ? blogCategory : "Vita Urbana di Lusso"}
                     </Link>
                     <Link to={`/blog/${blogID}`} className="h5">
-                        {blogTitle ? blogTitle : 'Live Elegantly in Our Contemporary Suite for Apartment'}
+                        {blogTitle ? blogTitle : 'Vivi con Eleganza nella Nostra Suite Contemporanea'}
                     </Link>
                     <p>
-                        In today's ever-evolving business landscape, staying ahead of
-                        the curve is essential for success. Whether you're a seasoned
-                        entrepreneur or just starting out, the key to thriving in this
-                        dynamic environment lies in adaptability and innovation.
+                        Nell'attuale panorama aziendale in continua evoluzione, restare un passo avanti è essenziale per il successo.
+                        Che tu sia un imprenditore esperto o agli inizi, la chiave per prosperare in questo ambiente dinamico
+                        risiede nell'adattabilità e nell'innovazione.
                     </p>
                     <div className="single__blog__meta__main">
                         <div className="author__meta">
@@ -41,12 +40,11 @@ function PostFour(props) {
                                 {blogAuthor ? blogAuthor : 'Amin'}
                             </Link>
                             <span>
-                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Min
-                                Read
+                                <img src="assets/images/icon/clock.svg" alt="" /> 10 Minuti di Lettura
                             </span>
                         </div>
                         <div className="readmore">
-                            <Link to={`/blog/${blogID}`}>Read More</Link>
+                            <Link to={`/blog/${blogID}`}>Leggi di più</Link>
                         </div>
                     </div>
                 </div>

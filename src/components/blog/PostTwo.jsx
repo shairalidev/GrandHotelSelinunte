@@ -17,15 +17,15 @@ function PostTwo(props) {
             </div>
             <div className="blog__item__meta">
                 <Link to="#" className="blog__item__meta__cat">
-                    {blogCategory ? blogCategory : "Urban Oasis Living"}
+                    {blogCategory ? blogCategory : "Vita Urbana di Lusso"}
                 </Link>
                 <Link to={`/blog/${blogID}`} className="blog__item__meta__title">
-                    <h5>{blogTitle ? blogTitle : 'Live Elegantly in Our Contemporary Suite for Apartment'}</h5>
+                    <h5>{blogTitle ? blogTitle : 'Vivi con Eleganza nella Nostra Suite Contemporanea'}</h5>
                 </Link>
                 <div className="blog__item__meta__list">
                     <span className="blog__item__meta__list__item">
                         <img src="/assets/images/icon/calendar.svg" alt="" />
-                        {blogPublishedDate ? blogPublishedDate : 'March 26, 2024'}
+                        {blogPublishedDate ? blogPublishedDate : '26 Marzo 2024'}
                     </span>
                     <span className="blog__item__meta__list__item">
                         <Link to="#">

@@ -5,18 +5,18 @@ import posts from '../data/data-post.json'
 function BlogTwo() {
     return (
         <>
-            {/* blog style */}
+            {/* stile blog */}
             <div className="rts__section blog is__home__three">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-40">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="section__topbar">
                                 <span className="h6 subtitle__icon__three mx-auto">Blog</span>
-                                <h2 className="section__title">See Our Latest Blog</h2>
+                                <h2 className="section__title">Scopri il Nostro Ultimo Blog</h2>
                             </div>
                         </div>
                     </div>
-                    {/* row end */}
+                    {/* fine riga */}
                     <div className="row g-30">
                         {posts.map((data, index) => {
                             return (
@@ -38,9 +38,8 @@ function BlogTwo() {
                     </div>
                 </div>
             </div>
-            {/* blog style end */}
+            {/* fine stile blog */}
         </>
-
     )
 }
 

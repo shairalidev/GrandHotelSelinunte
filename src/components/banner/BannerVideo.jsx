@@ -3,7 +3,7 @@ import React from 'react'
 function BannerVideo() {
     return (
         <>
-            {/* banner area */}
+            {/* area banner */}
             <div className="rts__section banner__area is__home__video banner__height banner__center">
                 <div className="banner__video__section">
                     <div className="video__area">
@@ -21,33 +21,33 @@ function BannerVideo() {
                                 <div className="video__section__text">
                                     <div className="video__text__slider overflow-hidden">
                                         <div className="swiper-wrapper">
-                                            {/* single slider */}
+                                            {/* singolo slide */}
                                             <div className="swiper-slide">
                                                 <div className="video__text__slider__item">
                                                     <h1 className="video__text__slider__title">
-                                                        Luxury Stay Hotel Experience Comfort &amp; Elegance
+                                                        Soggiorno di Lusso: Comfort &amp; Eleganza Garantiti
                                                     </h1>
                                                 </div>
                                             </div>
-                                            {/* single slider end */}
-                                            {/* single slider */}
+                                            {/* fine slide */}
+                                            {/* singolo slide */}
                                             <div className="swiper-slide">
                                                 <div className="video__text__slider__item">
                                                     <h1 className="video__text__slider__title">
-                                                        A Luxurious Retreat Comfort &amp; Elegance Await
+                                                        Un Rifugio Lussuoso: Comfort &amp; Eleganza ti Attendono
                                                     </h1>
                                                 </div>
                                             </div>
-                                            {/* single slider end */}
-                                            {/* single slider */}
+                                            {/* fine slide */}
+                                            {/* singolo slide */}
                                             <div className="swiper-slide">
                                                 <div className="video__text__slider__item">
                                                     <h1 className="video__text__slider__title">
-                                                        Elevate Your Experience Luxury, Comfort, and Elegance
+                                                        Eleva la Tua Esperienza: Lusso, Comfort ed Eleganza
                                                     </h1>
                                                 </div>
                                             </div>
-                                            {/* single slider end */}
+                                            {/* fine slide */}
                                         </div>
                                     </div>
                                 </div>
@@ -56,9 +56,8 @@ function BannerVideo() {
                     </div>
                 </div>
             </div>
-            {/* banner area end */}
+            {/* fine area banner */}
         </>
-
     )
 }
 

@@ -10,9 +10,9 @@ function EventOne() {
                     <div className="row justify-content-center text-center mb-20">
                         <div className="col-lg-8 wow fadeInUp" data-wow-delay=".3s">
                             <div className="section__topbar">
-                                <span className="h6 subtitle__icon__four mx-auto">Event</span>
+                                <span className="h6 subtitle__icon__four mx-auto">Evento</span>
                                 <h2 className="section__title mb-20">
-                                    Our Recent Beachside Events
+                                    I Nostri Eventi Recenti in Spiaggia
                                 </h2>
                                 <span className="font-sm" />
                             </div>
@@ -31,11 +31,11 @@ function EventOne() {
                                     <div className="blog__item__meta__list mb-20">
                                         <span className="blog__item__meta__list__item">
                                             <img src="/assets/images/icon/calendar.svg" alt="" />
-                                            March 26, 2024
+                                            26 Marzo 2024
                                         </span>
                                     </div>
                                     <Link to="/event" className="blog__item__meta__title">
-                                        <h5>Your Perfect Event, Our Oceanfront Paradise</h5>
+                                        <h5>Il Tuo Evento Perfetto nel Nostro Paradiso Fronte Mare</h5>
                                     </Link>
                                     <div className="blog__item__meta__list">
                                         <span className="blog__item__meta__list__item">
@@ -64,11 +64,11 @@ function EventOne() {
                                         <div className="blog__item__meta__list mb-20">
                                             <span className="blog__item__meta__list__item">
                                                 <img src="/assets/images/icon/calendar.svg" alt="" />
-                                                March 26, 2024
+                                                26 Marzo 2024
                                             </span>
                                         </div>
                                         <Link to="/event" className="blog__item__meta__title">
-                                            <h5>Coastal Elegance for Unforgettable Moments</h5>
+                                            <h5>Eleganza Costiera per Momenti Indimenticabili</h5>
                                         </Link>
                                         <div className="blog__item__meta__list">
                                             <span className="blog__item__meta__list__item">
@@ -95,11 +95,11 @@ function EventOne() {
                                         <div className="blog__item__meta__list mb-20">
                                             <span className="blog__item__meta__list__item">
                                                 <img src="/assets/images/icon/calendar.svg" alt="" />
-                                                March 26, 2024
+                                                26 Marzo 2024
                                             </span>
                                         </div>
                                         <Link to="/event" className="blog__item__meta__title">
-                                            <h5>Comfortable Room with En-Suite Bathroom</h5>
+                                            <h5>Camera Confortevole con Bagno Privato</h5>
                                         </Link>
                                         <div className="blog__item__meta__list">
                                             <span className="blog__item__meta__list__item">
@@ -126,11 +126,11 @@ function EventOne() {
                                         <div className="blog__item__meta__list mb-20">
                                             <span className="blog__item__meta__list__item">
                                                 <img src="/assets/images/icon/calendar.svg" alt="" />
-                                                March 26, 2024
+                                                26 Marzo 2024
                                             </span>
                                         </div>
                                         <Link to="/event" className="blog__item__meta__title">
-                                            <h5>Elegant Apartment with Private Terrace</h5>
+                                            <h5>Appartamento Elegante con Terrazza Privata</h5>
                                         </Link>
                                         <div className="blog__item__meta__list">
                                             <span className="blog__item__meta__list__item">

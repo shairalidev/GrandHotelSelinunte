@@ -7,7 +7,7 @@ function BannerThree() {
         }, []);
     return (
         <>
-            {/* banner area */}
+            {/* area banner */}
             <div className="rts__section banner__area is__home__two banner__height banner__center">
                 <div className="banner__content">
                     <div className="banner__slider__image">
@@ -18,20 +18,20 @@ function BannerThree() {
                             <div className="col-lg-10">
                                 <div className="banner__slide__content">
                                     <h1 className="wow fadeInUp">
-                                        Luxury Stay Hotel Experience Comfort &amp; Elegance
+                                        Soggiorno di Lusso: Comfort &amp; Eleganza Garantiti
                                     </h1>
                                     <div className="banner__slide__content__info">
                                         <div className="item wow fadeInUp" data-wow-delay=".3s">
                                             <span className="h2 d-block">30+</span>
-                                            <p>Hotel Room</p>
+                                            <p>Camere d'Hotel</p>
                                         </div>
                                         <div className="item wow fadeInUp" data-wow-delay=".5s">
                                             <span className="h2 d-block">20+</span>
-                                            <p>Pool &amp; Spa Center</p>
+                                            <p>Centro Piscine &amp; Spa</p>
                                         </div>
                                         <div className="item wow fadeInUp" data-wow-delay=".7s">
                                             <span className="h2 d-block">50+</span>
-                                            <p>Experience Staff</p>
+                                            <p>Staff Esperto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -40,9 +40,8 @@ function BannerThree() {
                     </div>
                 </div>
             </div>
-            {/* banner area end */}
+            {/* fine area banner */}
         </>
-
     )
 }
 

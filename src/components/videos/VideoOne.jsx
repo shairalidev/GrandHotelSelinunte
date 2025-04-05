@@ -39,7 +39,7 @@ function VideoOne() {
                                             </defs>
                                             <text>
                                                 <textPath xlinkHref="#circle-2">
-                                                    Watch Now * Watch Now * Watch Full Video *
+                                                🇮🇹 Guarda ora * Guarda ora * Guarda il video completo
                                                 </textPath>
                                             </text>
                                         </svg>

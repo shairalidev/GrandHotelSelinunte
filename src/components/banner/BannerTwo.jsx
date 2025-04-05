@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 function BannerTwo() {
     return (
         <>
-            {/* banner area */}
+            {/* area banner */}
             <div className="rts__section banner__area is__home__one banner__height banner__center">
                 <Swiper
                     className="banner__slider overflow-hidden"
@@ -27,7 +27,7 @@ function BannerTwo() {
                     effect="slide"
                 >
                     <div className="swiper-wrapper">
-                        {/* single slider item */}
+                        {/* singolo elemento slider */}
                         <SwiperSlide>
                             <div className="banner__slider__image">
                                 <img src="/assets/images/banner/4.webp" alt="" />
@@ -37,27 +37,26 @@ function BannerTwo() {
                                     <div className="col-lg-10">
                                         <div className="banner__slide__content">
                                             <span className="h6 subtitle__icon">
-                                                Welcome to Our Hotel
+                                                Benvenuti nel Nostro Hotel
                                             </span>
-                                            <h1>Luxury Stay Hotel Experience Comfort &amp; Elegance</h1>
+                                            <h1>Soggiorno di Lusso: Comfort &amp; Eleganza</h1>
                                             <p className="sub__text">
-                                                Choosing Grand Hotel Selinunte was one of the best decisions we've ever
-                                                made. They have proven to be a reliable and innovative
-                                                partner
+                                                Scegliere il Grand Hotel Selinunte è stata una delle migliori decisioni che abbiamo mai preso.
+                                                Si sono dimostrati un partner affidabile e innovativo.
                                             </p>
                                             <Link
                                                 to="/room-three"
                                                 className="theme-btn btn-style fill no-border "
                                             >
-                                                <span>Discover Room</span>
+                                                <span>Scopri la Camera</span>
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* single slider item end */}
-                        {/* single slider item */}
+                        {/* fine singolo elemento slider */}
+                        {/* singolo elemento slider */}
                         <SwiperSlide>
                             <div className="banner__slider__image">
                                 <img src="assets/images/banner/slides-1.webp" alt="" />
@@ -66,25 +65,24 @@ function BannerTwo() {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-10">
                                         <div className="banner__slide__content">
-                                            <span className="h6 subtitle__icon">Welcome to Our Spa</span>
-                                            <h1>Lavish Getaway A Blend of Comfort &amp; Style</h1>
+                                            <span className="h6 subtitle__icon">Benvenuti nella Nostra Spa</span>
+                                            <h1>Fuga Lussuosa: Unione di Comfort &amp; Stile</h1>
                                             <p className="sub__text">
-                                                Choosing Grand Hotel Selinunte was one of the best decisions we've ever
-                                                made. They have proven to be a reliable and innovative
-                                                partner
+                                                Scegliere il Grand Hotel Selinunte è stata una delle migliori decisioni che abbiamo mai preso.
+                                                Si sono dimostrati un partner affidabile e innovativo.
                                             </p>
                                             <Link
                                                 to="/room-four"
                                                 className="theme-btn btn-style fill no-border "
                                             >
-                                                <span>Discover Room</span>
+                                                <span>Scopri la Camera</span>
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* single slider item end */}
+                        {/* fine singolo elemento slider */}
                     </div>
                     <div className="rts__slider__nav">
                         <div className="rts__slide">
@@ -130,9 +128,8 @@ function BannerTwo() {
                     </div>
                 </Swiper>
             </div>
-            {/* banner area end */}
+            {/* fine area banner */}
         </>
-
     )
 }
 

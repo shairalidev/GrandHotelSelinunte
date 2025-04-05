@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import WOW from 'wowjs';
 
-function BreadcrumbOne({ title, description, bgImage }) {
+function BreadcrumbOne({ title = 'Titolo della Pagina', description = 'Questa è una breve descrizione della pagina.', bgImage }) {
     useEffect(() => {
-        const wow = new WOW.WOW(); // Properly initialize WOW.js
+        const wow = new WOW.WOW();
         wow.init();
     }, []);
     return (
         <>
-            {/* page header */}
+            {/* intestazione pagina */}
             <div
                 className="rts__section page__hero__height page__hero__bg"
                 style={{ backgroundImage: `url(${bgImage || '/assets/images/pages/header__bg.webp'})` }}
@@ -24,7 +24,7 @@ function BreadcrumbOne({ title, description, bgImage }) {
                     </div>
                 </div>
             </div>
-            {/* page header end */}
+            {/* fine intestazione pagina */}
         </>
     )
 }

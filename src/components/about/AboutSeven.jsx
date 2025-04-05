@@ -34,15 +34,14 @@ function AboutSeven() {
                                     Hotel Experience
                                 </span>
                                 <h2 className="font-xl wow fadeInUp">
-                                    From Farm to Fork: Enjoy Fresh, Seasonal Dishes at Bokinn
+                                Benvenuti al nostro Grand Hotel Selinunte &amp; Resort
                                 </h2>
                                 <p className="font-sm mt-30 wow fadeInUp" data-wow-delay=".3s">
-                                Welcome to Italy, where luxury meets comfort in the heart of
-                                Marinella, we have been dedicated to providing an
-                                exceptional stay for our guests, blending modern amenities with
-                                timeless elegance. Our beautifully designed rooms and suites offer
-                                stunning views and plush accommodations, ensuring a restful
-                                retreat whether you're here for business or leisure.
+                                Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
+                                Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
+                                garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                                 </p>
                                 <div className="reservation__meta wow fadeInUp">
                                     <div className="reservation__item">

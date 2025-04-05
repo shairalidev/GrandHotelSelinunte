@@ -9,12 +9,12 @@ function BlogDetailsMain() {
     console.log("Blog Post:", blogPost); // Debugging
 
     if (!blogPost) {
-        return <div>Post not found!</div>;
+        return <div>Post non trovato!</div>;
     }
 
     return (
         <>
-            {/* Page Header */}
+            {/* Intestazione Pagina */}
             <div
                 className="rts__section page__hero__height page__hero__bg if__is__blog"
                 style={{
@@ -39,12 +39,12 @@ function BlogDetailsMain() {
                                             src="/assets/images/author/3.webp"
                                             height={40}
                                             width={40}
-                                            alt="Author"
+                                            alt="Autore"
                                         />
                                         {blogPost.author}
                                     </Link>
                                     <span>
-                                        <img src="/assets/images/icon/clock.svg" alt="Clock" /> 10 Min Read
+                                        <img src="/assets/images/icon/clock.svg" alt="Orologio" /> 10 Minuti di Lettura
                                     </span>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ function BlogDetailsMain() {
                     </div>
                 </div>
             </div>
-            {/* Page Header End */}
+            {/* Fine Intestazione Pagina */}
             <div className="rts__section section__padding">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -60,19 +60,16 @@ function BlogDetailsMain() {
                             <div className="blog__details">
                                 <div className="blog__details__content">
                                     <p className="description">
-                                        Welcome to Career Compass, your ultimate destination for career
-                                        advice, job search strategies, and professional development
-                                        insights. Whether you're a recent graduate, seasoned professional,
-                                        or someone considering a career change, our blog is your trusted
-                                        guide to help you navigate the ever-evolving landscape of the job
-                                        market.
+                                        Benvenuto su Career Compass, la tua destinazione definitiva per consigli di carriera,
+                                        strategie di ricerca lavoro e sviluppo professionale. Che tu sia un neolaureato, un
+                                        professionista esperto o stia valutando un cambiamento di carriera, il nostro blog è la
+                                        tua guida fidata per orientarti nel mercato del lavoro in continua evoluzione.
                                         <br />
-                                        At Career Compass, we understand that finding the right career
-                                        path can be daunting. That's why we offer a wealth of resources to
-                                        empower you on your journey. From resume writing tips and
-                                        interview techniques to networking advice and skill-building
-                                        strategies, our expert contributors share their knowledge and
-                                        expertise to equip you with the tools you need to succeed.
+                                        Su Career Compass comprendiamo che trovare il giusto percorso professionale può essere
+                                        difficile. Per questo offriamo una ricca gamma di risorse per accompagnarti nel tuo cammino.
+                                        Dai consigli su come scrivere un curriculum e affrontare i colloqui, ai suggerimenti su
+                                        networking e sviluppo di competenze, i nostri esperti condividono le loro conoscenze per
+                                        fornirti gli strumenti necessari per avere successo.
                                     </p>
                                     <img
                                         className="rounded-3 my-4 img-fluid"
@@ -81,72 +78,68 @@ function BlogDetailsMain() {
                                         src="/assets/images/pages/blog/details.webp"
                                         alt=""
                                     />
-                                    <h6 className="mb-4 mt-4">Hotel Service</h6>
+                                    <h6 className="mb-4 mt-4">Servizi dell'Hotel</h6>
                                     <ul className="service-list list-unstyled">
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Romantic Getaway
+                                            Fuga Romantica
                                         </li>
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Family Vacation
+                                            Vacanza in Famiglia
                                         </li>
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Event Planning
+                                            Organizzazione Eventi
                                         </li>
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Seasonal Promotions
+                                            Promozioni Stagionali
                                         </li>
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Conference Venues
+                                            Sale Conferenze
                                         </li>
                                         <li>
                                             <img src="/assets/images/icon/check-fill.svg" alt="" />
-                                            Special Offers
+                                            Offerte Speciali
                                         </li>
                                     </ul>
                                     <h6 className="mb-4 mt-4">
-                                        Real Guest Stories: Unforgettable Stays at Bokinn
+                                        Storie Reali degli Ospiti: Soggiorni Indimenticabili al Bokinn
                                     </h6>
                                     <p className="description">
-                                        Welcome to Career Compass, your ultimate destination for career
-                                        advice, job search strategies, and professional development
-                                        insights. Whether you're a recent graduate, seasoned professional,
-                                        or someone considering a career change, our blog is your trusted
-                                        guide to help you navigate the ever-evolving landscape of the job
-                                        market.
+                                        Benvenuto su Career Compass, la tua destinazione definitiva per consigli di carriera,
+                                        strategie di ricerca lavoro e sviluppo professionale. Che tu sia un neolaureato, un
+                                        professionista esperto o stia valutando un cambiamento di carriera, il nostro blog è la
+                                        tua guida fidata per orientarti nel mercato del lavoro in continua evoluzione.
                                     </p>
                                     <blockquote className="rts__blockquote">
                                         <span className="blockquote__text">
-                                            Contrary to popular belief, Lorem Ipsum is not simply random
-                                            text. It has roots in a piece of classical Latin literature from
-                                            45 BC, making it over 2000 years old. Richard McClintock, a
-                                            Latin professor at Hampden-Sydney College in Virginia
+                                            Contrariamente a quanto si crede, il Lorem Ipsum non è semplicemente testo casuale.
+                                            Ha origini in un'opera di letteratura latina classica del 45 a.C., con oltre 2000 anni di storia.
+                                            Richard McClintock, professore di latino all'Hampden-Sydney College in Virginia...
                                         </span>
                                     </blockquote>
                                     <p className="description">
-                                        At Career Compass, we understand that finding the right career
-                                        path can be daunting. That's why we offer a wealth of resources to
-                                        empower you on your journey. From resume writing tips and
-                                        interview techniques to networking advice and skill-building
-                                        strategies, our expert contributors share their knowledge and
-                                        expertise to equip you with the tools you need to succeed.
+                                        Su Career Compass comprendiamo che trovare il giusto percorso professionale può essere
+                                        difficile. Per questo offriamo una ricca gamma di risorse per accompagnarti nel tuo cammino.
+                                        Dai consigli su come scrivere un curriculum e affrontare i colloqui, ai suggerimenti su
+                                        networking e sviluppo di competenze, i nostri esperti condividono le loro conoscenze per
+                                        fornirti gli strumenti necessari per avere successo.
                                     </p>
-                                    <h6 className="mb-30">Tags</h6>
+                                    <h6 className="mb-30">Tag</h6>
                                     <div className="tag__list mb-30">
                                         <div className="tags__list">
-                                            <Link to="#">Hotel Stay</Link>
-                                            <Link to="#">Travel Blog</Link>
-                                            <Link to="#">Guest Experience</Link>
-                                            <Link to="#"> Hotel Guide</Link>
-                                            <Link to="#">Hotel Review</Link>
+                                            <Link to="#">Soggiorno in Hotel</Link>
+                                            <Link to="#">Blog di Viaggio</Link>
+                                            <Link to="#">Esperienza dell’Ospite</Link>
+                                            <Link to="#">Guida all'Hotel</Link>
+                                            <Link to="#">Recensione Hotel</Link>
                                         </div>
                                     </div>
                                     <div className="share mb-30">
-                                        <h6 className="mb-20">Share</h6>
+                                        <h6 className="mb-20">Condividi</h6>
                                         <div className="social__link">
                                             <Link to="#">
                                                 <i className="flaticon-linkedin" />
@@ -162,7 +155,7 @@ function BlogDetailsMain() {
                                             </Link>
                                         </div>
                                     </div>
-                                    <h6 className="mb-30">Comment</h6>
+                                    <h6 className="mb-30">Commenti</h6>
                                     <div className="comment__list">
                                         <div className="comment__item">
                                             <div className="comment__item__author">
@@ -177,19 +170,18 @@ function BlogDetailsMain() {
                                                 </div>
                                                 <div className="author__info">
                                                     <h6 className="font-20 mb-0">Jonathon Doe</h6>
-                                                    <span>A week ago</span>
+                                                    <span>Una settimana fa</span>
                                                 </div>
                                             </div>
                                             <div className="comment__text">
                                                 <p className="font-sm">
-                                                    I still have a lot of studying to do using this course and
-                                                    the other practice exams, but so far it's been great! I have
-                                                    not taken my Security+ exam as well, so I'll update this at
-                                                    a later time.
+                                                    Ho ancora molto da studiare usando questo corso e gli altri esami pratici,
+                                                    ma finora è stato fantastico! Non ho ancora sostenuto l’esame Security+,
+                                                    quindi aggiornerò più avanti.
                                                 </p>
                                                 <Link to="#">
                                                     <img src="/assets/images/icon/reply.svg" alt="" />
-                                                    Reply
+                                                    Rispondi
                                                 </Link>
                                             </div>
                                         </div>
@@ -205,69 +197,68 @@ function BlogDetailsMain() {
                                                     />
                                                 </div>
                                                 <div className="author__info">
-                                                    <h6 className="font-20 mb-0">Michael Roy </h6>
-                                                    <span>A week ago</span>
+                                                    <h6 className="font-20 mb-0">Michael Roy</h6>
+                                                    <span>Una settimana fa</span>
                                                 </div>
                                             </div>
                                             <div className="comment__text">
                                                 <p className="font-sm">
-                                                    I still have a lot of studying to do using this course and
-                                                    the other practice exams, but so far it's been great! I have
-                                                    not taken my Security+ exam as well, so I'll update this at
-                                                    a later time.
+                                                    Ho ancora molto da studiare usando questo corso e gli altri esami pratici,
+                                                    ma finora è stato fantastico! Non ho ancora sostenuto l’esame Security+,
+                                                    quindi aggiornerò più avanti.
                                                 </p>
                                                 <Link to="#">
                                                     <img src="/assets/images/icon/reply.svg" alt="" />
-                                                    Reply
+                                                    Rispondi
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
-                                    {/* comment form */}
+                                    {/* modulo commento */}
                                     <div className="comment__form mt-40">
-                                        <h6 className="mb-3">Leave a Comment</h6>
+                                        <h6 className="mb-3">Lascia un Commento</h6>
                                         <form action="#" className="comment__form__content">
                                             <div className="input-group">
                                                 <div className="form-group">
-                                                    <label htmlFor="name">Name</label>
+                                                    <label htmlFor="name">Nome</label>
                                                     <input
                                                         type="text"
                                                         id="name"
                                                         name="name"
                                                         className="form-control"
-                                                        placeholder="Your Name"
+                                                        placeholder="Il tuo nome"
                                                         required=""
                                                     />
                                                 </div>
                                                 <div className="form-group">
-                                                    <label htmlFor="email">Your Email</label>
+                                                    <label htmlFor="email">La tua Email</label>
                                                     <input
                                                         type="email"
                                                         id="email"
                                                         name="email"
                                                         className="form-control"
-                                                        placeholder="Your Email"
+                                                        placeholder="La tua email"
                                                         required=""
                                                     />
                                                 </div>
                                             </div>
                                             <div className="form-group">
-                                                <label htmlFor="msg">Your Comment</label>
+                                                <label htmlFor="msg">Il tuo Commento</label>
                                                 <textarea
                                                     id="msg"
                                                     name="msg"
                                                     className="form-control"
-                                                    placeholder="Your message"
+                                                    placeholder="Il tuo messaggio"
                                                     required=""
                                                     defaultValue={""}
                                                 />
                                             </div>
                                             <button type="submit" className="theme-btn btn-style fill mt-4">
-                                                <span>Submit Comment</span>
+                                                <span>Invia Commento</span>
                                             </button>
                                         </form>
                                     </div>
-                                    {/* comment form end */}
+                                    {/* fine modulo commento */}
                                 </div>
                             </div>
                         </div>

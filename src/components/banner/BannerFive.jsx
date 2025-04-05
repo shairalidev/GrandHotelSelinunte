@@ -36,7 +36,7 @@ function BannerFive() {
                             <div className="col-xl-9 col-lg-11">
                                 <div className="banner__slide__content if__not__slider">
                                     <h1 className="wow fadeInUp">
-                                        Elevate Your Stay Luxury and Adventure in the Mountains
+                                    Eleva il Tuo Soggiorno: Lusso e Avventura tra le Montagne
                                     </h1>
                                 </div>
                             </div>

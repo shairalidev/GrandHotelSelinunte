@@ -8,22 +8,22 @@ function AboutFive() {
                 <div className="container">
                     <div className="row justify-content-center text-center">
                         <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
-                            <div className="section__topbar">
-                                <span className="h6 subtitle__icon__three mx-auto">About US</span>
-                                <h2 className="section__title">
-                                    Welcome To Our Grand Hotel Selinunte &amp; Resort
-                                </h2>
-                            </div>
+                        <div className="section__topbar">
+                            <span className="h6 subtitle__icon__three mx-auto">Chi Siamo</span>
+                            <h2 className="section__title">
+                                Benvenuti al nostro Grand Hotel Selinunte &amp; Resort
+                            </h2>
+                        </div>
+
                             <p
                                 className="font-sm d-block mt-30 wow fadeInUp"
                                 data-wow-delay="0.4s"
                             >
-                                Welcome to Italy, where luxury meets comfort in the heart of
-                                Marinella, we have been dedicated to providing an
-                                exceptional stay for our guests, blending modern amenities with
-                                timeless elegance. Our beautifully designed rooms and suites offer
-                                stunning views and plush accommodations, ensuring a restful
-                                retreat whether you're here for business or leisure.
+                                Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
+                                Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
+                                garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                             </p>
                             <img
                                 src="/assets/images/index-5/sign.webp"

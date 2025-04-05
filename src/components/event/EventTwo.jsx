@@ -22,26 +22,26 @@ function EventTwo() {
                             </div>
                             <div className="single__event__meta">
                                 <h2 className="wow fadeInUp mb-20">
-                                    A Night of Hope: Our Charity Gala Room.
+                                    Una Notte di Speranza: Il Nostro Gala di Beneficenza.
                                 </h2>
                                 <p className="font-sm wow fadeInUp">
-                                    At our Fitness &amp; Yoga Services, we are dedicated to helping
-                                    you achieve your health and wellness goals. Our comprehensive
-                                    program offers a variety of classes designed to suit all levels,
-                                    from beginners to advanced practitioners.
+                                    Nei nostri Servizi di Fitness &amp; Yoga, siamo dedicati ad aiutarti
+                                    a raggiungere i tuoi obiettivi di salute e benessere. Il nostro programma
+                                    completo offre una varietà di classi adatte a tutti i livelli,
+                                    dai principianti ai praticanti esperti.
                                 </p>
                                 <div className="event__info mt-20 wow fadeInUp">
                                     <div className="event__info__single">
                                         <span className="h5 d-block">1000+</span>
-                                        <p>Guest Dinner</p>
+                                        <p>Cena per Ospiti</p>
                                     </div>
                                     <div className="event__info__single">
                                         <span className="h5 d-block">100+</span>
-                                        <p>Service Man</p>
+                                        <p>Staff di Servizio</p>
                                     </div>
                                     <div className="event__info__single">
                                         <span className="h5 d-block">10+</span>
-                                        <p>Special Room</p>
+                                        <p>Stanze Speciali</p>
                                     </div>
                                 </div>
                             </div>
@@ -57,26 +57,26 @@ function EventTwo() {
                             </div>
                             <div className="single__event__meta">
                                 <h2 className="wow fadeInUp mb-20">
-                                    Taste of Luxury: Food &amp; Wine Festival Event
+                                    Gusto di Lusso: Evento Festival di Cibo &amp; Vino
                                 </h2>
                                 <p className="font-sm wow fadeInUp">
-                                    At our Fitness &amp; Yoga Services, we are dedicated to helping
-                                    you achieve your health and wellness goals. Our comprehensive
-                                    program offers a variety of classes designed to suit all levels,
-                                    from beginners to advanced practitioners.
+                                    Nei nostri Servizi di Fitness &amp; Yoga, siamo dedicati ad aiutarti
+                                    a raggiungere i tuoi obiettivi di salute e benessere. Il nostro programma
+                                    completo offre una varietà di classi adatte a tutti i livelli,
+                                    dai principianti ai praticanti esperti.
                                 </p>
                                 <div className="event__info mt-20 wow fadeInUp">
                                     <div className="event__info__single">
                                         <span className="h5 d-block">800+</span>
-                                        <p>Guest Dinner</p>
+                                        <p>Cena per Ospiti</p>
                                     </div>
                                     <div className="event__info__single">
                                         <span className="h5 d-block">70+</span>
-                                        <p>Service Man</p>
+                                        <p>Staff di Servizio</p>
                                     </div>
                                     <div className="event__info__single">
                                         <span className="h5 d-block">16+</span>
-                                        <p>Special Room</p>
+                                        <p>Stanze Speciali</p>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,6 @@ function EventTwo() {
             </div>
             {/* event area end */}
         </>
-
     )
 }
 

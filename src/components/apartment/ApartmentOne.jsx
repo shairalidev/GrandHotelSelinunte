@@ -1,8 +1,8 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Core Swiper styles
+import 'swiper/swiper-bundle.css'; // Stili principali di Swiper
 import { Pagination } from 'swiper/modules';
-// Import Swiper styles
+// Importa gli stili di Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
@@ -11,23 +11,23 @@ import { Link } from 'react-router-dom';
 function ApartmentOne() {
     return (
         <>
-            {/* our apartment */}
+            {/* i nostri appartamenti */}
             <div className="rts__section section__padding">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-40">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="section__topbar">
-                                <span className="h6 subtitle__icon__four mx-auto">Apartment</span>
-                                <h2 className="section__title mb-20"> Our Apartment</h2>
+                                <span className="h6 subtitle__icon__four mx-auto">Appartamento</span>
+                                <h2 className="section__title mb-20">I Nostri Appartamenti</h2>
                                 <span className="font-sm">
-                                    Our rooms offer a harmonious blend of comfort and elegance,
-                                    designed to provide an exceptional stay for every guest Each room
-                                    features plush bedding.
+                                    Le nostre camere offrono un'armoniosa combinazione di comfort ed eleganza,
+                                    progettate per offrire un soggiorno eccezionale a ogni ospite. Ogni camera
+                                    è dotata di letti confortevoli.
                                 </span>
                             </div>
                         </div>
                     </div>
-                    {/* row end */}
+                    {/* fine riga */}
                 </div>
                 <div className="full__width">
                     <Swiper
@@ -59,7 +59,7 @@ function ApartmentOne() {
                         }}
                     >
                         <div className="swiper-wrapper">
-                            {/* single apartment slider */}
+                            {/* singolo slide appartamento */}
                             <SwiperSlide>
                                 <div className="apartment__slide__box">
                                     <div className="apartment__slide__image">
@@ -67,30 +67,30 @@ function ApartmentOne() {
                                             height={500}
                                             width={610}
                                             src="/assets/images/index-3/apartment/1.webp"
-                                            alt="apartment"
+                                            alt="appartamento"
                                         />
                                     </div>
                                     <div className="apartment__slide__content">
                                         <div className="slider__meta">
                                             <Link to="/room/2" className="apartment__title">
-                                                <h5>Elegant Apartment</h5>
+                                                <h5>Appartamento Elegante</h5>
                                             </Link>
                                             <div className="apartment__content__meta">
                                                 <span>
                                                     <i className="flaticon-construction" />
-                                                    35 sqm
+                                                    35 mq
                                                 </span>
                                                 <span>
-                                                    <i className="flaticon-user" />5 Person
+                                                    <i className="flaticon-user" />5 Persone
                                                 </span>
                                             </div>
                                         </div>
-                                        <span className="price h4">200$</span>
+                                        <span className="price h4">200€</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            {/* single apartment slider end */}
-                            {/* single apartment slider */}
+                            {/* fine slide appartamento */}
+                            {/* singolo slide appartamento */}
                             <SwiperSlide>
                                 <div className="apartment__slide__box">
                                     <div className="apartment__slide__image">
@@ -98,30 +98,30 @@ function ApartmentOne() {
                                             height={500}
                                             width={610}
                                             src="/assets/images/index-3/apartment/2.webp"
-                                            alt="apartment"
+                                            alt="appartamento"
                                         />
                                     </div>
                                     <div className="apartment__slide__content">
                                         <div className="slider__meta">
                                             <Link to="/room/2" className="apartment__title">
-                                                <h5>Elegant Apartment</h5>
+                                                <h5>Appartamento Elegante</h5>
                                             </Link>
                                             <div className="apartment__content__meta">
                                                 <span>
                                                     <i className="flaticon-construction" />
-                                                    35 sqm
+                                                    35 mq
                                                 </span>
                                                 <span>
-                                                    <i className="flaticon-user" />5 Person
+                                                    <i className="flaticon-user" />5 Persone
                                                 </span>
                                             </div>
                                         </div>
-                                        <span className="price h4">200$</span>
+                                        <span className="price h4">200€</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            {/* single apartment slider end */}
-                            {/* single apartment slider */}
+                            {/* fine slide appartamento */}
+                            {/* singolo slide appartamento */}
                             <SwiperSlide>
                                 <div className="apartment__slide__box">
                                     <div className="apartment__slide__image">
@@ -129,30 +129,30 @@ function ApartmentOne() {
                                             height={500}
                                             width={610}
                                             src="/assets/images/index-3/apartment/3.webp"
-                                            alt="apartment"
+                                            alt="appartamento"
                                         />
                                     </div>
                                     <div className="apartment__slide__content">
                                         <div className="slider__meta">
                                             <Link to="/room/2" className="apartment__title">
-                                                <h5>Elegant Apartment</h5>
+                                                <h5>Appartamento Elegante</h5>
                                             </Link>
                                             <div className="apartment__content__meta">
                                                 <span>
                                                     <i className="flaticon-construction" />
-                                                    35 sqm
+                                                    35 mq
                                                 </span>
                                                 <span>
-                                                    <i className="flaticon-user" />5 Person
+                                                    <i className="flaticon-user" />5 Persone
                                                 </span>
                                             </div>
                                         </div>
-                                        <span className="price h4">200$</span>
+                                        <span className="price h4">200€</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            {/* single apartment slider end */}
-                            {/* single apartment slider */}
+                            {/* fine slide appartamento */}
+                            {/* singolo slide appartamento */}
                             <SwiperSlide>
                                 <div className="apartment__slide__box">
                                     <div className="apartment__slide__image">
@@ -160,42 +160,41 @@ function ApartmentOne() {
                                             height={500}
                                             width={610}
                                             src="/assets/images/index-3/apartment/4.webp"
-                                            alt="apartment"
+                                            alt="appartamento"
                                         />
                                     </div>
                                     <div className="apartment__slide__content">
                                         <div className="slider__meta">
                                             <Link to="/room/2" className="apartment__title">
-                                                <h5>Elegant Apartment</h5>
+                                                <h5>Appartamento Elegante</h5>
                                             </Link>
                                             <div className="apartment__content__meta">
                                                 <span>
                                                     <i className="flaticon-construction" />
-                                                    35 sqm
+                                                    35 mq
                                                 </span>
                                                 <span>
-                                                    <i className="flaticon-user" />5 Person
+                                                    <i className="flaticon-user" />5 Persone
                                                 </span>
                                             </div>
                                         </div>
-                                        <span className="price h4">200$</span>
+                                        <span className="price h4">200€</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            {/* single apartment slider end */}
+                            {/* fine slide appartamento */}
                         </div>
-                        {/* pagination button */}
+                        {/* pulsante paginazione */}
                         <div className="rts__pagination">
                             <div className="rts-pagination" />
                         </div>
-                        {/* pagination button end */}
+                        {/* fine paginazione */}
                     </Swiper>
                 </div>
             </div>
-            {/* our apartment end */}
+            {/* fine sezione appartamenti */}
         </>
-
     )
 }
 
-export default ApartmentOne
+export default ApartmentOne;

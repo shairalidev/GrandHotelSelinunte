@@ -24,16 +24,15 @@ function AboutSix() {
                                         About US
                                     </span>
                                     <h2 className="content__title h2 lh-1 wow fadeInUp">
-                                        Welcome To Our Grand Hotel Selinunte &amp; Resort
+                                    Benvenuti al nostro Grand Hotel Selinunte &amp; Resort
                                     </h2>
                                 </div>
                                 <p className="font-sm mt-30 mb-40">
-                                Welcome to Italy, where luxury meets comfort in the heart of
-                                Marinella, we have been dedicated to providing an
-                                exceptional stay for our guests, blending modern amenities with
-                                timeless elegance. Our beautifully designed rooms and suites offer
-                                stunning views and plush accommodations, ensuring a restful
-                                retreat whether you're here for business or leisure.
+                                Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
+                                Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
+                                garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                                 </p>
                                 <img
                                     height={75}

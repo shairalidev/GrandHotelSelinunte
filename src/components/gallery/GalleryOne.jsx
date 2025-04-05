@@ -33,7 +33,7 @@ function GalleryOne() {
                 <span className="h6 subtitle__icon__three mx-auto">
                   Instagram Post
                 </span>
-                <h2 className="section__title">Follow on&nbsp;Instagram</h2>
+                <h2 className="section__title">Segui su &nbsp;Instagram</h2>
               </div>
             </div>
           </div>
