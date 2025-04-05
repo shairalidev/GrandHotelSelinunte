@@ -62,20 +62,24 @@ function HeaderDark() {
                                                 </Link>
                                                 <ul className="submenu sub__style" role="menu">
                                                     <li role="menuitem" className="has-child has-arrow">
-                                                        <Link to="/">Stile della Camera</Link>
+                                                        <Link to="/">tipologia di camera</Link>
                                                         <ul className="sub__style" role="menu">
                                                             <li role="menuitem">
-                                                                <Link to="/room-one">Camera Uno</Link>
+                                                                <Link to="/room-one">Camera singola</Link>
                                                             </li>
                                                             <li role="menuitem">
-                                                                <Link to="/room-two">Camera Due</Link>
+                                                                <Link to="/room-two">Camera matrimoniale</Link>
                                                             </li>
                                                             <li role="menuitem">
-                                                                <Link to="/room-three">Camera Tre</Link>
+                                                                <Link to="/room-three">Camera tripla</Link>
                                                             </li>
                                                             <li role="menuitem">
-                                                                <Link to="/room-four">Camera Quattro</Link>
+                                                                <Link to="/room-four">Camera quadrupla</Link>
                                                             </li>
+                                                            <li role="menuitem">
+                                                                <Link to="/room-four">Camera quintupla</Link>
+                                                            </li>
+                                                            
                                                         </ul>
                                                     </li>
                                                     <li role="menuitem" className="has-child has-arrow">
