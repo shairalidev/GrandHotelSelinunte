@@ -132,7 +132,8 @@ function RoomDetailsOne() {
               <div className="rts__booking__form has__background is__room__details sticky-item">
                 <form id="scheduleForm" className="advance__search">
                   <h5 className="pt-0">Book Your Stay</h5>
-                  <div className="advance__search__wrapper">
+                  
+<div className="advance__search__wrapper">
 
                     {/* Custom Slot Selector */}
                     <CustomSlotSelect
@@ -145,7 +146,6 @@ function RoomDetailsOne() {
                         RoomBooking.calculateTotalPrice();
                       }}
                     />
-
                     <div className="query__input wow fadeInUp">
                       <label htmlFor="adults" className="query__label">Adult</label>
                       <div className="query__input__position">

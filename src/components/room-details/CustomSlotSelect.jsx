@@ -27,24 +27,28 @@ function CustomSlotSelect({ slots, onSelect }) {
   }, []);
 
   return (
-    <div className="query__input wow fadeInUp" ref={wrapperRef} style={{ width: '100%' }}>
-      <div
+    <div className="query__input wow fadeInUp" ref={wrapperRef} style={{ width: '100%', position: 'relative', zIndex: 10 }}>
+
+        <div
         className="query__input__position"
         onClick={() => setShowOptions(!showOptions)}
         style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          width: '100%',
-          height: '50px',
-          border: '1px solid #ced4da',
-          borderRadius: '6px',
-          backgroundColor: '#fff',
-          padding: '0 12px',
-          cursor: 'pointer',
-          position: 'relative'
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%', // ✅ Full width
+            height: '50px',
+            border: '1px solid #ced4da',
+            borderRadius: '6px',
+            backgroundColor: '#fff',
+            padding: '0 12px',
+            cursor: 'pointer',
+            position: 'relative',
+            maxWidth: '100%',     // ✅ Override
+            minWidth: 'unset'     // ✅ Remove constraint
         }}
-      >
+        >
+
         <div
           className="form-select"
           style={{
@@ -67,21 +71,26 @@ function CustomSlotSelect({ slots, onSelect }) {
         value={selectedSlot ? JSON.stringify(selectedSlot) : ''}
       />
 
-      {showOptions && (
-        <div
-          className="dropdown-menu show"
-          style={{
-            maxHeight: '250px',
-            overflowY: 'auto',
-            zIndex: 1000,
-            marginTop: '8px',
-            background: '#fff',
-            border: '1px solid #ced4da',
-            borderRadius: '6px',
-            width: '100%',
-            boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
-          }}
-        >
+{showOptions && (
+  <div
+    className="dropdown-menu show"
+    style={{
+      position: 'absolute',
+      top: '100%',
+      left: 0,
+      right: 0,
+      maxHeight: '250px',
+      overflowY: 'auto',
+      zIndex: 9999,
+      marginTop: '8px',
+      background: '#fff',
+      border: '1px solid #ced4da',
+      borderRadius: '6px',
+      width: '100%',
+      boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
+    }}
+  >
+
           <input
             type="text"
             placeholder="Search slot..."
