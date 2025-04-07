@@ -1,13 +1,10 @@
 const express = require('express');
-require('dotenv').config();
 const cors = require('cors');
-const { InferenceClient } = require('@huggingface/inference');
+const axios = require('axios');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-const client = new InferenceClient(process.env.HF_TOKEN);
 
 // 🧠 Session memory: { sessionId: [{role, content}, ...] }
 const sessionMemory = new Map();
@@ -31,25 +28,24 @@ app.post('/ask', async (req, res) => {
   messages.push({ role: "user", content: question });
 
   try {
-    const chatCompletion = await client.chatCompletion({
-      provider: "nebius",
-      model: "deepseek-ai/DeepSeek-V3-0324",
-      messages,
-      max_tokens: 1000,
+    const response = await axios.post('http://localhost:11434/api/chat', {
+      model: "tinyllama:chat",
+      messages: messages,
+      stream: false
     });
 
-    const reply = chatCompletion?.choices?.[0]?.message;
+    const reply = response.data.message.content;
 
     // Store assistant response in memory
-    messages.push({ role: "assistant", content: reply.content });
+    messages.push({ role: "assistant", content: reply });
 
-    res.json({ answer: reply.content });
+    res.json({ answer: reply });
   } catch (error) {
-    console.error("DeepSeek HF Proxy Error:", error);
-    res.status(500).json({ error: "Failed to get response from AI." });
+    console.error("Ollama Proxy Error:", error.message);
+    res.status(500).json({ error: "Failed to get response from local AI." });
   }
 });
 
 app.listen(5000, () => {
-  console.log('✅ Hugging Face Proxy running on http://localhost:5000');
+  console.log('✅ Ollama Proxy running on http://localhost:5000');
 });

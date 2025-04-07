@@ -205,7 +205,7 @@ return (
     {open && (
       <div className="chat-container-popup">
         <header className='header-chatbot'>
-  <img src="./assets/images/logo/logo.svg" alt="Hotel Logo" style={{ height: '60px', marginRight: '10px' }} />
+  <img src="./assets/images/logo/logo__two.png" alt="Hotel Logo" style={{ height: '60px', marginRight: '10px' }} />
 </header>
 
         <div className="chat-box">
