@@ -12,6 +12,7 @@
   "dependencies": {
     "@huggingface/inference": "^3.6.2",
     "axios": "^1.8.4",
+    "backend": "file:",
     "cors": "^2.8.5",
     "express": "^5.1.0"
   }
