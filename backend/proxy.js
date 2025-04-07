@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const cors = require('cors');
 const { InferenceClient } = require('@huggingface/inference');
 
@@ -6,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const client = new InferenceClient("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");
+const client = new InferenceClient(process.env.HF_TOKEN);
 
 // 🧠 Session memory: { sessionId: [{role, content}, ...] }
 const sessionMemory = new Map();
