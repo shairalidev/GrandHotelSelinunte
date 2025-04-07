@@ -21,7 +21,7 @@ import Blog from "./Blog";
 import BlogDetails from "./BlogDetails";
 import Cart from "./Cart";
 import CheckOut from "./CheckOut";
-
+import ChatBot from '../components/chatbot/ChatBot';
 function RouterPage() {
   return (
     <>
@@ -51,7 +51,7 @@ function RouterPage() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<CheckOut />} />
         </Routes>
-
+        <ChatBot/>
         {/* GDPR Cookie Consent */}
         <GDPRCookie
           settings={{
