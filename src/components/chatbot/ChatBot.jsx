@@ -171,7 +171,8 @@ const sendMessage = async () => {
   setLoading(true);
 
   try {
-    const res = await axios.post('http://34.247.46.239:5000/ask', {
+    const res = await axios.post('/ask', {
+
       question: input,
       context: context,
       sessionId: sessionId.current
