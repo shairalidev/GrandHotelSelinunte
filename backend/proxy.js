@@ -1,10 +1,12 @@
 const express = require('express');
 const cors = require('cors');
-const axios = require('axios');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY); // ← Put your key in .env
 
 const sessionMemory = new Map();
 
@@ -13,10 +15,7 @@ app.post('/ask', async (req, res) => {
 
   if (!sessionMemory.has(sessionId)) {
     sessionMemory.set(sessionId, [
-      {
-        role: "system",
-        content: context || "You are a helpful hotel assistant."
-      }
+      { role: "system", content: context || "You are a helpful hotel assistant." }
     ]);
   }
 
@@ -24,30 +23,29 @@ app.post('/ask', async (req, res) => {
   messages.push({ role: "user", content: question });
 
   try {
-    console.log('➡️ Received /ask request');
-    console.log('🧠 Messages:', messages);
+    console.log("➡️ Calling Gemini AI...");
 
-    const response = await axios.post('http://localhost:11434/api/chat', {
-        model: "tinydolphin:1.1b",
-        messages,
-        stream: false,
-        num_predict: 100 // optional: limit output length
-      }, {
-        timeout: 60000 // 60 seconds
-      });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-    console.log('✅ Response from Ollama:', response.data);
+    const chat = model.startChat({
+      history: messages.map(m => ({
+        role: m.role === 'system' ? 'user' : m.role,
+        parts: [{ text: m.content }]
+      }))
+    });
 
-    const reply = response.data.message.content;
+    const result = await chat.sendMessage(question);
+    const reply = result.response.text();
+
     messages.push({ role: "assistant", content: reply });
 
     res.json({ answer: reply });
-  } catch (error) {
-    console.error("❌ Ollama Proxy Error:", error.message);
-    res.status(500).json({ error: "Failed to get response from local AI." });
+  } catch (err) {
+    console.error("❌ Gemini Proxy Error:", err.message);
+    res.status(500).json({ error: "Failed to get response from Gemini AI." });
   }
 });
 
 app.listen(5000, () => {
-  console.log('✅ Ollama Proxy running on http://localhost:5000');
+  console.log('✅ Gemini Proxy running on http://localhost:5000');
 });
