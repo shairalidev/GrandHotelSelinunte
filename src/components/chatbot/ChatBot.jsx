@@ -177,7 +177,7 @@ const sendMessage = async () => {
       context: context,
       sessionId: sessionId.current
     }, {
-      timeout: 60000
+      timeout: 600000
     });
 
     const combinedText = res.data?.answer || 'Sorry, no answer found.';
