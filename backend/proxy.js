@@ -1,12 +1,14 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY); // ← Put your key in .env
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" }); // ✅ use the correct model
 
 const sessionMemory = new Map();
 
@@ -15,7 +17,7 @@ app.post('/ask', async (req, res) => {
 
   if (!sessionMemory.has(sessionId)) {
     sessionMemory.set(sessionId, [
-      { role: "system", content: context || "You are a helpful hotel assistant." }
+      { role: "user", content: context || "You are a helpful hotel assistant." }
     ]);
   }
 
@@ -23,13 +25,9 @@ app.post('/ask', async (req, res) => {
   messages.push({ role: "user", content: question });
 
   try {
-    console.log("➡️ Calling Gemini AI...");
-
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
     const chat = model.startChat({
       history: messages.map(m => ({
-        role: m.role === 'system' ? 'user' : m.role,
+        role: m.role,
         parts: [{ text: m.content }]
       }))
     });
@@ -41,7 +39,7 @@ app.post('/ask', async (req, res) => {
 
     res.json({ answer: reply });
   } catch (err) {
-    console.error("❌ Gemini Proxy Error:", err.message);
+    console.error("❌ Gemini Proxy Error:", err);
     res.status(500).json({ error: "Failed to get response from Gemini AI." });
   }
 });
