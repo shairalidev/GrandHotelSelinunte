@@ -18,12 +18,15 @@ app.post('/ask', async (req, res) => {
   const { question, context, sessionId } = req.body;
 
   if (!sessionMemory.has(sessionId)) {
-    sessionMemory.set(sessionId, [
-      {
-        role: "user",
-        content: context || "You are a helpful hotel assistant. Keep replies short and helpful."
-      }
-    ]);
+    sessionMemory.set(sessionId, {
+        lastActive: Date.now(),
+        messages: [
+          {
+            role: "user",
+            content: context || "You are a helpful hotel assistant."
+          }
+        ]
+      });
   }
 
   const messages = sessionMemory.get(sessionId);
