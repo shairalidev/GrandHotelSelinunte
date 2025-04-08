@@ -28,10 +28,13 @@ app.post('/ask', async (req, res) => {
     console.log('🧠 Messages:', messages);
 
     const response = await axios.post('http://localhost:11434/api/chat', {
-    model: "gemma:2b",
-    messages,
-    stream: false
-    });
+        model: "tinydolphin:1.1b",
+        messages,
+        stream: false,
+        num_predict: 100 // optional: limit output length
+      }, {
+        timeout: 60000 // 60 seconds
+      });
 
     console.log('✅ Response from Ollama:', response.data);
 
