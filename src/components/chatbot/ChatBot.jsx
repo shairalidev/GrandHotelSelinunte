@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import './ChatBot.css';
 
 const ChatBot = () => {
+const [bookingMessage, setBookingMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,8 +16,11 @@ const ChatBot = () => {
   }, []);
 
   // Paste your assistant context here
-  const context = `You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, and helpful.
-
+const context = `use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly dont make mistake by suggesting any slots by yourself or estimating cost outside of slots is also not allowed, just use slots we mentioned and cost with the slots bellow and calculate always correct and the club card cost is mandatory,.
+only allowed mentioned slots. 
+parking is free of cost.
+  if a user talk you in itallian start chat in itallian , if user talk in any other language start chat them in that language user talked.
+be small in response and simple 
 Steps to follow:
 1. Ask the user what dates they want to stay.
 2. Confirm check-in and check-out dates with full date and month.
@@ -155,6 +159,9 @@ October:
 - May 25–29: 4 nights, 249 €
 - May 31–June 2: 2 nights, 199 €
 - September 12–14: 2 nights, 300 € (event for journalists)
+once they agree to book , kindly make a small message for them :
+your slot is startdate - enddate , number of nights, total cost, including any extra facitlity if they chose 
+and ask them to message on Whatsapp to confirm your booking click the booking button, 20 percent of total cost will be paid in advance to hotel and 80 percent of total amount will be paid at arrival time to the hotel
 
 DO NOT. If a user asks for a discount, DO NOT apply one. Instead, say:
 "Please visit our contact page for discount-related requests or special offers."
@@ -162,6 +169,94 @@ Or provide:
 Telephone: +39 0924 076901
 WhatsApp: +39 328 817 0176
 Email: booking@grandhotelselinunte.com
+
+Grand Hotel Selinunte – Technical Information
+ROOMS – Total: 80 Rooms
+Standard Rooms
+•	2 Single rooms
+•	22 Double/Queen rooms
+•	4 Triple rooms
+•	15 Quadruple rooms
+•	1 Quintuple room
+Superior Rooms
+•	20 Double/Queen rooms
+•	5 Triple rooms
+•	10 Quadruple rooms
+•	1 Quintuple room
+Room Amenities (All Rooms)
+•	Air conditioning
+•	Telephone
+•	TV
+•	Safe
+•	Minibar
+•	Hairdryer
+•	Private veranda
+•	Shower or Bathtub (only 8 rooms have bathtub)
+Views
+•	38 rooms have a sea or pool view
+•	Remaining rooms have vineyard or olive grove views
+ 
+ RESTAURANT & BAR
+•	Restaurant: 1 onsite restaurant with a capacity of 220 seats
+•	Bars:
+o	1 Indoor bar
+o	1 Outdoor poolside bar
+ 
+POOL
+•	1 Outdoor pool with:
+o	Jacuzzi
+o	Children’s island
+o	Sun loungers and poolside gazebos
+ 
+ MULTI-PURPOSE COURT
+•	Field for:
+o	5-a-side football
+o	Tennis
+o	Mini basketball
+ 
+ MINICLUB
+•	Equipped children’s play area
+ 
+ COVERED PANORAMIC TERRACE
+•	Sea-view terrace suitable for:
+o	Parties
+o	Aperitifs
+o	Entertainment shows
+o	Live music/piano bar
+ 
+ INTERNET
+•	Free Wi-Fi available throughout the hotel
+ 
+ PARKING
+•	Free private parking available
+ 
+ BEACH
+•	Equipped private beach located within the Belice Nature Reserve
+•	Shuttle Service:
+o	Free shuttle to the equipped beach
+o	Paid shuttle for other destinations
+ 
+ ADDITIONAL SERVICES (On Request)
+•	Excursions
+•	Onsite Bazaar
+•	Airport transfers
+ 
+ PET-ZONE
+•	Pet-friendly rooms available (extra charge)
+•	Outdoor pet area
+•	General rules provided in the pet policy
+
+ USEFUL INFO
+•	Website: www.grandhotelselinunte.it
+•	Phone: +39 0924 076901
+•	WhatsApp: +39 328 8170176
+•	Email: booking@grandhotelselinunte.com
+
+DIRECTIONS TO GRAND HOTEL SELINUNTE
+From Palermo or Trapani:
+Take the A29 motorway toward Mazara del Vallo. Exit at Castelvetrano and follow signs to Selinunte. After the Selinunte exit, take the Menfi exit and follow signs to Grand Hotel Selinunte.
+From Catania:
+Take the A19 motorway toward Palermo, exit at Caltanissetta, then continue along SS640 and SS115 toward Trapani. Exit at Selinunte, then take the Menfi exit and follow signs to Grand Hotel Selinunte.
 
 `;
 const sendMessage = async () => {
@@ -185,9 +280,12 @@ const sendMessage = async () => {
     const combinedText = res.data?.answer || 'Sorry, no answer found.';
     const botMessage = { from: 'bot', text: combinedText };
     setMessages((prev) => [...prev, botMessage]);
+    if (combinedText.toLowerCase().includes("your slot is")) {
+      setBookingMessage(combinedText);
+    }
 
   } catch (err) {
-    const errorMessage = { from: 'bot', text: 'Error contacting AI service.' };
+    const errorMessage = { from: 'bot', text: 'Error contacting AI service try contacting on Whatsapp(+393288170176).' };
     setMessages((prev) => [...prev, errorMessage]);
     console.error('Proxy API error:', err);
   } finally {
@@ -226,15 +324,27 @@ return (
           {loading && <div className="message bot">Typing...</div>}
         </div>
         <div className="chat-input-box">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-            placeholder="Ask me something..."
-          />
-          <button onClick={sendMessage}>➤</button>
-        </div>
+  <input
+    type="text"
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
+    placeholder="Ask me something..."
+  />
+  <button onClick={sendMessage}>➤</button>
+
+  {bookingMessage && (
+    <a
+      href={`https://wa.me/393288170176?text=${encodeURIComponent(bookingMessage)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="whatsapp-button"
+      title="Confirm booking on WhatsApp"
+    >
+      📱
+    </a>
+  )}
+</div>
       </div>
     )}
   </>
