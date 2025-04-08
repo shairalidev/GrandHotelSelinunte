@@ -24,11 +24,16 @@ app.post('/ask', async (req, res) => {
   messages.push({ role: "user", content: question });
 
   try {
+    console.log('➡️ Received /ask request');
+    console.log('🧠 Messages:', messages);
+
     const response = await axios.post('http://localhost:11434/api/chat', {
-      model: "tinyllama:chat", // or try llama2:7b-chat if this is slow
-      messages: messages,
-      stream: false
+    model: "tinyllama:chat",
+    messages,
+    stream: false
     });
+
+    console.log('✅ Response from Ollama:', response.data);
 
     const reply = response.data.message.content;
     messages.push({ role: "assistant", content: reply });
