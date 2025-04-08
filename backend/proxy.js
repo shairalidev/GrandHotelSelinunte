@@ -8,7 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" }); // ✅ use the correct model
+
+// Use Gemini 1.5 Flash (fastest, efficient)
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 const sessionMemory = new Map();
 
@@ -17,7 +19,10 @@ app.post('/ask', async (req, res) => {
 
   if (!sessionMemory.has(sessionId)) {
     sessionMemory.set(sessionId, [
-      { role: "user", content: context || "You are a helpful hotel assistant." }
+      {
+        role: "user",
+        content: context || "You are a helpful hotel assistant. Keep replies short and helpful."
+      }
     ]);
   }
 
