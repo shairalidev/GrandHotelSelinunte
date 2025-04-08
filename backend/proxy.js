@@ -46,6 +46,12 @@ app.post('/ask', async (req, res) => {
   }
 });
 
+app.all('*', (req, res, next) => {
+    console.log(`⚠️ Incoming request: ${req.method} ${req.path}`);
+    next();
+  });
+  
+  
 app.listen(5000, () => {
   console.log('✅ Ollama Proxy running on http://localhost:5000');
 });
