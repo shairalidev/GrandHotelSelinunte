@@ -6,13 +6,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 🧠 Session memory: { sessionId: [{role, content}, ...] }
 const sessionMemory = new Map();
+
+app.all('*', (req, res, next) => {
+  console.log(`⚠️ Incoming request: ${req.method} ${req.path}`);
+  next();
+});
 
 app.post('/ask', async (req, res) => {
   const { question, context, sessionId } = req.body;
 
-  // Create memory if this is a new session
   if (!sessionMemory.has(sessionId)) {
     sessionMemory.set(sessionId, [
       {
@@ -23,8 +26,6 @@ app.post('/ask', async (req, res) => {
   }
 
   const messages = sessionMemory.get(sessionId);
-
-  // Add user question to memory
   messages.push({ role: "user", content: question });
 
   try {
@@ -35,8 +36,6 @@ app.post('/ask', async (req, res) => {
     });
 
     const reply = response.data.message.content;
-
-    // Store assistant response in memory
     messages.push({ role: "assistant", content: reply });
 
     res.json({ answer: reply });
@@ -46,12 +45,6 @@ app.post('/ask', async (req, res) => {
   }
 });
 
-app.all('*', (req, res, next) => {
-    console.log(`⚠️ Incoming request: ${req.method} ${req.path}`);
-    next();
-  });
-  
-  
 app.listen(5000, () => {
   console.log('✅ Ollama Proxy running on http://localhost:5000');
 });
