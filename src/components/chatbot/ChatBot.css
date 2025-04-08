@@ -94,3 +94,33 @@
     
   }
   
+  .chat-input-box {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* more spacing between input, ➤ and WhatsApp button */
+  }
+  
+  .chat-input-box input {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .chat-input-box button {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+  
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 8px;
+    padding: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #128C7E;
+  }
+  
