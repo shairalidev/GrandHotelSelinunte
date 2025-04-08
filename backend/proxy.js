@@ -8,11 +8,6 @@ app.use(express.json());
 
 const sessionMemory = new Map();
 
-app.all('*', (req, res, next) => {
-  console.log(`⚠️ Incoming request: ${req.method} ${req.path}`);
-  next();
-});
-
 app.post('/ask', async (req, res) => {
   const { question, context, sessionId } = req.body;
 
@@ -30,7 +25,7 @@ app.post('/ask', async (req, res) => {
 
   try {
     const response = await axios.post('http://localhost:11434/api/chat', {
-      model: "tinyllama:chat",
+      model: "tinyllama:chat", // or try llama2:7b-chat if this is slow
       messages: messages,
       stream: false
     });
@@ -40,7 +35,7 @@ app.post('/ask', async (req, res) => {
 
     res.json({ answer: reply });
   } catch (error) {
-    console.error("Ollama Proxy Error:", error.message);
+    console.error("❌ Ollama Proxy Error:", error.message);
     res.status(500).json({ error: "Failed to get response from local AI." });
   }
 });
