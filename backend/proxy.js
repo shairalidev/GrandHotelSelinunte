@@ -29,7 +29,10 @@ app.post('/ask', async (req, res) => {
       });
   }
 
-  const messages = sessionMemory.get(sessionId);
+  const session = sessionMemory.get(sessionId);
+    session.lastActive = Date.now(); // update timestamp
+    const messages = session.messages;
+
   messages.push({ role: "user", content: question });
 
   try {
