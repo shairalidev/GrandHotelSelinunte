@@ -28,7 +28,7 @@ app.post('/ask', async (req, res) => {
     console.log('🧠 Messages:', messages);
 
     const response = await axios.post('http://localhost:11434/api/chat', {
-    model: "tinyllama:chat",
+    model: "llama2:7b-chat",
     messages,
     stream: false
     });
