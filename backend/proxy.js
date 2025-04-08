@@ -31,16 +31,18 @@ app.post('/ask', async (req, res) => {
 
   try {
     const chat = model.startChat({
-      history: messages.map(m => ({
-        role: m.role,
-        parts: [{ text: m.content }]
-      }))
-    });
+        history: messages.map(m => ({
+          role: m.role === "assistant" ? "model" : m.role, // convert old role if exists
+          parts: [{ text: m.content }]
+        }))
+      });
+      
+      const result = await chat.sendMessage(question);
+      const reply = result.response.text();
+      
+      messages.push({ role: "model", content: reply }); // ✅ FIXED
+      
 
-    const result = await chat.sendMessage(question);
-    const reply = result.response.text();
-
-    messages.push({ role: "assistant", content: reply });
 
     res.json({ answer: reply });
   } catch (err) {
