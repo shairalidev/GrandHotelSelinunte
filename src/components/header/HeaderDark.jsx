@@ -100,6 +100,9 @@ function HeaderDark() {
                                                     Pagine
                                                 </Link>
                                                 <ul className="submenu sub__style" role="menu">
+                                                <li role="menuitem">
+                                                    <Link to="/chat">Assistenza via chat</Link>
+                                                </li>
                                                     <li role="menuitem">
                                                         <Link to="/about">Chi Siamo</Link>
                                                     </li>

@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import './ChatBot.css';
 
-const ChatBot = () => {
+const ChatBot = ({ fullPage = false })  => {
 const [bookingMessage, setBookingMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -310,31 +310,32 @@ const sendMessage = async () => {
 
 return (
   <>
-    <div
-      className="chat-toggle"
-      onClick={() => setOpen(!open)}
-    >
-      💬
-    </div>
+    {!fullPage && (
+  <div className="chat-toggle" onClick={() => setOpen(!open)}>
+    💬
+  </div>
+)}
 
-    {open && (
-      <div className="chat-container-popup">
-        <header className='header-chatbot'>
-  <img src="./assets/images/logo/logo__two.png" alt="Hotel Logo" style={{ height: '60px', marginRight: '10px' }} />
-</header>
+{(open || fullPage) && (
+  <div className={fullPage ? "chat-container-full" : "chat-container-popup"}>
+    {!fullPage && (
+      <header className="header-chatbot">
+        <img src="/assets/images/logo/logo__two.png" alt="Hotel Logo" style={{ height: '60px', marginRight: '10px' }} />
+      </header>
+    )}
+
 
         <div className="chat-box">
           {messages.map((msg, i) => (
             <div
-              key={i}
-              className={`message ${msg.from}`}
-              style={{
-                alignSelf: msg.from === 'user' ? 'flex-end' : 'flex-start',
-                marginBottom: '8px'
-              }}
-            >
+            key={i}
+            className={`message-wrapper ${msg.from}`}
+            style={{ display: 'flex', justifyContent: msg.from === 'user' ? 'flex-end' : 'flex-start', marginBottom: '10px' }}
+          >
+            <div className={`message ${msg.from}`}>
               <ReactMarkdown>{msg.text}</ReactMarkdown>
             </div>
+          </div>
           ))}
           {loading && <div className="message bot">Typing...</div>}
         </div>
