@@ -21,7 +21,7 @@ function AboutSix() {
                             <div className="about__content__full">
                                 <div className="section__topbar">
                                     <span className="h6 subtitle__icon__five d-block wow fadeInUp">
-                                        About US
+                                    Chi Siamos
                                     </span>
                                     <h2 className="content__title h2 lh-1 wow fadeInUp">
                                     Benvenuti al nostro Grand Hotel Selinunte &amp; Resort
