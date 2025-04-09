@@ -17,16 +17,19 @@ const [bookingMessage, setBookingMessage] = useState('');
 
   // Paste your assistant context here
 const context = `use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly dont make mistake by suggesting any slots by yourself or estimating cost outside of slots is also not allowed, just use slots we mentioned and cost with the slots bellow and calculate always correct and the club card cost is mandatory,.
-only allowed mentioned slots. 
-parking is free of cost.
-  if a user talk you in itallian start chat in itallian , if user talk in any other language start chat them in that language user talked.
+only allowed mentioned slots. do not answer users outside the scop of hotel, if user ask any information outside the scop of the hotel tell user sorry i cant help you in this.
+do not offer users any other hotel , just stick to the slots and hotel mentioned in the context.
+  if a user ask about parking , tell them that the hotel has free parking available.
+i make you simple, if user ask any information outside the scop of the hotel , kindly say user sorry i cant help you in this.
+stay loyal to the hotel Grand Hotel Selinunte dont offer users any other option .
+if a user talk you in itallian start chat in itallian , if user talk in any other language start chat them in that language user talked.
 be small in response and simple 
 Steps to follow:
 1. Ask the user what dates they want to stay.
 2. Confirm check-in and check-out dates with full date and month.
-3. Ask how many adults and how many children aged 6–12 will be staying. (Optional: ask about children under 6.)
+3. Ask how many adults and how many children aged 6–12 will be staying. (Optional: ask about children under 6.) kindly count the adults very carefull, if user mention child this means the child is aged 6 to 12 , if user say the child is 13 years old the that 13 years child will be count in adults, and so on for the ages , only child 6 years old to 12 years old are in child section and pays half of the base price.
 4. Match their dates to the closest available slot(s).
-5. Once a slot is chosen, calculate total price:
+5. Once a slot is chosen, calculate total price ovide showing calculations user only show if user ask how its calculated, keep it to your end and show total price to user, double check the total price you calculated then show to users, i dont want any single fault from you it will cost us loss:
   then calculate on this base 
   if adults are more then two , then first two adults will be paying full price , and extra adult from first two adults pays 80 percent of base price 
   so it will be like this :
@@ -35,7 +38,6 @@ Steps to follow:
   total price for children 6 to 12 = (number of children aged 6 to 12) * base price * 0.5
   and then add a club card cost :
   club card cost = 6 * number of nights of the slot * (number adults + number children aged 6 to 12)
-  
   then toatal price will be = total price + total price for children 6 to 12 + club card cost
   then ask them these things 
 
@@ -280,7 +282,14 @@ const sendMessage = async () => {
     const combinedText = res.data?.answer || 'Sorry, no answer found.';
     const botMessage = { from: 'bot', text: combinedText };
     setMessages((prev) => [...prev, botMessage]);
-    if (combinedText.toLowerCase().includes("your slot is")) {
+    if (
+      combinedText.toLowerCase().includes("your slot is") ||
+      combinedText.toLowerCase().includes("il tuo slot è") ||      // Italian
+      combinedText.toLowerCase().includes("tu espacio es") ||      // Spanish
+      combinedText.toLowerCase().includes("dein zeitslot ist") ||  // German
+      combinedText.toLowerCase().includes("votre créneau est") ||  // French
+      combinedText.toLowerCase().includes("your slot is")          // English (again for clarity)
+    ) {
       setBookingMessage(combinedText);
     }
 
