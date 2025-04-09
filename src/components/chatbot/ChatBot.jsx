@@ -280,17 +280,21 @@ const sendMessage = async () => {
     }, {
       timeout: 9000000
     });
-
+    
     const combinedText = res.data?.answer || 'Sorry, no answer found.';
     const botMessage = { from: 'bot', text: combinedText };
     setMessages((prev) => [...prev, botMessage]);
     if (
-      combinedText.toLowerCase().includes("your slot is") ||
-      combinedText.toLowerCase().includes("il tuo slot è") ||      // Italian
-      combinedText.toLowerCase().includes("tu espacio es") ||      // Spanish
-      combinedText.toLowerCase().includes("dein zeitslot ist") ||  // German
-      combinedText.toLowerCase().includes("votre créneau est") ||  // French
-      combinedText.toLowerCase().includes("your slot is")          // English (again for clarity)
+      combinedText.toLowerCase().includes("your slot is") ||               // English
+      combinedText.toLowerCase().includes("la tua prenotazione è") ||      // Italian
+      combinedText.toLowerCase().includes("tu espacio es") ||              // Spanish
+      combinedText.toLowerCase().includes("dein zeitslot ist") ||          // German
+      combinedText.toLowerCase().includes("votre créneau est") ||          // French
+      combinedText.toLowerCase().includes("contact us on whatsapp") ||     // English WhatsApp
+      combinedText.toLowerCase().includes("contattaci su whatsapp") ||     // Italian WhatsApp
+      combinedText.toLowerCase().includes("contáctanos en whatsapp") ||    // Spanish WhatsApp
+      combinedText.toLowerCase().includes("kontaktiere uns auf whatsapp") || // German WhatsApp
+      combinedText.toLowerCase().includes("contactez-nous sur whatsapp")   // French WhatsApp
     ) {
       setBookingMessage(combinedText);
     }
