@@ -18,16 +18,16 @@ function RoomOne({ className }) {
                     <div className="section__wrapper mb-40 wow fadeInUp">
                         <div className="section__content__left">
                             <span className="h6 subtitle__icon__two d-block wow fadeInUp">
-                                Room
+                                Camere
                             </span>
-                            <h2 className="content__title h2 lh-1">Our Rooms</h2>
+                            <h2 className="content__title h2 lh-1">Le Nostre Camere</h2>
                         </div>
                         <div className="section__content__right">
                             <p>
-                                Our rooms offer a harmonious blend of comfort and elegance,
-                                designed to provide an exceptional stay for every guest. Each room
-                                features plush bedding, high-quality linens, and a selection of
-                                pillows to ensure a restful night's sleep.
+                                Le nostre camere offrono un'armoniosa combinazione di comfort ed eleganza,
+                                progettate per garantire un soggiorno eccezionale a ogni ospite. Ogni camera
+                                dispone di letti comodi, biancheria di alta qualità e una selezione di
+                                cuscini per garantire un sonno riposante.
                             </p>
                         </div>
                     </div>
@@ -40,9 +40,9 @@ function RoomOne({ className }) {
                     className="main__room__slider overflow-hidden wow fadeInUp"
                     data-wow-delay=".5s"
                     modules={[Pagination]}
-                    slidesPerView={3}  // Try increasing this
+                    slidesPerView={3}
                     spaceBetween={30}
-                    loop={posts.length > 1}  // Disable loop if only 1 item
+                    loop={posts.length > 1}
                     autoplay={false}
                     pagination={{ el: ".rts-pagination", clickable: true }}
                     speed={1000}
@@ -68,7 +68,7 @@ function RoomOne({ className }) {
                             </SwiperSlide>
                         ))
                     ) : (
-                        <p>No rooms available</p>
+                        <p>Nessuna camera disponibile</p>
                     )}
                 </Swiper>
 
