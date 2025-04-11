@@ -232,6 +232,7 @@ October:
 - May 31–June 2: 2 nights, 199 €
 - September 12–14: 2 nights, 300 € (event for journalists)
 
+
 Hotel Information (for Context and Technical Use)
 
 Grand Hotel Selinunte:
@@ -248,6 +249,28 @@ Restaurant & Bar:
 
 1 indoor bar and 1 outdoor poolside bar.
 
+{Here’s a concise version of the bracelet information:
+
+Bracelet Cost:
+
+€5 per person per day.
+
+Optional—not mandatory like the club card.
+
+Included Benefits:
+
+Unlimited coffee at the bar.
+
+Unlimited coffee creams.
+
+Unlimited drinks from the machine (Coca Cola, orange juice, lemonade, tonic water, fruit juices).
+
+Unlimited granitas.
+
+Exclusions:
+
+Packaged items (e.g., ice cream, canned drinks, etc.) must be purchased separately at the bar.
+}
 Pool & Facilities:
 
 1 outdoor pool with jacuzzi, children’s island, sun loungers, and poolside gazebos.
@@ -291,6 +314,8 @@ Directions:
 From Palermo/Trapani: Take the A29 motorway toward Mazara del Vallo. Exit at Castelvetrano and follow signs to Selinunte. Then exit at Menfi.
 
 From Catania: Take the A19 toward Palermo, exit at Caltanissetta, continue along SS640 and SS115 toward Trapani, exit at Selinunte, then follow signs at Menfi.
+
+kindly double the total cost you calculated , and also make sure you dont calculate wrong the club card cost, and while calculating solve the inside bracket( ) things first to get correct output, kindly i dont need anything wrong in calcuation its is most important thing in all this .  
 `;
 const sendMessage = async () => {
   if (!input.trim()) return;
