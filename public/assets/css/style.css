@@ -15274,7 +15274,7 @@ picture.jarallax-img img {
 .mobile__menu ul .slide .slide__menu li a {
   font-size: 18px;
   font-family: var(--glida);
-  color: var(--rts-white);
+  color: #fff;
   border-bottom: 1px solid rgba(101, 103, 107, 0.8);
   display: block;
   margin-bottom: 10px;

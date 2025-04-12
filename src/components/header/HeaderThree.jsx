@@ -249,7 +249,7 @@ function HeaderThree() {
                                     <Link to="/">
                                         <img
                                             className="logo__class"
-                                            src="/assets/images/logo/logo__two.svg"
+                                            src="/assets/images/logo/logo__two.png"
                                             alt="moonlit"
                                         />
                                     </Link>

@@ -14,79 +14,68 @@ function OffcanvasMenu({ isOpen, onClose }) {
                 <div className="offcanvase__wrapper">
                     {/* Left Side - Mobile Menu */}
                     <div className="left__side mobile__menu">
-                        <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Close"></button>
+                        <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Chiudi"></button>
                         <div className="offcanvase__top">
                             <div className="offcanvase__logo">
                                 <Link to="/">
-                                    <img src="/assets/images/logo/logo__two.svg" alt="logo" />
+                                    <img src="/assets/images/logo/logo__two.png" alt="logo" />
                                 </Link>
                             </div>
                             <p className="description">
-                                Welcome to Grand Hotel Selinunte, where luxury meets comfort in the heart of Marinella, we have been dedicated to providing.
+                                Benvenuti al Grand Hotel Selinunte, dove il lusso incontra il comfort nel cuore di Marinella. Siamo da sempre dedicati a offrire esperienze uniche.
                             </p>
                         </div>
                         <div className="offcanvase__mobile__menu">
                             <div className="mobile__menu__active">
                                 <nav className="mobile__menu__nav">
-                                    <ul className="list-unstyled">
-                                        {/* Home Menu (modified) */}
+                                    <ul className="list-unstyled" style={{ color: "#fff" }}>
                                         <li className="slide active">
-                                            <Link className="slide__menu__item" to="/home-video">
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/home-video">
                                                 Home (Hotel Seaside)
                                             </Link>
                                         </li>
-
-                                        {/* About Us */}
                                         <li className="slide">
-                                            <Link className="slide__menu__item" to="/about">About us</Link>
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/about">Chi siamo</Link>
                                         </li>
-
-                                        {/* Rooms Menu */}
                                         <li className={`slide has__children ${activeMenu === 2 ? "active" : ""}`}>
-                                            <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(2)}>
-                                                Rooms
-                                                <span className="toggle" />
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(2)}>
+                                                Camere
+                                                <span className="toggle" style={{ color: "#fff" }} />
                                             </Link>
-                                            <ul className="slide__menu" style={{ display: activeMenu === 2 ? "block" : "none" }}>
-                                                <li><Link to="/room-one">Room One</Link></li>
-                                                <li><Link to="/room-two">Room Two</Link></li>
-                                                <li><Link to="/room-three">Room Three</Link></li>
-                                                <li><Link to="/room-four">Room Four</Link></li>
-                                                <li><Link to="/room-details-1">Room Details One</Link></li>
-                                                <li><Link to="/room-details-2">Room Details Two</Link></li>
+                                            <ul className="slide__menu" style={{ display: activeMenu === 2 ? "block" : "none", color: "#fff" }}>
+                                                <li><Link to="/room-one">Camera Uno</Link></li>
+                                                <li><Link to="/room-two">Camera Due</Link></li>
+                                                <li><Link to="/room-three">Camera Tre</Link></li>
+                                                <li><Link to="/room-four">Camera Quattro</Link></li>
+                                                <li><Link to="/room-details-1">Dettagli Camera Uno</Link></li>
+                                                <li><Link to="/room-details-2">Dettagli Camera Due</Link></li>
                                             </ul>
                                         </li>
-
-                                        {/* Blog Menu */}
                                         <li className={`slide has__children ${activeMenu === 3 ? "active" : ""}`}>
-                                            <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(3)}>
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(3)}>
                                                 Blog
                                                 <span className="toggle" />
                                             </Link>
-                                            <ul className="slide__menu" style={{ display: activeMenu === 3 ? "block" : "none" }}>
+                                            <ul className="slide__menu" style={{ display: activeMenu === 3 ? "block" : "none", color: "#fff" }}>
                                                 <li><Link to="/blog">Blog</Link></li>
-                                                <li><Link to="/blog/1">Blog Details</Link></li>
+                                                <li><Link to="/blog/1">Dettagli Blog</Link></li>
                                             </ul>
                                         </li>
-
-                                        {/* Pages Menu */}
                                         <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
-                                            <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(4)}>
-                                                Pages
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(4)}>
+                                                Pagine
                                                 <span className="toggle" />
                                             </Link>
-                                            <ul className="slide__menu" style={{ display: activeMenu === 4 ? "block" : "none" }}>
-                                                <li><Link to="/restaurant">Restaurant</Link></li>
-                                                <li><Link to="/gallery">Gallery</Link></li>
-                                                <li><Link to="/service">Service</Link></li>
-                                                <li><Link to="/event">Event</Link></li>
-                                                <li><Link to="/activities">Activities</Link></li>
+                                            <ul className="slide__menu" style={{ display: activeMenu === 4 ? "block" : "none", color: "#fff" }}>
+                                                <li><Link to="/restaurant">Ristorante</Link></li>
+                                                <li><Link to="/gallery">Galleria</Link></li>
+                                                <li><Link to="/service">Servizi</Link></li>
+                                                <li><Link to="/event">Eventi</Link></li>
+                                                <li><Link to="/activities">Attività</Link></li>
                                             </ul>
                                         </li>
-
-                                        {/* Contact Us */}
                                         <li className="slide">
-                                            <Link className="slide__menu__item" to="/contact">Contact Us</Link>
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/contact">Contattaci</Link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -95,23 +84,23 @@ function OffcanvasMenu({ isOpen, onClose }) {
                         <div className="offcanvase__bottom">
                             <div className="offcanvase__address">
                                 <div className="item">
-                                    <span className="h6">Phone</span>
-                                    <Link to="tel:+1234567890">
-                                        <i className="flaticon-phone-flip" /> +1234567890
+                                    <span className="h6">Telefono</span>
+                                    <Link to="tel:+390924076901">
+                                        +390924076901 <i className="flaticon-phone-flip" />
                                     </Link>
                                 </div>
                                 <div className="item">
                                     <span className="h6">Email</span>
-                                    <Link to="mailto:info@hostie.com">
+                                    <Link to="mailto:booking@grandhotelselinunte.com">
                                         <i className="flaticon-envelope" />
-                                        info@hostie.com
+                                        booking@grandhotelselinunte.com
                                     </Link>
                                 </div>
                                 <div className="item">
-                                    <span className="h6">Address</span>
+                                    <span className="h6">Indirizzo</span>
                                     <Link to="#">
-                                        <i className="flaticon-marker" /> 280 Augusta Avenue, M5T 2L9 Toronto,
-                                        Canada
+                                        <i className="flaticon-marker" />
+                                        Contrada, Via Trenta Salme, 91022 Marinella TP, Italia
                                     </Link>
                                 </div>
                             </div>
@@ -120,39 +109,32 @@ function OffcanvasMenu({ isOpen, onClose }) {
 
                     {/* Right Side - Desktop Menu */}
                     <div className="right__side desktop__menu">
-                        <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Close"></button>
+                        <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Chiudi"></button>
                         <div className="rts__desktop__menu">
                             <nav className="desktop__menu offcanvas__menu">
                                 <ul className="list-unstyled">
-                                    {/* Home Menu (modified) */}
                                     <li className="slide active">
                                         <Link className="slide__menu__item" to="/home-video">
                                             Home (Hotel Seaside)
                                         </Link>
                                     </li>
-
-                                    {/* About Us */}
                                     <li className="slide">
-                                        <Link className="slide__menu__item" to="/about">About us</Link>
+                                        <Link className="slide__menu__item" to="/about">Chi siamo</Link>
                                     </li>
-
-                                    {/* Rooms Menu */}
                                     <li className={`slide has__children ${activeMenu === 2 ? "active" : ""}`}>
                                         <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(2)}>
-                                            Rooms
+                                            Camere
                                             <span className="toggle" />
                                         </Link>
                                         <ul className="slide__menu" style={{ display: activeMenu === 2 ? "block" : "none" }}>
-                                            <li><Link to="/room-one">Room One</Link></li>
-                                            <li><Link to="/room-two">Room Two</Link></li>
-                                            <li><Link to="/room-three">Room Three</Link></li>
-                                            <li><Link to="/room-four">Room Four</Link></li>
-                                            <li><Link to="/room-details-1">Room Details One</Link></li>
-                                            <li><Link to="/room-details-2">Room Details Two</Link></li>
+                                            <li><Link to="/room-one">Camera Uno</Link></li>
+                                            <li><Link to="/room-two">Camera Due</Link></li>
+                                            <li><Link to="/room-three">Camera Tre</Link></li>
+                                            <li><Link to="/room-four">Camera Quattro</Link></li>
+                                            <li><Link to="/room-details-1">Dettagli Camera Uno</Link></li>
+                                            <li><Link to="/room-details-2">Dettagli Camera Due</Link></li>
                                         </ul>
                                     </li>
-
-                                    {/* Blog Menu */}
                                     <li className={`slide has__children ${activeMenu === 3 ? "active" : ""}`}>
                                         <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(3)}>
                                             Blog
@@ -160,28 +142,24 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                         </Link>
                                         <ul className="slide__menu" style={{ display: activeMenu === 3 ? "block" : "none" }}>
                                             <li><Link to="/blog">Blog</Link></li>
-                                            <li><Link to="/blog/1">Blog Details</Link></li>
+                                            <li><Link to="/blog/1">Dettagli Blog</Link></li>
                                         </ul>
                                     </li>
-
-                                    {/* Pages Menu */}
                                     <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
                                         <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(4)}>
-                                            Pages
+                                            Pagine
                                             <span className="toggle" />
                                         </Link>
                                         <ul className="slide__menu" style={{ display: activeMenu === 4 ? "block" : "none" }}>
-                                            <li><Link to="/restaurant">Restaurant</Link></li>
-                                            <li><Link to="/gallery">Gallery</Link></li>
-                                            <li><Link to="/service">Service</Link></li>
-                                            <li><Link to="/event">Event</Link></li>
-                                            <li><Link to="/activities">Activities</Link></li>
+                                            <li><Link to="/restaurant">Ristorante</Link></li>
+                                            <li><Link to="/gallery">Galleria</Link></li>
+                                            <li><Link to="/service">Servizi</Link></li>
+                                            <li><Link to="/event">Eventi</Link></li>
+                                            <li><Link to="/activities">Attività</Link></li>
                                         </ul>
                                     </li>
-
-                                    {/* Contact Us */}
                                     <li className="slide">
-                                        <Link className="slide__menu__item" to="/contact">Contact Us</Link>
+                                        <Link className="slide__menu__item" to="/contact">Contattaci</Link>
                                     </li>
                                 </ul>
                             </nav>

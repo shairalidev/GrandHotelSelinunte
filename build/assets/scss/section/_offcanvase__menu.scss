@@ -85,6 +85,8 @@
                                 .toggle {
                                     @include mq($sm) {
                                         display: none;
+                                        position: relative;
+    z-index: 10;
                                     }
                                 }
                             }
@@ -217,6 +219,8 @@
                     padding-left: 30px;
                     padding-right: 50px;
                     transition: var(--transition);
+                    position: relative;
+    z-index: 10;
 
                     &:hover {
                         color: var(--heading-color);
