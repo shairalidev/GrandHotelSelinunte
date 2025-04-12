@@ -48,19 +48,34 @@ Steps to follow:
      - Pet service: 30 € once per stay
      - Crib: 10 €/night
      
-kindly use this formula to calcuate correct: only use this formula to avoid any mistakes in calcualtion 
-Let:
-A = number of adults
-C = number of children (6–12)
-B = base price for the chosen slot
-N = number of nights
-Then, 
-if A>2:
-TotalCost=[2B+(A−2)×0.8B+C×0.5B+6N(A+C)]+ExtrasTotal
+kindly use this python code to calcuate correct: only use this code to avoid any mistakes in calcualtion 
+def calculate_booking_cost(base_price, nights, num_adults, num_children, extra_pool=False, extra_pet=False, extra_crib=False):
+  if num_adults > 2:
+      adult_cost = 2 * base_price + (num_adults - 2) * 0.8 * base_price
+  else:
+      adult_cost = num_adults * base_price
 
-Otherwise, 
-if A≤2:
-TotalCost=[A×B+C×0.5B+6N(A+C)]+ExtrasTotal
+  # Calculate cost for children (only ages 6 to 12) - half the base price per child
+  child_cost = num_children * 0.5 * base_price
+
+  # Club card cost is mandatory: 6 €/person per night (adults + children)
+  club_card_cost = 6 * nights * (num_adults + num_children)
+
+  # Base total cost (without extras)
+  total_base = adult_cost + child_cost + club_card_cost
+
+  # Calculate optional extras
+  extras_total = 0
+  if extra_pool:
+      extras_total += 10 * nights  # Pool view cost per night
+  if extra_pet:
+      extras_total += 30           # Pet service cost (flat per stay)
+  if extra_crib:
+      extras_total += 10 * nights  # Crib cost per night
+
+  # Final total cost including extras
+  total_cost = total_base + extras_total
+  return total_cost
 
 Only show “Over60” slots if the user mentions they are age 60+ or requests a senior discount.
 
