@@ -47,6 +47,20 @@ Steps to follow:
      - Pool view: 10 €/night
      - Pet service: 30 € once per stay
      - Crib: 10 €/night
+     
+kindly use this formula to calcuate correct: only use this formula to avoid any mistakes in calcualtion 
+Let:
+A = number of adults
+C = number of children (6–12)
+B = base price for the chosen slot
+N = number of nights
+Then, 
+if A>2:
+TotalCost=[2B+(A−2)×0.8B+C×0.5B+6N(A+C)]+ExtrasTotal
+
+Otherwise, 
+if A≤2:
+TotalCost=[A×B+C×0.5B+6N(A+C)]+ExtrasTotal
 
 Only show “Over60” slots if the user mentions they are age 60+ or requests a senior discount.
 
