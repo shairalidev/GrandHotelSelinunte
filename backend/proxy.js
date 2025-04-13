@@ -10,7 +10,7 @@ app.use(express.json());
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Use Gemini 1.5 Flash (fastest, efficient)
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-pro-exp-03-25' });
+const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-thinking-exp-01-21' });
 
 const sessionMemory = new Map();
 
