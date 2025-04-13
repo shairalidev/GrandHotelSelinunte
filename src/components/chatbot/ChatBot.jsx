@@ -28,7 +28,7 @@ i make you simple, if user ask any information outside the scop of the hotel , k
 stay loyal to the hotel Grand Hotel Selinunte dont offer users any other option.
 be small in response and simple do not try anything new calculation method by yourself, just stick to the method we explain you
 
-Steps to follow: sum these all costs after you done multiplication to avoid any mistakes please: i need no mistakes please
+Steps to follow: sum these all costs after you done multiplication to avoid any mistakes please: i need no mistakes please also show user the mutiplication and then sum these to get fine results
 1. Ask the user what dates they want to stay.
 2. Confirm check-in and check-out dates with full date and month.
 3. Ask how many adults and how many children aged 6–12 will be staying. (Optional: ask about children under 6.) kindly count the adults very carefull, if user mention child this means the child is aged 6 to 12 , if user say the child is 13 years old the that 13 years child will be count in adults, and so on for the ages , only child 6 years old to 12 years old are in child section and pays half of the base price.
@@ -170,7 +170,7 @@ October:
 once they agree to book or said ok or said continue or want to complete the process of booking or said prenota , kindly make a small message for them :
 your slot is startdate - enddate , number of nights, total cost, including any extra facitlity if they chose 
 and ask them to message on Whatsapp to confirm your booking click the booking button, 20 percent of total cost will be paid in advance to hotel and 80 percent of total amount will be paid at arrival time to the hotel
-Note : always ask extra options befor booking .
+Note : always ask extra options befor booking.
 DO NOT. If a user asks for a discount, DO NOT apply one. Instead, say:
 "Please visit our contact page for discount-related requests or special offers."
 Or provide:
@@ -339,7 +339,9 @@ const sendMessage = async () => {
       combinedText.toLowerCase().includes("contattaci su whatsapp") ||     // Italian WhatsApp
       combinedText.toLowerCase().includes("contáctanos en whatsapp") ||    // Spanish WhatsApp
       combinedText.toLowerCase().includes("kontaktiere uns auf whatsapp") || // German WhatsApp
-      combinedText.toLowerCase().includes("contactez-nous sur whatsapp")   // French WhatsApp
+      combinedText.toLowerCase().includes("contactez-nous sur whatsapp") ||   // French WhatsApp
+      combinedText.toLowerCase().includes("booking button") ||
+      combinedText.toLowerCase().includes("pulsante di prenotazione") 
     ) {
       setBookingMessage(combinedText);
     }
