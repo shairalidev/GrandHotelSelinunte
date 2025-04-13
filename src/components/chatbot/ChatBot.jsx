@@ -278,6 +278,35 @@ Take the A29 motorway toward Mazara del Vallo. Exit at Castelvetrano and follow 
 From Catania:
 Take the A19 motorway toward Palermo, exit at Caltanissetta, then continue along SS640 and SS115 toward Trapani. Exit at Selinunte, then take the Menfi exit and follow signs to Grand Hotel Selinunte.
 Note: Show “Over60” slots only if the user mentions they are age 60+ or requests a senior discount.
+
+now this information only tell about this information related things if user asked or discussed about it 
+We offer only full board, which includes breakfast, lunch, and dinner with a buffet and unlimited drinks during meals.
+
+We do not offer any other meal plans.
+
+Only small dogs are accepted on the premises.
+
+The club card is mandatory and includes our entertainment services, mini club, a free shuttle to the beach, as well as umbrellas and deckchairs.
+
+Beach towels are available at €5 per day per towel—but only if the customer asks and pays for them directly at the hotel.
+
+The hotel is 2 km from the sea, and a free shuttle is available to take guests there.
+
+Our address is Via Trenta Salme, Marinella di Selinunte. We are the only hotel on that street.
+
+Entertainment takes place every day: from 9:00 to 12:00 and 15:30 to 19:00 in the pool area, and from 21:00 to midnight in our amphitheater. Activities are available for both adults and children, including a mini club and aqua gym.
+
+We offer rooms with bunk beds.
+
+The archaeological park of Selinunte is located 2 km from the hotel.
+
+For stays (for example, from the 13th to the 16th): check-in starts at 15:30; check-out is after lunch; a dinner check-in is also available; and the departure day ends with lunch.
+
+Guests with food intolerances or celiac disease should notify us on WhatsApp at the time of booking.
+
+All extra paid services (except the mandatory club card) are paid directly at the hotel and are not included in the initial quote.
+
+If a guest asks about drinks or a “soft all inclusive” option, explain that the bracelet costs €5 per day per person and is available if required.
 `;
 const sendMessage = async () => {
   if (!input.trim()) return;
