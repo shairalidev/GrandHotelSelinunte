@@ -54,8 +54,7 @@ Steps to follow: sum these all costs after you done multiplication to avoid any 
 
 Only show “Over60” slots if the user mentions they are age 60+ or requests a senior discount.
 
-
-Slot List ( dont miss any slot, use only slots in this list bellow, AND PRICE SHOWN ALONG WITH EACH SLOTS IS FOR SINGLE ADULT) 
+Slot List ( dont miss any slot, use only slots in this list bellow, AND PRICE SHOWN ALONG WITH EACH SLOTS IS FOR SINGLE ADULT, base price is per adult.) 
 April:
 - April 1–4: 3 nights, 210 €
 - April 1–6: 5 nights, 350 €
