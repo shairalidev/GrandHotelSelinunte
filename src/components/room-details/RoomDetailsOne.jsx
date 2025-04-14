@@ -7,11 +7,10 @@ import CustomSlotSelect from './CustomSlotSelect';
 import { slots } from './RoomBooking';
 
 function RoomDetailsOne() {
-const [selectedSlot, setSelectedSlot] = useState(null);
-const [confirmationMessage, setConfirmationMessage] = useState('');
-const [whatsAppLink, setWhatsAppLink] = useState('');
-const [showWhatsApp, setShowWhatsApp] = useState(false);
-
+  const [selectedSlot, setSelectedSlot] = useState(null);
+  const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [whatsAppLink, setWhatsAppLink] = useState('');
+  const [showWhatsApp, setShowWhatsApp] = useState(false);
 
   const { id } = useParams();
   const roomPost = Posts.find(post => post.id === parseInt(id));
@@ -21,12 +20,12 @@ const [showWhatsApp, setShowWhatsApp] = useState(false);
   }, []);
 
   if (!roomPost) {
-    return <div>Post not found!</div>;
+    return <div>Post non trovato!</div>;
   }
 
   return (
     <>
-      {/* room details area */}
+      {/* area dettagli camera */}
       <div className="rts__section single page__hero__height page__hero__bg no__shadow">
         <img src={`/assets/images/pages/room/${roomPost.bannerImg}`} alt="" />
       </div>
@@ -39,19 +38,13 @@ const [showWhatsApp, setShowWhatsApp] = useState(false);
                 <span className="h4 price">{roomPost.price}</span>
                 <h2 className="room__title">{roomPost.title}</h2>
                 <div className="room__meta">
-                  <span><i className="flaticon-construction" /> 35 sqm</span>
-                  <span><i className="flaticon-user" />5 Person</span>
+                  <span><i className="flaticon-construction" /> 35 mq</span>
+                  <span><i className="flaticon-user" />5 Persone</span>
                 </div>
                 <p>
-                  Our elegantly appointed rooms and suites are designed to offer the
-                  utmost in comfort and style. Each room features modern amenities,
-                  plush furnishings, and thoughtful touches to ensure a relaxing stay.
+                  Le nostre camere e suite arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                   <br /><br />
-                  Indulge in a culinary journey at our on-site restaurants, where
-                  our talented chefs create mouthwatering dishes using the freshest
-                  local ingredients. Start your day with a sumptuous breakfast,
-                  enjoy a leisurely lunch, and savor a gourmet dinner in an elegant
-                  setting.
+                  Concediti un viaggio culinario nei nostri ristoranti in loco, dove i nostri talentuosi chef creano piatti deliziosi utilizzando ingredienti locali freschissimi. Inizia la giornata con una ricca colazione, gusta un pranzo tranquillo e assapora una cena gourmet in un ambiente elegante.
                 </p>
 
                 <div className="room__image__group row row-cols-md-2 row-cols-sm-1 mt-30 mb-50 gap-4 gap-md-0">
@@ -63,72 +56,70 @@ const [showWhatsApp, setShowWhatsApp] = useState(false);
                   </div>
                 </div>
 
-                <span className="h4 d-block mb-30">Room Amenities</span>
+                <span className="h4 d-block mb-30">Servizi della Camera</span>
                 <div className="room__amenity mb-50">
                   <div className="group__row">
                     <div className="single__item">
                       <img src="/assets/images/icon/wifi.svg" height={30} width={36} alt="" />
-                      <span>Free Wifi</span>
+                      <span>Wi-Fi Gratuito</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/shower.svg" height={30} width={36} alt="" />
-                      <span>Shower</span>
+                      <span>Doccia</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/aeroplane.svg" height={30} width={36} alt="" />
-                      <span>Airport transport</span>
+                      <span>Trasporto Aeroportuale</span>
                     </div>
                   </div>
                   <div className="group__row">
                     <div className="single__item">
                       <img src="/assets/images/icon/balcony.svg" height={30} width={36} alt="" />
-                      <span>Balcony</span>
+                      <span>Balcone</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/refrigerator.svg" height={30} width={36} alt="" />
-                      <span>Refrigerator</span>
+                      <span>Frigorifero</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/support.svg" height={30} width={36} alt="" />
-                      <span>24/7 Support</span>
+                      <span>Supporto 24/7</span>
                     </div>
                   </div>
                   <div className="group__row">
                     <div className="single__item">
                       <img src="/assets/images/icon/desk.svg" height={30} width={36} alt="" />
-                      <span>Work Desk</span>
+                      <span>Scrivania</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/fitness.svg" height={30} width={36} alt="" />
-                      <span>Fitness Center</span>
+                      <span>Centro Fitness</span>
                     </div>
                     <div className="single__item">
                       <img src="/assets/images/icon/swimming-pool.svg" height={30} width={36} alt="" />
-                      <span>Swimming Pool</span>
+                      <span>Piscina</span>
                     </div>
                   </div>
                 </div>
 
-                <span className="h4 d-block mb-50">Room Features</span>
+                <span className="h4 d-block mb-50">Caratteristiche della Camera</span>
                 <div className="room__feature mb-30">
                   <div className="room__feature__image mb-50">
                     <img className="rounded-2" src="/assets/images/pages/room/r-d-3.webp" alt="" />
                   </div>
                   <div className="group__row">
                     <ul className="list__item">
-                      <li>Children and extra beds</li>
-                      <li>Climate Control</li>
-                      <li>Art and Decor</li>
-                      <li>Coffee/Tea Maker</li>
-                      <li>High-End Bedding</li>
-                      <li>Smart Technology</li>
+                      <li>Bambini e letti extra</li>
+                      <li>Controllo del Clima</li>
+                      <li>Arte e Arredo</li>
+                      <li>Macchina per Caffè/Tè</li>
+                      <li>Biancheria di Alta Qualità</li>
+                      <li>Tecnologia Intelligente</li>
                     </ul>
                   </div>
                 </div>
                 <p>
-                  Our elegantly appointed rooms and suites are designed to offer the
-                  utmost in comfort and style. Each room features modern amenities,
-                  plush furnishings, and thoughtful touches to ensure a relaxing stay.
+                  Le nostre camere e suite arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                 </p>
               </div>
             </div>
@@ -182,7 +173,7 @@ Please confirm my booking.`;
         setShowWhatsApp(true);
       }}
     >
-      <h5 className="pt-0">Book Your Stay</h5>
+      <h5 className="pt-0">Prenota il tuo soggiorno</h5>
 
       <div className="advance__search__wrapper">
         {/* Slot Select */}
@@ -206,7 +197,7 @@ Please confirm my booking.`;
           <div className="query__input__position">
             <select id="adults" className="form-select">
               {[...Array(7)].map((_, i) => (
-                <option key={i + 1} value={i + 1}>{i + 1} Person</option>
+                <option key={i + 1} value={i + 1}>{i + 1} Persona</option>
               ))}
             </select>
             <div className="query__input__icon">
@@ -217,11 +208,11 @@ Please confirm my booking.`;
 
         {/* Children */}
         <div className="query__input wow fadeInUp">
-          <label htmlFor="children612" className="query__label">Child</label>
+          <label htmlFor="children612" className="query__label">Bambino</label>
           <div className="query__input__position">
             <select id="children612" className="form-select">
               {[...Array(8)].map((_, i) => (
-                <option key={i} value={i}>{i} Child</option>
+                <option key={i} value={i}>{i} Bambino</option>
               ))}
             </select>
             <div className="query__input__icon">
@@ -230,28 +221,28 @@ Please confirm my booking.`;
           </div>
         </div>
 
-        <h5 className="p-0 mt-20">Extra Services</h5>
+        <h5 className="p-0 mt-20">Servizi aggiuntivi</h5>
 
         {/* Extra Services */}
         <div className="query__input checkbox wow fadeInUp">
           <input type="checkbox" id="pet" />
-          <label htmlFor="pet">Pet-Friendly</label>
-          <span>€30 per stay</span>
+          <label htmlFor="pet">Animali ammessi</label>
+          <span>€30 a soggiorno</span>
         </div>
         <div className="query__input checkbox wow fadeInUp">
           <input type="checkbox" id="crib" />
-          <label htmlFor="crib">Crib Service</label>
-          <span>€10 / Night</span>
+          <label htmlFor="crib">Servizio culla</label>
+          <span>€10 / Notte</span>
         </div>
         <div className="query__input checkbox wow fadeInUp">
           <input type="checkbox" id="pool" />
-          <label htmlFor="pool">Pool View</label>
-          <span>€10 / Night</span>
+          <label htmlFor="pool">Vista sulla piscina</label>
+          <span>€10 / Notte</span>
         </div>
 
         {/* Total Price */}
         <div className="total__price">
-          <span className="total h6 mb-0">Total Price</span>
+          <span className="total h6 mb-0">Prezzo totale</span>
           <span className="price h6 m-0" id="totalPrice">€0.00</span>
         </div>
 
@@ -261,7 +252,7 @@ Please confirm my booking.`;
           className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
           data-wow-delay=".6s"
         >
-          <span>Book Your Room</span>
+          <span>Prenota la tua camera</span>
         </button>
 
         {/* Confirmation Message */}
@@ -283,7 +274,7 @@ Please confirm my booking.`;
           className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
           data-wow-delay=".6s"
         >
-            <span> Confirm on WhatsApp</span>
+            <span> Conferma su WhatsApp</span>
          
         </a>
         )}
