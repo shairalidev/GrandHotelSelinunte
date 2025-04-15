@@ -3,6 +3,7 @@ import TopBar from '../components/header/TopBar'
 import HeaderDark from '../components/header/HeaderDark';
 import ChatBot from '../components/chatbot/ChatBot';
 import FooterOne from '../components/footer/FooterOne';
+import HeaderForFullChat from '../components/header/HeaderForFullChat';
 
 function ChatFullPage() {
     useEffect(() => {
@@ -11,10 +12,9 @@ function ChatFullPage() {
 
     return (
         <div>
-            <TopBar />
             <HeaderDark />
             <ChatBot fullPage={true} />
-            <FooterOne />
+           
         </div>
     );
 }
