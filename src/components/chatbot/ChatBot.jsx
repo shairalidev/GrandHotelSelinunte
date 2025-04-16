@@ -335,7 +335,8 @@ const sendMessage = async () => {
       combinedText.toLowerCase().includes("kontaktiere uns auf whatsapp") || // German WhatsApp
       combinedText.toLowerCase().includes("contactez-nous sur whatsapp") ||   // French WhatsApp
       combinedText.toLowerCase().includes("booking button") ||
-      combinedText.toLowerCase().includes("pulsante di prenotazione") 
+      combinedText.toLowerCase().includes("pulsante di prenotazione") ||
+      combinedText.toLowerCase().includes("393288170176") 
     ) {
       setBookingMessage(combinedText);
     }
