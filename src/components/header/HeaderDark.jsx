@@ -44,7 +44,7 @@ function HeaderDark() {
                                                 <div className="has__mega__menu">
                                                     <div className="row g-30 row-cols-1 row-cols-md-3 row-cols-lg-5">
                                                         <div className="menu__item">
-                                                            <Link to="/home-video">
+                                                            <Link to="/">
                                                                 <img
                                                                     src="/assets/images/menu/08.webp"
                                                                     height={250}

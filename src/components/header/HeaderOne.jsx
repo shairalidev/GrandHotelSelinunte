@@ -123,7 +123,7 @@ function HeaderOne() {
                                                             </Link>
                                                         </div>
                                                         <div className="menu__item">
-                                                            <Link to="/home-video">
+                                                            <Link to="/home">
                                                                 <img
                                                                     src="/assets/images/menu/08.webp"
                                                                     height={250}

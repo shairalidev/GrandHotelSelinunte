@@ -30,7 +30,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                 <nav className="mobile__menu__nav">
                                     <ul className="list-unstyled" style={{ color: "#fff" }}>
                                         <li className="slide active">
-                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/home-video">
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/home">
                                                 Home (Hotel Seaside)
                                             </Link>
                                         </li>
@@ -114,7 +114,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                             <nav className="desktop__menu offcanvas__menu">
                                 <ul className="list-unstyled">
                                     <li className="slide active">
-                                        <Link className="slide__menu__item" to="/home-video">
+                                        <Link className="slide__menu__item" to="/home">
                                             Home (Hotel Seaside)
                                         </Link>
                                     </li>

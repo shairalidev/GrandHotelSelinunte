@@ -1,21 +1,3 @@
-import React, { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
-import ReactMarkdown from 'react-markdown';
-import './ChatBot.css';
-
-const ChatBot = ({ fullPage = false })  => {
-const [bookingMessage, setBookingMessage] = useState('');
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
-
-  const sessionId = useRef(localStorage.getItem("chatSessionId") || crypto.randomUUID());
-  useEffect(() => {
-    localStorage.setItem("chatSessionId", sessionId.current);
-  }, []);
-
-  // Paste your assistant context here
 const context = `use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly suggest user some slots if user ask to suggest, don not offer any slots which is not in list bellow of slots or estimating cost outside of slots is also not allowed, just use slots we mentioned and cost with the slots bellow and calculate always correct and the club card cost is mandatory,.
 only allowed mentioned slots. do not answer users outside the scop of hotel.
 do not pause during you reply like im thinking .. or im calcualting , just give them answer, dont pause , make it simple.
@@ -34,20 +16,23 @@ Steps to follow: sum these all costs after you done multiplication to avoid any 
 2. Confirm check-in and check-out dates with full date and month.
 3. Ask how many adults and how many children aged 6–12 will be staying. (Optional: ask about children under 6.) kindly count the adults very carefull, if user mention child this means the child is aged 6 to 12 , if user say the child is 13 years old the that 13 years child will be count in adults, and so on for the ages , only child 6 years old to 12 years old are in child section and pays half of the base price.
 4. Match their dates to the closest available slot(s).
-5. Once a slot is chosen, then ask user if they wanted anything extra 
+5. Once a slot is chosen, calculate total price ovide showing calculations user only show if user ask how its calculated, keep it to your end and show total price to user, double check the total price you calculated then show to users, i dont want any single fault from you it will cost us loss:
+  then calculate on this base 
+  if adults are more then two , then first two adults will be paying full price , and extra adult from first two adults pays 80 percent of base price 
+  so it will be like this :
+  total price = 2 * base price  + (extra adult ) * 0.8 * base price;
+  ans then childrens aged 6 to 12 will be paying half of the base price in this way:
+  total price for children 6 to 12 = (number of children aged 6 to 12) * base price * 0.5
+  and then add a club card cost :
+  club card cost = 6 * number of nights of the slot * (number adults + number children aged 6 to 12)
+  sum these all costs after you done multiplication to avoid any mistakes please: i need no mistakes please
+  then toatal price will be = total price + total price for children 6 to 12 + club card cost
+  then ask them these things 
 
    - Optional extras:
      - Pool view: 10 €/night
      - Pet service: 30 € once per stay
      - Crib: 10 €/night
-
-once all the things are confirmed you need to make a message for user like  this
-once they agree to book or said ok or said continue or want to complete the process of booking or said prenota , kindly make a small message for them :
-your slot is show selected slot here , number of nights,  including any extra facitlity if they choosed 
-and ask them to message on Whatsapp to confirm your booking and for the calculate the total cost of your stay contact us click the booking button, 20 percent of total cost will be paid in advance to hotel and 80 percent of total amount will be paid at arrival time to the hotel
-Note : always ask extra options befor booking.
-DO NOT. If a user asks for a discount, DO NOT apply one. Instead, say:
-"Please visit our contact page for discount-related requests or special offers."
 
 Only show “Over60” slots if the user mentions they are age 60+ or requests a senior discount.
 
@@ -302,119 +287,3 @@ we don’t have larger rooms than quintuple and that the maximum of paying peopl
 Guests with food intolerances or celiac disease should notify us on WhatsApp at the time of booking.
 All extra paid services (except the mandatory club card) are paid directly at the hotel and are not included in the initial quote.
 If a guest asks about drinks or a “soft all inclusive” option, explain that the bracelet costs €5 per day per person and is available if required.`;
-const sendMessage = async () => {
-  if (!input.trim()) return;
-
-  const userMessage = { from: 'user', text: input };
-  setMessages((prev) => [...prev, userMessage]);
-  setInput('');
-  setLoading(true);
-
-  try {
-    const res = await axios.post('/ask', {
-
-      question: input,
-      context: context,
-      sessionId: sessionId.current
-    }, {
-      timeout: 9000000
-    });
-    
-    const combinedText = res.data?.answer || 'Sorry, no answer found.';
-    const botMessage = { from: 'bot', text: combinedText };
-    setMessages((prev) => [...prev, botMessage]);
-    if (
-      combinedText.toLowerCase().includes("your slot is") ||               // English
-      combinedText.toLowerCase().includes("la tua prenotazione è") ||      // Italian
-      combinedText.toLowerCase().includes("tu espacio es") ||              // Spanish
-      combinedText.toLowerCase().includes("dein zeitslot ist") ||          // German
-      combinedText.toLowerCase().includes("votre créneau est") ||          // French
-      combinedText.toLowerCase().includes("contact us on whatsapp") ||     // English WhatsApp
-      combinedText.toLowerCase().includes("contattaci su whatsapp") ||     // Italian WhatsApp
-      combinedText.toLowerCase().includes("contáctanos en whatsapp") ||    // Spanish WhatsApp
-      combinedText.toLowerCase().includes("kontaktiere uns auf whatsapp") || // German WhatsApp
-      combinedText.toLowerCase().includes("contactez-nous sur whatsapp") ||   // French WhatsApp
-      combinedText.toLowerCase().includes("booking button") ||
-      combinedText.toLowerCase().includes("pulsante di prenotazione") 
-    ) {
-      setBookingMessage(combinedText);
-    }
-
-  } catch (err) {
-    const errorMessage = { from: 'bot', text: 'Error contacting AI service try contacting on Whatsapp(+393288170176).' };
-    setMessages((prev) => [...prev, errorMessage]);
-    console.error('Proxy API error:', err);
-  } finally {
-    setLoading(false);
-  }
-};
-
-return (
-  <>
-    {!fullPage && (
-  <div className="chat-toggle" onClick={() => setOpen(!open)}>
-    💬
-  </div>
-)}
-
-{(open || fullPage) && (
-  <div className={fullPage ? "chat-container-full" : "chat-container-popup"}>
-    {!fullPage && (
-      <header className="header-chatbot">
-        <img src="/assets/images/logo/logo__two.png" alt="Hotel Logo" style={{ height: '60px', marginRight: '10px' }} />
-      </header>
-    )}
-
-
-        <div className="chat-box">
-          {messages.map((msg, i) => (
-            <div
-            key={i}
-            className={`message-wrapper ${msg.from}`}
-            style={{ display: 'flex', justifyContent: msg.from === 'user' ? 'flex-end' : 'flex-start', marginBottom: '10px' }}
-          >
-            <div className={`message ${msg.from}`}>
-              <ReactMarkdown>{msg.text}</ReactMarkdown>
-            </div>
-          </div>
-          ))}
-          {loading && <div className="message bot">Typing...</div>}
-        </div>
-        <div className="chat-input-box">
-  <input
-    type="text"
-    value={input}
-    onChange={(e) => setInput(e.target.value)}
-    onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-    placeholder="Ask me something..."
-  />
-  <button onClick={sendMessage}>➤</button>
-
-  {bookingMessage && (
-  <a
-    href={`https://wa.me/393288170176?text=${encodeURIComponent(bookingMessage)}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Confirm booking on WhatsApp"
-    className="whatsapp-link"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="28"
-      viewBox="0 0 32 32"
-      fill="white"
-    >
-      <path d="M16 .396C7.164.396 0 7.561 0 16.396c0 2.891.766 5.699 2.219 8.188L0 32l7.582-2.18a15.875 15.875 0 0 0 8.418 2.383h.001c8.837 0 16.002-7.165 16.002-16.001S24.837.396 16 .396zm0 29.215a13.12 13.12 0 0 1-6.675-1.825l-.481-.285-4.493 1.293 1.313-4.383-.313-.49A13.08 13.08 0 0 1 2.878 16.4c0-7.276 5.843-13.119 13.122-13.119S29.12 9.124 29.12 16.4c0 7.276-5.843 13.119-13.12 13.119zm7.234-9.845c-.397-.198-2.352-1.161-2.717-1.294-.365-.132-.63-.198-.896.198-.265.397-1.029 1.294-1.26 1.559-.232.265-.464.298-.861.1-.397-.198-1.678-.618-3.197-1.974-1.182-1.055-1.98-2.36-2.213-2.757-.232-.397-.025-.612.174-.809.179-.178.397-.464.596-.696.199-.232.265-.397.398-.662.132-.265.066-.497-.033-.696-.1-.198-.896-2.158-1.229-2.958-.324-.778-.654-.672-.896-.683-.232-.011-.497-.013-.763-.013-.265 0-.696.1-1.06.497-.365.397-1.39 1.359-1.39 3.316s1.422 3.843 1.619 4.112c.198.265 2.798 4.272 6.785 5.989.949.409 1.689.652 2.266.834.951.304 1.818.262 2.502.159.763-.114 2.352-.96 2.685-1.887.331-.926.331-1.72.232-1.887-.1-.165-.365-.265-.763-.464z" />
-    </svg>
-  </a>
-)}
-
-</div>
-      </div>
-    )}
-  </>
-);
-};
-
-export default ChatBot;
