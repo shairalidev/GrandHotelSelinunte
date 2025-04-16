@@ -5,7 +5,13 @@ import './ChatBot.css';
 
 const ChatBot = ({ fullPage = false })  => {
 const [bookingMessage, setBookingMessage] = useState('');
-  const [messages, setMessages] = useState([]);
+  
+  const [messages, setMessages] = useState([
+    {
+      from: 'bot',
+      text: 'Hello! Welcome to Grand Hotel Selinunte. How can I help you today?'
+    }
+  ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
@@ -16,7 +22,7 @@ const [bookingMessage, setBookingMessage] = useState('');
   }, []);
 
   // Paste your assistant context here
-const context = `Always message first to users Hello! Welcome to Grand Hotel Selinunte. How can I help you today? .use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly suggest user some slots if user ask to suggest, don not offer any slots which is not in list bellow  just use slots we mentioned and cost with the slots bellow and the club card cost is mandatory,.
+const context = `use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly suggest user some slots if user ask to suggest, don not offer any slots which is not in list bellow  just use slots we mentioned and cost with the slots bellow and the club card cost is mandatory,.
 your main task is to provide a message to user where you are showing slot, number of adults and children and anything extra if they asked , and then ask user to contact on whatsapp by clicking a button in bottom right corner of the screen. just that.
 dont not do calculation of totoal stay etc , that thing will be done by whatsapp support team.
 you are making ease to that team.
