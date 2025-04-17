@@ -342,7 +342,8 @@ const sendMessage = async () => {
       combinedText.toLowerCase().includes("contactez-nous sur whatsapp") ||   // French WhatsApp
       combinedText.toLowerCase().includes("booking button") ||
       combinedText.toLowerCase().includes("pulsante di prenotazione") ||
-      combinedText.toLowerCase().includes("393288170176") 
+      combinedText.toLowerCase().includes("393288170176")  ||
+      combinedText.toLowerCase().includes("whatsapp")  
     ) {
       setBookingMessage(combinedText);
     }
