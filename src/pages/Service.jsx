@@ -12,10 +12,11 @@ function Service() {
     <div>
         <TopBar />
         <HeaderDark />
-        <BreadcrumbOne 
-            title="Our Service" 
-            description="At Grand Hotel Selinunte we pride ourselves on delivering an exceptional experience."
-        />
+        <BreadcrumbOne
+  title="I Nostri Servizi"
+  description="Al Grand Hotel Selinunte siamo orgogliosi di offrire un’esperienza eccezionale."
+/>
+
         <ServiceFive />
         <ServiceOne />
         <TestimonialOne />

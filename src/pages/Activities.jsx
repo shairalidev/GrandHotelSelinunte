@@ -11,9 +11,10 @@ function Activities() {
         <TopBar />
         <HeaderDark />
         <BreadcrumbOne
-            title="Activities" 
-            description="Our diverse range of activities is designed to offer something for everyone."
-        />
+  title="Attività"
+  description="La nostra ampia gamma di attività è pensata per offrire qualcosa a tutti."
+/>
+
         <ActivitiesOne />
         <FooterOne />
     </div>

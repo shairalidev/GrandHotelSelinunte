@@ -11,10 +11,11 @@ function Gallery() {
     <div>
         <TopBar />
         <HeaderDark />
-        <BreadcrumbOne 
-            title="Gallery" 
-            description="where every image tells a story of luxury, comfort, and unparalleled hospitality"
-        />
+        <BreadcrumbOne
+  title="Galleria"
+  description="dove ogni immagine racconta una storia di lusso, comfort e ospitalità senza pari"
+/>
+
         <GalleryFive />
         <VideoThree />
         <FooterOne />

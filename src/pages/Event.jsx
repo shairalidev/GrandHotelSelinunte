@@ -12,10 +12,11 @@ function Event() {
     <div>
         <TopBar />
         <HeaderDark />
-        <BreadcrumbOne 
-            title="Events" 
-            description="Our diverse range of activities is designed to offer something for everyone."
-        />
+        <BreadcrumbOne
+  title="Eventi"
+  description="La nostra ampia gamma di attività è pensata per offrire qualcosa a tutti."
+/>
+
         <EventTwo />
         <NewsletterThree />
         <ServiceSix />

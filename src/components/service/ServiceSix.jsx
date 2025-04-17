@@ -1,90 +1,92 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ServiceSix() {
-    return (
-        <>
-            {/* service */}
-            <div className="rts__section section__padding">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-12">
-                            <div className="section__head text-center mb-40">
-                                <h2 className="section__title">why choose our events</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="service__list">
-                            {/* single service item */}
-                            <div className="service__item">
-                                <div className="service__item__icon">
-                                    <i className="flaticon-24-hours" />
-                                </div>
-                                <Link to="#" className="h6">
-                                    24-Hour Security
-                                </Link>
-                                <p>
-                                    A 24-hour security service provides and surveillance, properties,
-                                    or sensitive information around the clock.
-                                </p>
-                            </div>
-                            {/* single service item end */}
-                            {/* single service item */}
-                            <div className="service__item">
-                                <div className="service__item__icon">
-                                    <i className="flaticon-wifi" />
-                                </div>
-                                <Link to="#" className="h6">
-                                    Free Wifi
-                                </Link>
-                                <p>
-                                    Free Wi-Fi has become an essential service in our increasingly
-                                    connected world. It by people to access the internet
-                                </p>
-                            </div>
-                            {/* single service item end */}
-                            {/* single service item */}
-                            <div className="service__item">
-                                <div className="service__item__icon">
-                                    <img
-                                        height={40}
-                                        width={40}
-                                        src="/assets/images/icon/bed.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <Link to="#" className="h6">
-                                    Quality Room
-                                </Link>
-                                <p>
-                                    A fitness center is a vibrant and dynamic environment designed to
-                                    promote health and Fitnee Center well-being.
-                                </p>
-                            </div>
-                            {/* single service item end */}
-                            {/* single service item */}
-                            <div className="service__item">
-                                <div className="service__item__icon">
-                                    <i className="flaticon-plane" />
-                                </div>
-                                <Link to="#" className="h6">
-                                    Airport transport
-                                </Link>
-                                <p>
-                                    Airport transportation plays a crucial role in travel experiences
-                                    for passengers. It various services, including taxis, ride-sharing
-                                </p>
-                            </div>
-                            {/* single service item end */}
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      {/* servizi */}
+      <div className="rts__section section__padding">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-12">
+              <div className="section__head text-center mb-40">
+                <h2 className="section__title">Perché scegliere i nostri eventi</h2>
+              </div>
             </div>
-            {/* service end */}
-        </>
+          </div>
+          <div className="row">
+            <div className="service__list">
+              {/* singolo servizio */}
+              <div className="service__item">
+                <div className="service__item__icon">
+                  <i className="flaticon-24-hours" />
+                </div>
+                <Link to="#" className="h6">
+                  Sicurezza 24 Ore
+                </Link>
+                <p>
+                  Un servizio di sicurezza attivo 24 ore su 24 garantisce sorveglianza
+                  continua di persone, strutture e informazioni sensibili.
+                </p>
+              </div>
+              {/* singolo servizio end */}
 
-    )
+              {/* singolo servizio */}
+              <div className="service__item">
+                <div className="service__item__icon">
+                  <i className="flaticon-wifi" />
+                </div>
+                <Link to="#" className="h6">
+                  Wi‑Fi Gratuito
+                </Link>
+                <p>
+                  Il Wi‑Fi gratuito è ormai un servizio essenziale in un mondo sempre più
+                  connesso, permettendo a tutti di accedere a Internet in qualsiasi momento.
+                </p>
+              </div>
+              {/* singolo servizio end */}
+
+              {/* singolo servizio */}
+              <div className="service__item">
+                <div className="service__item__icon">
+                  <img
+                    height={40}
+                    width={40}
+                    src="/assets/images/icon/bed.svg"
+                    alt=""
+                  />
+                </div>
+                <Link to="#" className="h6">
+                  Camere di Qualità
+                </Link>
+                <p>
+                  Le nostre camere offrono un ambiente confortevole e curato,
+                  progettato per garantire un soggiorno di alto livello.
+                </p>
+              </div>
+              {/* singolo servizio end */}
+
+              {/* singolo servizio */}
+              <div className="service__item">
+                <div className="service__item__icon">
+                  <i className="flaticon-plane" />
+                </div>
+                <Link to="#" className="h6">
+                  Transfer Aeroportuale
+                </Link>
+                <p>
+                  Il servizio di transfer da e per l’aeroporto è fondamentale per
+                  un viaggio senza intoppi, includendo taxi, ride‑sharing e altre soluzioni.
+                </p>
+              </div>
+              {/* singolo servizio end */}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* servizi end */}
+    </>
+  );
 }
 
-export default ServiceSix
+export default ServiceSix;

@@ -13,10 +13,11 @@ function Resturant() {
     <div>
         <TopBar />
         <HeaderDark />
-        <BreadcrumbOne 
-            title="The Restaurant" 
-            description="Whether you are in the mood for a leisurely breakfast, a business lunch, or a romantic dinner."
-        />
+        <BreadcrumbOne
+  title="Il Ristorante"
+  description="Che tu abbia voglia di una colazione rilassante, di un pranzo di lavoro o di una cena romantica."
+/>
+
         <AboutSeven />
         <GalleryFour />
         <FoodMenuOne />

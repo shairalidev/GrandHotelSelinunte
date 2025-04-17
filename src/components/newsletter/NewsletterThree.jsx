@@ -10,7 +10,7 @@ function NewsletterThree() {
                         <div className="col-lg-6">
                             <div className="event__newsletter__text">
                                 <h2 className="mb-0">
-                                    We're Here to Help Reach Out to Us Today And Join Our Event
+                                Siamo qui per aiutarti. Contattaci oggi e partecipa al nostro evento.
                                 </h2>
                             </div>
                         </div>
@@ -18,16 +18,16 @@ function NewsletterThree() {
                             <div className="event__newsletter__contact">
                                 <div className="contact__method">
                                     <span className="h6">Reservation By Phone</span>
-                                    <a href="callto:121">
+                                    <a href="callto:+390924076901">
                                         <i className="flaticon-phone-flip" />
-                                        +12505550199
+                                        +390924076901
                                     </a>
                                 </div>
                                 <div className="contact__method">
                                     <span className="h6">Reservation By Email</span>
-                                    <a href="mailto:example@example.com">
+                                    <a href="mailto:booking@grandhotelselinunte.com">
                                         <img src="/assets/images/icon/mail.svg" alt="" />
-                                        moonlit@gmail.com
+                                        booking@grandhotelselinunte.com
                                     </a>
                                 </div>
                             </div>

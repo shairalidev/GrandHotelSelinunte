@@ -154,10 +154,10 @@ function ActivitiesOne() {
                                     />
                                 </div>
                                 <div className="activities__meta">
-                                    <Link to="/cultural-tours" className="h4 title d-block">
+                                    <Link to="" className="h4 title d-block">
                                         Tour Culturali
                                     </Link>
-                                    <Link to="/cultural-tours" className="theme-btn btn-style border">
+                                    <Link to="" className="theme-btn btn-style border">
                                         <span>Scopri di più</span>
                                     </Link>
                                 </div>
@@ -175,10 +175,10 @@ function ActivitiesOne() {
                                     />
                                 </div>
                                 <div className="activities__meta">
-                                    <Link to="/cultural-tours" className="h4 title d-block">
+                                    <Link to="" className="h4 title d-block">
                                         Tour Culturali
                                     </Link>
-                                    <Link to="/cultural-tours" className="theme-btn btn-style border">
+                                    <Link to="" className="theme-btn btn-style border">
                                         <span>Scopri di più</span>
                                     </Link>
                                 </div>
@@ -196,10 +196,10 @@ function ActivitiesOne() {
                                     />
                                 </div>
                                 <div className="activities__meta">
-                                    <Link to="/cultural-tours" className="h4 title d-block">
+                                    <Link to="" className="h4 title d-block">
                                         Tour Culturali
                                     </Link>
-                                    <Link to="/cultural-tours" className="theme-btn btn-style border">
+                                    <Link to="" className="theme-btn btn-style border">
                                         <span>Scopri di più</span>
                                     </Link>
                                 </div>

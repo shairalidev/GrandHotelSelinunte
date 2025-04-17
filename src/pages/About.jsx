@@ -14,9 +14,10 @@ function About() {
         <TopBar />
         <HeaderDark />
         <BreadcrumbOne
-            title="About Us" 
-            description="Welcome to Italy, where luxury meets comfort in the heart of Marinella." 
-        />
+  title="Chi Siamo"
+  description="Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella."
+/>
+
         <AboutFour />
         <FacilitiesSeven />
         <TeamOne />

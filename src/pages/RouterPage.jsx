@@ -34,7 +34,7 @@ function RouterContent() {
       <Routes>
         {/* Home routes */}
         <Route path="/" element={<HomeVideo />} />
-        <Route path="/home-video" element={<HomeVideo />} />
+        <Route path="/home" element={<HomeVideo />} />
 
         {/* Other pages */}
         <Route path="/about" element={<About />} />

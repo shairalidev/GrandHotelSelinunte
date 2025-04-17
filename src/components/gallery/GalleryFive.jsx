@@ -20,19 +20,18 @@ function GalleryFive() {
             {/* restaurant room */}
             <div className="rts__section pt-120">
                 <div className="container">
-                    <div className="row justify-content-center text-center mb-40">
-                        <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
-                            <div className="section__topbar">
-                                <span className="h6 subtitle__icon__three mx-auto">Gallery</span>
-                                <h2 className="section__title">Our Restaurant Gallery</h2>
-                            </div>
-                            <p>
-                                Our rooms offer a harmonious blend of comfort and elegance, designed
-                                to provide an exceptional stay for every guest Each room features
-                                plush bedding.
-                            </p>
+                <div className="row justify-content-center text-center mb-40">
+                    <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
+                        <div className="section__topbar">
+                        <span className="h6 subtitle__icon__three mx-auto">Galleria</span>
+                        <h2 className="section__title">La Nostra Galleria del Ristorante</h2>
                         </div>
+                        <p>
+                        Le nostre camere offrono un’armoniosa combinazione di comfort ed eleganza, pensata per garantire un soggiorno eccezionale a ogni ospite. Ogni camera è dotata di biancheria da letto di lusso.
+                        </p>
                     </div>
+                    </div>
+
                     <div className="row g-30 gallery">
                         <div className="col-lg-4 col-md-6">
                             <div className="gallery__item">

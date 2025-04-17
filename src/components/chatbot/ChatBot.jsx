@@ -9,7 +9,7 @@ const [bookingMessage, setBookingMessage] = useState('');
   const [messages, setMessages] = useState([
     {
       from: 'bot',
-      text: 'Hello! Welcome to Grand Hotel Selinunte. How can I help you today?'
+      text: 'Salve! Benvenuti al Grand Hotel Selinunte. Come posso aiutarla?'
     }
   ]);
   const [input, setInput] = useState('');
@@ -393,7 +393,7 @@ return (
     value={input}
     onChange={(e) => setInput(e.target.value)}
     onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-    placeholder="Ask me something..."
+    placeholder="Chiedimi qualcosa..."
   />
   <button onClick={sendMessage}>➤</button>
 
