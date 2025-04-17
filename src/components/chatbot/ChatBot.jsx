@@ -15,11 +15,15 @@ const [bookingMessage, setBookingMessage] = useState('');
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
-
+  const chatRef = useRef(null);
   const sessionId = useRef(localStorage.getItem("chatSessionId") || crypto.randomUUID());
   useEffect(() => {
     localStorage.setItem("chatSessionId", sessionId.current);
   }, []);
+  useEffect(() => {
+    chatRef.current?.scrollTo({ top: chatRef.current.scrollHeight, behavior: 'smooth' });
+  }, [messages]);
+  
 
   // Paste your assistant context here
 const context = `use small in sentences and simple in responding, You are a professional hotel assistant for Grand Hotel Selinunte. Help users book their stay based on the slots below. Always stay polite, concise, kindly suggest user some slots if user ask to suggest, don not offer any slots which is not in list bellow  just use slots we mentioned and cost with the slots bellow and the club card cost is mandatory,.
@@ -374,7 +378,7 @@ return (
     )}
 
 
-        <div className="chat-box">
+        <div ref={chatRef} className="chat-box">
           {messages.map((msg, i) => (
             <div
             key={i}
