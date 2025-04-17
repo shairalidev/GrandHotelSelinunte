@@ -140,4 +140,12 @@
   
   
   
-  
+.message,
+.message.user,
+.message.bot {
+  overflow: visible !important;     /* never show a scrollbar */
+  max-width: 70%;                   /* keep bubbles from spanning full width */
+  word-break: break-word;           /* wrap long words/URLs */
+  overflow-wrap: anywhere;          /* extra safety for edge‑cases */
+  white-space: pre-wrap;            /* keep line breaks typed by user */
+}
