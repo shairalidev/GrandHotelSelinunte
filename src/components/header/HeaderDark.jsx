@@ -77,7 +77,7 @@ function HeaderDark() {
                                                                 <Link to="/room-four">Camera quadrupla</Link>
                                                             </li>
                                                             <li role="menuitem">
-                                                                <Link to="/room-four">Camera quintupla</Link>
+                                                                <Link to="/room-five">Camera quintupla</Link>
                                                             </li>
                                                             
                                                         </ul>

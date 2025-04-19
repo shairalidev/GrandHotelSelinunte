@@ -1,25 +1,26 @@
 import React from 'react'
 import TopBar from '../components/header/TopBar'
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
-import RoomSeven from '../components/room/RoomSeven'
-import TestimonialFive from '../components/testimonials/TestimonialFive'
+import TestimonialSix from '../components/testimonials/TestimonialSix'
 import FooterOne from '../components/footer/FooterOne'
 import HeaderDark from '../components/header/HeaderDark'
-function RoomTwo() {
+import RoomFour from './RoomFour'
+import RoomEight from '../components/room/RoomEight'
+
+function RoomFive() {
     return (
-        <div> 
+        <div>
             <TopBar />
             <HeaderDark />
-            <BreadcrumbOne 
+            <BreadcrumbOne
                 title="Deluxe Room"
                 description="A step up from the standard room, often with better views, more space, and additional amenities."
             />
-            <RoomSeven />
-            <TestimonialFive />
+            <RoomEight />
+            <TestimonialSix className="section__padding" />
             <FooterOne />
         </div>
-
     )
 }
 
-export default RoomTwo
+export default RoomFive

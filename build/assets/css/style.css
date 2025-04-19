@@ -98,6 +98,36 @@ All CSS Structure Follow this Order
   --transition: all .4s ease;
 }
 
+.inline-layout .advance__search__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inline-layout .form-row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.inline-layout .form-row-1 > * {
+  flex: 1 1 calc(33.33% - 14px);
+}
+
+.inline-layout .form-row-2,
+.inline-layout .form-row-3,
+.inline-layout .form-row-4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inline-layout .form-row-3 > * {
+  flex: 1 1 calc(33.33% - 14px);
+}
+
+
 .rts__footer.is__footer__two.has__background__image,
 .event__newsletter__bg,
 .newsletter.is__home__four.has__background,

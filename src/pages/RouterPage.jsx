@@ -23,6 +23,7 @@ import Cart from "./Cart";
 import CheckOut from "./CheckOut";
 import ChatBot from '../components/chatbot/ChatBot';
 import ChatFullPage from './ChatFullPage';
+import RoomFive from "./RoomFive";
 
 
 function RouterContent() {
@@ -48,6 +49,7 @@ function RouterContent() {
         <Route path="/room-two" element={<RoomTwo />} />
         <Route path="/room-three" element={<RoomThree />} />
         <Route path="/room-four" element={<RoomFour />} />
+        <Route path="/room-five" element={<RoomFive />} />
         <Route path="/room/:id" element={<RoomDetails />} />
         <Route path="/room2/:id" element={<RoomDetailsTwo />} />
         <Route path="/blog" element={<Blog />} />

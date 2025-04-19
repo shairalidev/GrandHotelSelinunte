@@ -1,5 +1,5 @@
 // RoomBooking.jsx
-
+import React, { useEffect } from 'react';
 export const slots = [
   // APRIL
   { start: "2025-04-01", end: "2025-04-04", nights: 3, price: 210, description: "Dal 1 al 4 aprile 210€ (3 notti)" },
