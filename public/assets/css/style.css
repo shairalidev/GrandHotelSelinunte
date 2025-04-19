@@ -126,6 +126,33 @@ All CSS Structure Follow this Order
 .inline-layout .form-row-3 > * {
   flex: 1 1 calc(33.33% - 14px);
 }
+/* Mobile first: stack CustomSlotSelect */
+.responsive-booking-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mycontainer
+{
+  margin-top: 60px;
+}
+
+.slot-column {
+  width: 100%;
+}
+
+/* Desktop: keep default behavior */
+@media (min-width: 768px) {
+  .responsive-booking-row {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .slot-column {
+    width: auto;
+  }
+}
 
 
 .rts__footer.is__footer__two.has__background__image,

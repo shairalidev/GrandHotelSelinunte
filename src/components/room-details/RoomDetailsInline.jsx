@@ -3,7 +3,7 @@ import RoomBooking from './RoomBooking';
 import CustomSlotSelect from './CustomSlotSelect';
 import { slots } from './RoomBooking';
 
-function RoomDetails({ inline = false }) {
+function RoomDetailsInline({ inline = false }) {
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [confirmationMessage, setConfirmationMessage] = useState('');
   const [whatsAppLink, setWhatsAppLink] = useState('');
@@ -14,7 +14,7 @@ function RoomDetails({ inline = false }) {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mycontainer">
       <form
         id="scheduleForm"
         className={`advance__search ${inline ? 'inline-layout' : ''}`}
@@ -50,7 +50,6 @@ function RoomDetails({ inline = false }) {
           Prezzo totale: ${total}
           
           Per favore, conferma la mia prenotazione.`;
-          
 
           setConfirmationMessage(message);
           setWhatsAppLink(`https://wa.me/393288170176?text=${encodeURIComponent(message)}`);
@@ -61,18 +60,20 @@ function RoomDetails({ inline = false }) {
 
         <div className="advance__search__wrapper">
           {/* Row 1 */}
-          <div className={inline ? 'form-row-1' : ''}>
-            <CustomSlotSelect
-              slots={slots}
-              onSelect={(slot) => {
-                setSelectedSlot(slot);
-                const hiddenSlotInput = document.getElementById("slotSelect");
-                if (hiddenSlotInput) {
-                  hiddenSlotInput.value = JSON.stringify(slot);
-                }
-                RoomBooking.calculateTotalPrice();
-              }}
-            />
+          <div className={`form-row-1 responsive-booking-row ${inline ? 'inline-layout' : ''}`}>
+            <div className="slot-column">
+              <CustomSlotSelect
+                slots={slots}
+                onSelect={(slot) => {
+                  setSelectedSlot(slot);
+                  const hiddenSlotInput = document.getElementById("slotSelect");
+                  if (hiddenSlotInput) {
+                    hiddenSlotInput.value = JSON.stringify(slot);
+                  }
+                  RoomBooking.calculateTotalPrice();
+                }}
+              />
+            </div>
 
             <div className="query__input wow fadeInUp">
               <label htmlFor="adults" className="query__label">Adulto</label>
@@ -127,7 +128,7 @@ function RoomDetails({ inline = false }) {
             </div>
           </div>
 
-          {/* Row 4: Total, Button, Confirmation, WhatsApp */}
+          {/* Row 4 */}
           <div className={inline ? 'form-row-4' : ''}>
             <div className="total__price">
               <span className="total h6 m-0">Prezzo totale</span>
@@ -177,4 +178,4 @@ function RoomDetails({ inline = false }) {
   );
 }
 
-export default RoomDetails;
+export default RoomDetailsInline;
