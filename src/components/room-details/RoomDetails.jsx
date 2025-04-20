@@ -88,7 +88,7 @@ function RoomDetails({ inline = false }) {
 
           {/* Children */}
           <div className="query__input wow fadeInUp">
-            <label htmlFor="children612" className="query__label">Bambino</label>
+            <label htmlFor="children612" className="query__label">Bambino 6-12</label>
             <div className="query__input__position">
               <select id="children612" className="form-select">
                 {[...Array(8)].map((_, i) => (
