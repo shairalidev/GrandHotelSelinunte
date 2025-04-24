@@ -133,10 +133,7 @@ function RoomDetails2() {
                                             <img src="/assets/images/icon/desk.svg" height={30} width={36} alt="" />
                                             <span>Work Desk</span>
                                         </div>
-                                        <div className="single__item">
-                                            <img src="/assets/images/icon/fitness.svg" height={30} width={36} alt="" />
-                                            <span>Fitness Center</span>
-                                        </div>
+                                        
                                     </div>
                                 </div>
 

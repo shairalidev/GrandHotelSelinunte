@@ -10,8 +10,8 @@ function TeamOne() {
                     <div className="row justify-content-center text-center mb-40">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="section__topbar">
-                                <span className="h6 subtitle__icon__three mx-auto">Our Team</span>
-                                <h2 className="section__title">Meet The Team</h2>
+                                <span className="h6 subtitle__icon__three mx-auto">Il Nostro Team</span>
+                                <h2 className="section__title">Conosci il Team</h2>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ function TeamOne() {
                                     <Link to="#" className="h6">
                                         Emma Elizabeth
                                     </Link>
-                                    <span className="designation">Manager</span>
+                                    <span className="designation">Direttrice</span>
                                     <div className="team__member__social">
                                         <Link to="#">
                                             <i className="flaticon-facebook" />
@@ -53,7 +53,7 @@ function TeamOne() {
                                     <Link to="#" className="h6">
                                         Jonathon Doe
                                     </Link>
-                                    <span className="designation">Assitant Manager</span>
+                                    <span className="designation">Vice Direttore</span>
                                     <div className="team__member__social">
                                         <Link to="#">
                                             <i className="flaticon-facebook" />
@@ -79,7 +79,7 @@ function TeamOne() {
                                     <Link to="#" className="h6">
                                         Emma Elizabeth
                                     </Link>
-                                    <span className="designation">General Manager</span>
+                                    <span className="designation">Direttrice Generale</span>
                                     <div className="team__member__social">
                                         <Link to="#">
                                             <i className="flaticon-facebook" />
@@ -105,7 +105,7 @@ function TeamOne() {
                                     <Link to="#" className="h6">
                                         Jhon Doe
                                     </Link>
-                                    <span className="designation">Quality Inspector</span>
+                                    <span className="designation">Ispettore Qualità</span>
                                     <div className="team__member__social">
                                         <Link to="#">
                                             <i className="flaticon-facebook" />
@@ -123,9 +123,8 @@ function TeamOne() {
                     </div>
                 </div>
             </div>
-            {/* team end */}
+            {/* fine team */}
         </>
-
     )
 }
 

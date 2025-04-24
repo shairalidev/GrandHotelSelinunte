@@ -25,62 +25,7 @@ function ActivitiesOne() {
             <div className="rts__section activites section__padding">
                 <div className="container">
                     <div className="row">
-                        {/* singola attività */}
-                        <div className="single__service__item if__is__default if__activities">
-                            <div className="service__thumb jarallax">
-                                <img
-                                    className="jarallax-img"
-                                    src="/assets/images/pages/activities/1.webp"
-                                    width={605}
-                                    height={650}
-                                    alt="Attività invernali"
-                                />
-                            </div>
-                            <div className="service__content">
-                                <div className="section__content__left">
-                                    <span className="h6 subtitle__icon__two d-block wow fadeInUp">
-                                        Attività Invernali
-                                    </span>
-                                    <h2 className="content__title h2 wow fadeInUp lh-1">
-                                        Attività Invernali
-                                    </h2>
-                                </div>
-                                <p className="font-sm mt-20 wow fadeInUp">
-                                    Approfitta delle piste vicine, perfette sia per principianti che per sciatori esperti. Esplora paesaggi invernali tranquilli con tour guidati con racchette da neve sui sentieri nei dintorni.
-                                </p>
-                                <div className="activity__feature wow fadeInUp mt-20">
-                                    <ul className="list-unstyled">
-                                        <li>
-                                            <img src="/assets/images/icon/sketing.svg" alt="Sci e Snowboard" />
-                                            Sci e Snowboard
-                                        </li>
-                                        <li>
-                                            <img src="/assets/images/icon/wild.svg" alt="Tour della fauna invernale" />
-                                            Tour della Fauna Invernale
-                                        </li>
-                                        <li>
-                                            <img src="/assets/images/icon/hot-coffe.svg" alt="Cioccolata calda al caminetto" />
-                                            Cioccolata Calda al Caminetto
-                                        </li>
-                                        <li>
-                                            <img src="/assets/images/icon/snow.svg" alt="Escursioni con le ciaspole" />
-                                            Escursioni con le Ciaspole
-                                        </li>
-                                        <li>
-                                            <img src="/assets/images/icon/spa.svg" alt="Spa e benessere" />
-                                            Spa e Benessere
-                                        </li>
-                                    </ul>
-                                </div>
-                                <Link
-                                    to="/winter-activities"
-                                    className="underline__style wow fadeInUp"
-                                    data-wow-delay=".4s"
-                                >
-                                    Scopri di più
-                                </Link>
-                            </div>
-                        </div>
+                        
                         {/* singola attività fine */}
                         {/* singola attività */}
                         <div className="single__service__item if__is__reverse if__activities">
@@ -108,14 +53,6 @@ function ActivitiesOne() {
                                 <div className="activity__feature wow fadeInUp mt-20">
                                     <ul className="list-unstyled">
                                         <li>
-                                            <img src="/assets/images/icon/sketing.svg" alt="Escursioni guidate" />
-                                            Escursioni Guidate
-                                        </li>
-                                        <li>
-                                            <img src="/assets/images/icon/biking.svg" alt="Mountain Bike" />
-                                            Mountain Bike
-                                        </li>
-                                        <li>
                                             <img src="/assets/images/icon/swimming.svg" alt="Piscina all'aperto" />
                                             Piscina all’Aperto
                                         </li>
@@ -130,7 +67,7 @@ function ActivitiesOne() {
                                     </ul>
                                 </div>
                                 <Link
-                                    to="/summer-activities"
+                                    to="/activities"
                                     className="underline__style wow fadeInUp"
                                     data-wow-delay=".4s"
                                 >

@@ -37,19 +37,7 @@ function ServiceFive() {
               </div>
               {/* single service item end */}
 
-              {/* single service item */}
-              <div className="service__item">
-                <div className="service__item__icon">
-                  <i className="flaticon-gym" />
-                </div>
-                <Link href="#" className="h6">
-                  Centro Fitness
-                </Link>
-                <p>
-                  Il nostro centro fitness è un ambiente dinamico e stimolante progettato per promuovere salute e benessere.
-                </p>
-              </div>
-              {/* single service item end */}
+              
 
               {/* single service item */}
               <div className="service__item">
