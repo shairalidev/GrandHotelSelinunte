@@ -19,8 +19,6 @@ import RoomDetails from "./RoomDetails";
 import RoomDetailsTwo from "./RoomDetailsTwo";
 import Blog from "./Blog";
 import BlogDetails from "./BlogDetails";
-import Cart from "./Cart";
-import CheckOut from "./CheckOut";
 import ChatBot from '../components/chatbot/ChatBot';
 import ChatFullPage from './ChatFullPage';
 import RoomFive from "./RoomFive";
@@ -54,8 +52,6 @@ function RouterContent() {
   <Route path="/room2/:id" element={<RoomDetailsTwo />} />
   <Route path="/blog" element={<Blog />} />
   <Route path="/blog/:id" element={<BlogDetails />} />
-  <Route path="/cart" element={<Cart />} />
-  <Route path="/checkout" element={<CheckOut />} />
   <Route path="/chat" element={<ChatFullPage />} />
 
   {/* Redirect any undefined route */}

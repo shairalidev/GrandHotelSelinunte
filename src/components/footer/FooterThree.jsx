@@ -69,7 +69,7 @@ function FooterThree() {
                             </div>
                             <div className="rts__widget if__is__newsletter">
                                 <span className="widget__title">Get In Touch</span>
-                                <form action="#" className="footer__form">
+                                <form className="footer__form">
                                     {/* single input */}
                                     <div className="query__input">
                                         <div className="query__input__position">

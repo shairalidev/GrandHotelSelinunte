@@ -22,7 +22,7 @@ function FooterOne() {
                         <div className="footer__newsletter">
                             <span className="h2">Iscriviti alla nostra Newsletter</span>
                             <div className="rts__form">
-                                <form action="#" method="post">
+                                <form>
                                     <input
                                         type="email"
                                         name="email"

@@ -62,7 +62,7 @@ function FooterFive() {
                             <div className="rts__widget">
                                 <span className="widget__title">Join Our Newsletter</span>
                                 <div className="rts__form footer__newsletter">
-                                    <form action="#" method="post">
+                                    <form>
                                         <input
                                             type="email"
                                             name="email"
