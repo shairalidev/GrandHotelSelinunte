@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-function CustomSlotSelect({ slots, onSelect }) {
+function CustomSlotSelect({ slots, onSelect, required }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [showOptions, setShowOptions] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState(null);

@@ -22,7 +22,7 @@ function RoomDetailsInline({ inline = false }) {
           e.preventDefault();
 
           if (!selectedSlot) {
-            setConfirmationMessage("⚠️ Please select a slot first.");
+            setConfirmationMessage("⚠️ Seleziona prima uno slot.");
             return;
           }
 
@@ -62,17 +62,19 @@ function RoomDetailsInline({ inline = false }) {
           {/* Row 1 */}
           <div className={`form-row-1 responsive-booking-row ${inline ? 'inline-layout' : ''}`}>
             <div className="slot-column">
-              <CustomSlotSelect
-                slots={slots}
-                onSelect={(slot) => {
-                  setSelectedSlot(slot);
-                  const hiddenSlotInput = document.getElementById("slotSelect");
-                  if (hiddenSlotInput) {
-                    hiddenSlotInput.value = JSON.stringify(slot);
-                  }
-                  RoomBooking.calculateTotalPrice();
-                }}
-              />
+            <CustomSlotSelect
+  required={true}
+  slots={slots}
+  onSelect={(slot) => {
+    setSelectedSlot(slot);
+    const hiddenSlotInput = document.getElementById("slotSelect");
+    if (hiddenSlotInput) {
+      hiddenSlotInput.value = JSON.stringify(slot);
+    }
+    RoomBooking.calculateTotalPrice();
+  }}
+/>
+
             </div>
 
             <div className="query__input wow fadeInUp">

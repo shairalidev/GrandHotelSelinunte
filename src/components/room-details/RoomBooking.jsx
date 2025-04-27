@@ -1,5 +1,4 @@
 // RoomBooking.jsx
-import React, { useEffect } from 'react';
 export const slots = [
   // APRIL
   { start: "2025-04-01", end: "2025-04-04", nights: 3, price: 210, description: "Dal 1 al 4 aprile 210€ (3 notti)" },
@@ -202,18 +201,31 @@ export function calculateTotalPrice() {
 }
 
 export function showConfirmation() {
-  const slot = JSON.parse(document.getElementById('slotSelect').value);
-  const adults = parseInt(document.getElementById('adults')?.value || 0);
-  const children = parseInt(document.getElementById('children612')?.value || 0);
+  const slotSelect = document.getElementById('slotSelect');
+  const confirmation = document.getElementById('confirmationMessage');
+
+  if (!slotSelect || !slotSelect.value) {
+    if (confirmation) {
+      confirmation.textContent = "⚠️ Per favore, seleziona prima uno slot."; // (Show friendly message in Italian)
+    }
+    return;
+  }
+
+  const slot = JSON.parse(slotSelect.value);
+  const adults = parseInt(document.getElementById('adults')?.value || "1");
+  const children = parseInt(document.getElementById('children612')?.value || "0");
   const totalText = document.getElementById('totalPrice')?.textContent || '€0.00';
 
   const message = `Prenotazione confermata dal ${formatDate(slot.start)} al ${formatDate(slot.end)}\n` +
     `Persone: ${adults} adulti, ${children} bambini\n` +
     `Prezzo totale: ${totalText}`;
 
-  const confirmation = document.getElementById('confirmationMessage');
-  if (confirmation) confirmation.textContent = message;
+  if (confirmation) {
+    confirmation.textContent = message;
+  }
 }
+
+
 
 export function attachFormListeners() {
   document.getElementById('scheduleForm')?.addEventListener('submit', function (e) {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+
+import { useParams } from 'react-router-dom';
 import Posts from '../data/data-room.json';
 import RoomDetails from './RoomDetails';
 
@@ -86,7 +86,7 @@ function RoomDetails2() {
                                             </svg>
                                             <div className="rts__circle--icon">
                                                 <a
-                                                    href="https://www.youtube.com/watch?v=qOwxqRGHy5Q"
+                                                    href="https://www.youtube.com/watch?v=AzHyRxonWYw"
                                                     className="video-play"
                                                 >
                                                     <i className="flaticon-play" />

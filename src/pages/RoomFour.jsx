@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../components/header/TopBar'
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
 import RoomNine from '../components/room/RoomNine'
-import TestimonialSix from '../components/testimonials/TestimonialSix'
+import TestimonialOne from '../components/testimonials/TestimonialOne'
 import FooterOne from '../components/footer/FooterOne'
 import HeaderDark from '../components/header/HeaderDark'
 
@@ -16,7 +16,7 @@ function RoomFour() {
                 description="A step up from the standard room, often with better views, more space, and additional amenities."
             />
             <RoomNine />
-            <TestimonialSix className="section__padding" />
+            <TestimonialOne className="section__padding" />
             <FooterOne />
         </div>
     )

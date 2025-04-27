@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import GDPRCookie from "../components/GDPRCookie";
 import LoadTop from "../components/LoadTop";
 import HomeVideo from "./HomeVideo";
@@ -33,31 +33,34 @@ function RouterContent() {
     <>
       <LoadTop />
       <Routes>
-        {/* Home routes */}
-        <Route path="/" element={<HomeVideo />} />
-        <Route path="/home" element={<HomeVideo />} />
+  {/* Home routes */}
+  <Route path="/" element={<HomeVideo />} />
+  <Route path="/home" element={<HomeVideo />} />
 
-        {/* Other pages */}
-        <Route path="/about" element={<About />} />
-        <Route path="/resturant" element={<Resturant />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/event" element={<Event />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/room-one" element={<RoomOne />} />
-        <Route path="/room-two" element={<RoomTwo />} />
-        <Route path="/room-three" element={<RoomThree />} />
-        <Route path="/room-four" element={<RoomFour />} />
-        <Route path="/room-five" element={<RoomFive />} />
-        <Route path="/room/:id" element={<RoomDetails />} />
-        <Route path="/room2/:id" element={<RoomDetailsTwo />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/chat" element={<ChatFullPage />} />
-      </Routes>
+  {/* Other pages */}
+  <Route path="/about" element={<About />} />
+  <Route path="/resturant" element={<Resturant />} />
+  <Route path="/gallery" element={<Gallery />} />
+  <Route path="/service" element={<Service />} />
+  <Route path="/event" element={<Event />} />
+  <Route path="/activities" element={<Activities />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/room-one" element={<RoomOne />} />
+  <Route path="/room-two" element={<RoomTwo />} />
+  <Route path="/room-three" element={<RoomThree />} />
+  <Route path="/room-four" element={<RoomFour />} />
+  <Route path="/room-five" element={<RoomFive />} />
+  <Route path="/room/:id" element={<RoomDetails />} />
+  <Route path="/room2/:id" element={<RoomDetailsTwo />} />
+  <Route path="/blog" element={<Blog />} />
+  <Route path="/blog/:id" element={<BlogDetails />} />
+  <Route path="/cart" element={<Cart />} />
+  <Route path="/checkout" element={<CheckOut />} />
+  <Route path="/chat" element={<ChatFullPage />} />
+
+  {/* Redirect any undefined route */}
+  <Route path="*" element={<Navigate to="/" replace />} />
+</Routes>
 
       {/* Only show popup ChatBot outside of full chat page */}
       {location.pathname !== "/chat" && <ChatBot />}

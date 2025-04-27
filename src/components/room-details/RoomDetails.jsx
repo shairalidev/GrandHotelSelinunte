@@ -22,7 +22,7 @@ function RoomDetails({ inline = false }) {
           e.preventDefault();
 
           if (!selectedSlot) {
-            setConfirmationMessage("⚠️ Please select a slot first.");
+            setConfirmationMessage("⚠️ Seleziona prima uno slot.");
             return;
           }
 

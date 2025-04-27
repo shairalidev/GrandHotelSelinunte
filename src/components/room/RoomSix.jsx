@@ -8,8 +8,12 @@ function RoomSix() {
     const postsPerLoad = 3; // Number of posts to load each time
 
     const handleLoadMore = () => {
-        setVisiblePosts((prev) => prev + postsPerLoad);
+        setVisiblePosts((prev) => {
+            const newVisible = prev + postsPerLoad;
+            return newVisible >= 13 ? 13 : newVisible;
+        });
     };
+    
 
     return (
         <>
