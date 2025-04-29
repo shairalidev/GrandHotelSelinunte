@@ -41,8 +41,9 @@ function FooterOne() {
                                 <Link to="/">
                                     <img
                                         className="footer__logo myclass"
-                                        src="/assets/images/logo/logo.svg"
+                                        src="/assets/images/logo/logofinal.svg"
                                         alt="footer logo"
+                                        style={{ width: "450px", height: "auto" }}
                                     />
                                 </Link>
                                 <p className="font-sm max-290 mt-20">
@@ -54,22 +55,22 @@ function FooterOne() {
                                 <ul>
                                     <li>
                                         <Link to="#" aria-label="footer__link">
-                                            Camere &amp; Suite
+                                            Camere 
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="#" aria-label="footer__link">
-                                            Ristorazione
+                                            mini bazar
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="#" aria-label="footer__link">
-                                            Spa &amp; Benessere
+                                        attività sportive pomeridiane
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="#" aria-label="footer__link">
-                                            Offerte Speciali
+                                        servizio di intrattenimento
                                         </Link>
                                     </li>
                                 </ul>
@@ -116,7 +117,7 @@ function FooterOne() {
                                     Copyright © {new Date().getFullYear()} Grand Hotel Selinunte. Tutti i diritti riservati.
                                 </p>
                                 <div className="footer__social__link">
-                                    <Link to="#" aria-label="footer__social" className="link__item">
+                                    <Link to="https://www.facebook.com/GHSSelinunte/" aria-label="footer__social" className="link__item">
                                         Facebook
                                     </Link>
                                     <Link to="#" aria-label="footer__social" className="link__item">

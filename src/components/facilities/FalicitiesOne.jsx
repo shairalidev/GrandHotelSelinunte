@@ -26,45 +26,45 @@ function FacilitiesOne() {
                                         <img src="/assets/images/icon/bed.svg" alt="" />
                                     </div>
                                     <Link to="/">
-                                        <h6 className="card-title h6 mb-15">Camere e Suite</h6>
+                                        <h6 className="card-title h6 mb-15">Camere</h6>
                                     </Link>
                                     <p className="card-text">
-                                        Varie tipologie di camere, dalle standard alle suite di lusso, dotate
-                                        di tutti i comfort essenziali come letti.
+                                    Varie tipologie di camere, dalla singola alla quintupla, 
+                                    dotate di tutti i comfort essenziali come i letti.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className="card rts__card no-border is__home radius-6">
-                                <div className="card-body">
-                                    <div className="icon">
-                                        <img src="/assets/images/icon/security.svg" alt="" />
-                                    </div>
-                                    <Link to="/">
-                                        <h6 className="card-title h6 mb-15">Sicurezza 24 Ore</h6>
-                                    </Link>
-                                    <p className="card-text">
-                                        Personale di sicurezza in loco e videosorveglianza avanzata. Da camere standard
-                                        a suite di lusso, con deposito sicuro per oggetti di valore.
-                                    </p>
+                            <div className="card-body">
+                                <div className="icon">
+                                    <img src="/assets/images/icon/security.svg" alt="Security Icon" />
                                 </div>
+                                <Link to="/">
+                                    <h6 className="card-title h6 mb-15">24/7 sicurezza</h6>
+                                </Link>
+                                <p className="card-text">
+                                    L'hotel è aperto 24 ore su 24, con un portiere sempre presente alla reception, anche durante la notte. Le aree comuni sono costantemente videosorvegliate per garantire la massima sicurezza.
+                                </p>
+                            </div>
+
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
                             <div className="card rts__card no-border is__home radius-6">
-                                <div className="card-body">
-                                    <div className="icon">
-                                        <img src="/assets/images/icon/gym.svg" alt="" />
-                                    </div>
-                                    <Link to="/">
-                                        <h6 className="card-title h6 mb-15">Centro Fitness</h6>
-                                    </Link>
-                                    <p className="card-text">
-                                        Dotato di macchine per l’esercizio e pesi. Offriamo massaggi,
-                                        trattamenti per il viso e altri servizi benessere.
-                                    </p>
+                            <div className="card-body">
+                                <div className="icon">
+                                    <img src="/assets/images/icon/desk.svg" alt="Desk Icon" />
                                 </div>
+                                <Link to="/">
+                                    <h6 className="card-title h6 mb-15">Scrivania in Camera</h6>
+                                </Link>
+                                <p className="card-text">
+                                    Una comoda scrivania ideale per lavorare, studiare o scrivere. Perfetta per rendere il tuo soggiorno ancora più produttivo e confortevole.
+                                </p>
+                            </div>
+
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6">
@@ -77,8 +77,8 @@ function FacilitiesOne() {
                                         <h6 className="card-title h6 mb-15">Piscina</h6>
                                     </Link>
                                     <p className="card-text">
-                                        Piscine interne o esterne per relax o esercizio. Offriamo
-                                        massaggi, trattamenti per il viso e altri servizi benessere.
+                                    piscine per relax o attività fisica. Offriamo servizio
+                                    di animazione diurna e serale per adulti e bambini con mini club e varie attività sportive pomeridiane.
                                     </p>
                                 </div>
                             </div>

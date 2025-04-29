@@ -20,41 +20,44 @@ function RoomDetailsInline({ inline = false }) {
         className={`advance__search ${inline ? 'inline-layout' : ''}`}
         onSubmit={(e) => {
           e.preventDefault();
-
+        
           if (!selectedSlot) {
             setConfirmationMessage("⚠️ Seleziona prima uno slot.");
             return;
           }
-
+        
           const adults = parseInt(document.getElementById("adults")?.value || "1");
+          const childrenUnder6 = parseInt(document.getElementById("children0to5")?.value || "0");
           const children = parseInt(document.getElementById("children612")?.value || "0");
           const pet = document.getElementById("pet")?.checked;
           const crib = document.getElementById("crib")?.checked;
           const pool = document.getElementById("pool")?.checked;
           const total = document.getElementById("totalPrice")?.innerText || "€0.00";
-
+        
           const extras = [];
           if (pet) extras.push("Pet-Friendly");
           if (crib) extras.push("Crib Service");
           if (pool) extras.push("Pool View");
-
+        
           const slotDate = selectedSlot?.description || "Unknown";
-
-          const message = ` Conferma Prenotazione 
-
+        
+          const message = ` Richiedi un preventivo
+        
           Data del soggiorno: ${slotDate}
           Notti: ${selectedSlot.nights}
           Adulti: ${adults}
+          Bambini (0-5): ${childrenUnder6}
           Bambini (6–12): ${children}
           Servizi extra: ${extras.length > 0 ? extras.join(", ") : "Nessuno"}
           Prezzo totale: ${total}
           
           Per favore, conferma la mia prenotazione.`;
-
+        
           setConfirmationMessage(message);
           setWhatsAppLink(`https://wa.me/393288170176?text=${encodeURIComponent(message)}`);
           setShowWhatsApp(true);
-        }}
+        }}        
+        
       >
         <h5 className="pt-0">Prenota il tuo soggiorno</h5>
 
@@ -91,19 +94,36 @@ function RoomDetailsInline({ inline = false }) {
               </div>
             </div>
 
-            <div className="query__input wow fadeInUp">
-              <label htmlFor="children612" className="query__label">Bambino 6-12</label>
-              <div className="query__input__position">
-                <select id="children612" className="form-select">
-                  {[...Array(8)].map((_, i) => (
-                    <option key={i} value={i}>{i} Bambino</option>
-                  ))}
-                </select>
-                <div className="query__input__icon">
-                  <i className="flaticon-user"></i>
-                </div>
-              </div>
-            </div>
+            <div className="d-flex flex-wrap gap-3">
+  <div className="query__input wow fadeInUp" style={{ flex: '1 1 48%' }}>
+    <label htmlFor="children0to5" className="query__label">Bambini 0-5</label>
+    <div className="query__input__position">
+      <select id="children0to5" className="form-select">
+        {[...Array(8)].map((_, i) => (
+          <option key={i} value={i}>{i} Bambino</option>
+        ))}
+      </select>
+      <div className="query__input__icon">
+        <i className="flaticon-user"></i>
+      </div>
+    </div>
+  </div>
+
+  <div className="query__input wow fadeInUp" style={{ flex: '1 1 48%' }}>
+    <label htmlFor="children612" className="query__label">Bambini 6-12</label>
+    <div className="query__input__position">
+      <select id="children612" className="form-select">
+        {[...Array(8)].map((_, i) => (
+          <option key={i} value={i}>{i} Bambino</option>
+        ))}
+      </select>
+      <div className="query__input__icon">
+        <i className="flaticon-user"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
 
           {/* Row 2 */}
@@ -169,7 +189,7 @@ function RoomDetailsInline({ inline = false }) {
                   className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
                   data-wow-delay=".6s"
                 >
-                  <span> Conferma su WhatsApp</span>
+                  <span>Richiedi su WhatsApp</span>
                 </a>
               </div>
             )}

@@ -57,7 +57,7 @@ function CustomSlotSelect({ slots, onSelect, required }) {
             color: selectedSlot ? '#000' : '#6c757d'
           }}
         >
-          {selectedSlot ? selectedSlot.description : "Select Slot"}
+          {selectedSlot ? selectedSlot.description : "Seleziona Pacchetto"}
         </div>
         <div className="query__input__icon" style={{ marginLeft: '8px' }}>
           <i className="flaticon-calendar" />

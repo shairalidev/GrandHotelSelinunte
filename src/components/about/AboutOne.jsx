@@ -70,7 +70,7 @@ function AboutOne() {
                                 garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                             </p>
                             <Link to="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
-                                <span>Learn More</span>
+                                <span>Saperne di più</span>
                             </Link>
                         </div>
                     </div>

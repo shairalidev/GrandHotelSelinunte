@@ -17,8 +17,6 @@ import RoomThree from "./RoomThree";
 import RoomFour from "./RoomFour";
 import RoomDetails from "./RoomDetails";
 import RoomDetailsTwo from "./RoomDetailsTwo";
-import Blog from "./Blog";
-import BlogDetails from "./BlogDetails";
 import ChatBot from '../components/chatbot/ChatBot';
 import ChatFullPage from './ChatFullPage';
 import RoomFive from "./RoomFive";
@@ -50,8 +48,8 @@ function RouterContent() {
   <Route path="/room-five" element={<RoomFive />} />
   <Route path="/room/:id" element={<RoomDetails />} />
   <Route path="/room2/:id" element={<RoomDetailsTwo />} />
-  <Route path="/blog" element={<Blog />} />
-  <Route path="/blog/:id" element={<BlogDetails />} />
+  {/*<Route path="/blog" element={<Blog />} />
+  <Route path="/blog/:id" element={<BlogDetails />} />*/}
   <Route path="/chat" element={<ChatFullPage />} />
 
   {/* Redirect any undefined route */}

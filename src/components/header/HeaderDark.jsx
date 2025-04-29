@@ -120,19 +120,7 @@ function HeaderDark() {
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li className="navigation__menu--item has-child has-arrow">
-                                                <Link to="/" className="navigation__menu--item__link">
-                                                    Blog
-                                                </Link>
-                                                <ul className="submenu sub__style" role="menu">
-                                                    <li role="menuitem">
-                                                        <Link to="/blog">Blog</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link to="/blog/1">Dettagli Blog</Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                           
                                             <li className="navigation__menu--item">
                                                 <Link to="/contact" className="navigation__menu--item__link">
                                                     Contatto

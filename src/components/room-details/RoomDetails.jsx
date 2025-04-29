@@ -39,7 +39,7 @@ function RoomDetails({ inline = false }) {
           if (pool) extras.push("Pool View");
 
           const slotDate = selectedSlot?.description || "Unknown";
-          const message = ` Conferma Prenotazione
+          const message = ` Richiedi un preventivo
 
           Data del soggiorno: ${slotDate}
           Notti: ${selectedSlot.nights}
