@@ -206,7 +206,7 @@ export function showConfirmation() {
 
   if (!slotSelect || !slotSelect.value) {
     if (confirmation) {
-      confirmation.textContent = "⚠️ Per favore, seleziona prima uno slot."; // (Show friendly message in Italian)
+      confirmation.textContent = "⚠️ Seleziona prima il pacchetto."; // (Show friendly message in Italian)
     }
     return;
   }

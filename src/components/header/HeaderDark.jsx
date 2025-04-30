@@ -157,7 +157,7 @@ function HeaderDark() {
 
                                 {/* Bottone Prenota Ora */}
                                 <Link to="/room/1" className="theme-btn btn-style sm-btn fill">
-                                    <span>Prenota Ora</span>
+                                    <span>Richiedi un preventivo</span>
                                 </Link>
 
                                 {/* Bottone Menu Mobile */}
