@@ -3,17 +3,13 @@ import TopBar from '../components/header/TopBar'
 import HeaderDark from '../components/header/HeaderDark'
 import BannerOne from '../components/banner/BannerOne'
 import AdvanceForm from '../components/form/AdvanceForm'
-import AboutOne from '../components/about/AboutOne'
 import FacilitiesOne from '../components/facilities/FalicitiesOne'
 import RoomOne from '../components/room/RoomOne'
 import TestimonialThree from '../components/testimonials/TestimonialThree'
 import VideoOne from '../components/videos/VideoOne'
-import OfferOne from '../components/offer/OfferOne'
 import GalleryOne from '../components/gallery/GalleryOne'
 import FooterOne from '../components/footer/FooterOne'
-import AboutSeven from '../components/about/AboutSeven'
 import AboutFour from '../components/about/AboutFour'
-
 function HomeDark() {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", "dark");

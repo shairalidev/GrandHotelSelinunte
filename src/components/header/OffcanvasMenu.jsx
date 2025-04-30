@@ -51,16 +51,6 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                                 <li><Link to="/room-details-2">Dettagli Camera Due</Link></li>
                                             </ul>
                                         </li>
-                                        <li className={`slide has__children ${activeMenu === 3 ? "active" : ""}`}>
-                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(3)}>
-                                                Blog
-                                                <span className="toggle" />
-                                            </Link>
-                                            <ul className="slide__menu" style={{ display: activeMenu === 3 ? "block" : "none", color: "#fff" }}>
-                                                <li><Link to="/blog">Blog</Link></li>
-                                                <li><Link to="/blog/1">Dettagli Blog</Link></li>
-                                            </ul>
-                                        </li>
                                         <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
                                             <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(4)}>
                                                 Pagine
@@ -115,7 +105,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                 <ul className="list-unstyled">
                                     <li className="slide active">
                                         <Link className="slide__menu__item" to="/home">
-                                            Home (Hotel Seaside)
+                                            Home
                                         </Link>
                                     </li>
                                     <li className="slide">
