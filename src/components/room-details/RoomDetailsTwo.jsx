@@ -1,4 +1,3 @@
-
 import { useParams } from 'react-router-dom';
 import Posts from '../data/data-room.json';
 import RoomDetails from './RoomDetails';
@@ -8,7 +7,7 @@ function RoomDetails2() {
     const roomPost = Posts.find(post => post.id === parseInt(id));
 
     if (!roomPost) {
-        return <div>Post not found!</div>;
+        return <div>Post non trovato!</div>;
     }
 
     return (
@@ -17,7 +16,7 @@ function RoomDetails2() {
                 <img src={`/assets/images/pages/room/${roomPost.bannerImg}`} alt="" />
             </div>
 
-            {/* room details two top */}
+            {/* dettagli camera - top */}
             <div className="rts__section">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -28,10 +27,10 @@ function RoomDetails2() {
                                 <div className="room__meta">
                                     <span>
                                         <i className="flaticon-construction" />
-                                        35 sqm
+                                        35 mq
                                     </span>
                                     <span>
-                                        <i className="flaticon-user" />5 Person
+                                        <i className="flaticon-user" />5 Persone
                                     </span>
                                 </div>
                             </div>
@@ -40,27 +39,25 @@ function RoomDetails2() {
                 </div>
             </div>
 
-            {/* room details area */}
+            {/* area dettagli camera */}
             <div className="rts__section section__padding">
                 <div className="container">
                     <div className="row g-5 sticky-wrap">
-                        <div className="col-lg-8">
+                        <div className="col-lg-7">
                             <div className="room__details">
-                                <h4 className="mb-30">Room Description</h4>
+                                <h4 className="mb-30">Descrizione della Camera</h4>
                                 <p>
-                                    Our elegantly appointed rooms and suites are designed to offer the
-                                    utmost in comfort and style. Each room features modern amenities,
-                                    plush furnishings, and thoughtful touches to ensure a relaxing
-                                    stay.
+                                    Le nostre camere elegantemente arredate sono progettate per offrire
+                                    il massimo comfort e stile. Ogni stanza dispone di comfort moderni,
+                                    arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                                     <br /><br />
-                                    Indulge in a culinary journey at our on-site restaurants, where
-                                    our talented chefs create mouthwatering dishes using the freshest
-                                    local ingredients. Start your day with a sumptuous breakfast,
-                                    enjoy a leisurely lunch, and savor a gourmet dinner in an elegant
-                                    setting.
+                                    Vivi un viaggio culinario nei nostri ristoranti interni, dove
+                                    chef esperti creano piatti deliziosi con ingredienti freschi locali. 
+                                    Inizia la giornata con una colazione abbondante, pranza in tranquillità 
+                                    e goditi una cena gourmet in un ambiente elegante.
                                 </p>
 
-                                <h4 className="mb-40">Room Video</h4>
+                                <h4 className="mb-40">Video della Camera</h4>
                                 <div className="video__area mb-50 position-relative wow fadeInUp">
                                     <div className="video__area__image is__room__details jara-mask-2 jarallax">
                                         <img
@@ -80,7 +77,7 @@ function RoomDetails2() {
                                                 </defs>
                                                 <text>
                                                     <textPath xlinkHref="#circle-2">
-                                                        Watch Now * Watch Now * Watch Full Video *
+                                                        Guarda Ora * Guarda Ora * Guarda il Video Completo *
                                                     </textPath>
                                                 </text>
                                             </svg>
@@ -96,48 +93,47 @@ function RoomDetails2() {
                                     </div>
                                 </div>
 
-                                <span className="h4 d-block mb-30">Room Amenities</span>
+                                <span className="h4 d-block mb-30">Servizi della Camera</span>
                                 <div className="room__amenity mb-50">
                                     <div className="group__row if__room__details__two">
                                         <div className="single__item">
                                             <img src="/assets/images/icon/wifi.svg" height={30} width={36} alt="" />
-                                            <span>Free Wifi</span>
+                                            <span>Wi-Fi Gratuito</span>
                                         </div>
                                         <div className="single__item">
                                             <img src="/assets/images/icon/shower.svg" height={30} width={36} alt="" />
-                                            <span>Shower</span>
+                                            <span>Doccia</span>
                                         </div>
                                     </div>
                                     <div className="group__row if__room__details__two">
                                         <div className="single__item">
                                             <img src="/assets/images/icon/aeroplane.svg" height={30} width={36} alt="" />
-                                            <span>Airport transport</span>
+                                            <span>Trasferimento Aeroporto</span>
                                         </div>
                                         <div className="single__item">
                                             <img src="/assets/images/icon/balcony.svg" height={30} width={36} alt="" />
-                                            <span>Balcony</span>
+                                            <span>Balcone</span>
                                         </div>
                                     </div>
                                     <div className="group__row if__room__details__two">
                                         <div className="single__item">
                                             <img src="/assets/images/icon/refrigerator.svg" height={30} width={36} alt="" />
-                                            <span>Refrigerator</span>
+                                            <span>Frigorifero</span>
                                         </div>
                                         <div className="single__item">
                                             <img src="/assets/images/icon/support.svg" height={30} width={36} alt="" />
-                                            <span>24/7 Support</span>
+                                            <span>Supporto 24/7</span>
                                         </div>
                                     </div>
                                     <div className="group__row if__room__details__two">
                                         <div className="single__item">
                                             <img src="/assets/images/icon/desk.svg" height={30} width={36} alt="" />
-                                            <span>Work Desk</span>
+                                            <span>Scrivania</span>
                                         </div>
-                                        
                                     </div>
                                 </div>
 
-                                <span className="h4 d-block mb-50">Room Features</span>
+                                <span className="h4 d-block mb-50">Caratteristiche della Camera</span>
                                 <div className="room__feature mb-20">
                                     <div className="room__image__group row row-cols-md-2 row-cols-sm-1 mt-30 mb-50 gap-4 gap-md-0">
                                         <div className="room__image__item">
@@ -149,30 +145,29 @@ function RoomDetails2() {
                                     </div>
                                     <div className="group__row is__room__details">
                                         <ul className="list__item">
-                                            <li>Children and extra beds</li>
-                                            <li>Climate Control</li>
+                                            <li>Bambini e letti extra</li>
+                                            <li>Climatizzazione</li>
                                         </ul>
                                         <ul className="list__item">
-                                            <li>Art and Decor</li>
-                                            <li>Coffee/Tea Maker</li>
+                                            <li>Arte e Decorazioni</li>
+                                            <li>Macchina per Caffè/Tè</li>
                                         </ul>
                                         <ul className="list__item">
-                                            <li>High-End Bedding</li>
-                                            <li>Smart Technology</li>
+                                            <li>Biancheria di Alta Qualità</li>
+                                            <li>Tecnologia Smart</li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <p>
-                                    Our elegantly appointed rooms and suites are designed to offer the
-                                    utmost in comfort and style. Each room features modern amenities,
-                                    plush furnishings, and thoughtful touches to ensure a relaxing
-                                    stay.
+                                    Le nostre camere elegantemente arredate sono progettate per offrire
+                                    il massimo comfort e stile. Ogni stanza dispone di comfort moderni,
+                                    arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="col-lg-4 sticky-item">
+                        <div className="col-lg-5 sticky-item">
                             <div className="rts__booking__form has__background is__room__details sticky-item">
                                 <RoomDetails />
                             </div>

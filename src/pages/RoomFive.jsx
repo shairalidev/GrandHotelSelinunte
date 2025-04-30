@@ -12,8 +12,8 @@ function RoomFive() {
             <TopBar />
             <HeaderDark />
             <BreadcrumbOne
-                title="Deluxe Room"
-                description="A step up from the standard room, often with better views, more space, and additional amenities."
+                title="Camera Quintupla"
+                description="Ideale per gruppi numerosi o famiglie allargate. Cinque posti letto comodi, climatizzazione, TV, cassaforte, frigobar, veranda e bagno privato."
             />
             <RoomEight />
             <TestimonialOne className="section__padding" />

@@ -27,16 +27,15 @@ function RoomDetailsOne() {
       <div className="rts__section section__padding">
         <div className="container">
           <div className="row g-5 sticky-wrap">
-            <div className="col-xxl-8 col-xl-7">
+            <div className="col-xxl-7 col-xl-7">
               <div className="room__details">
-                <span className="h4 price">{roomPost.price}</span>
+                
                 <h2 className="room__title">{roomPost.title}</h2>
                 <div className="room__meta">
-                  <span><i className="flaticon-construction" /> 35 mq</span>
-                  <span><i className="flaticon-user" />5 Persone</span>
+                
                 </div>
                 <p>
-                  Le nostre camere e suite arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
+                  Le nostre camere  arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                   <br /><br />
                   Concediti un viaggio culinario nei nostri ristoranti in loco, dove i nostri talentuosi chef creano piatti deliziosi utilizzando ingredienti locali freschissimi. Inizia la giornata con una ricca colazione, gusta un pranzo tranquillo e assapora una cena gourmet in un ambiente elegante.
                 </p>
@@ -85,13 +84,10 @@ function RoomDetailsOne() {
                       <img src="/assets/images/icon/desk.svg" height={30} width={36} alt="" />
                       <span>Scrivania</span>
                     </div>
-                    <div className="single__item">
-                      <img src="/assets/images/icon/fitness.svg" height={30} width={36} alt="" />
-                      <span>Centro Fitness</span>
-                    </div>
+                   
                     <div className="single__item">
                       <img src="/assets/images/icon/swimming-pool.svg" height={30} width={36} alt="" />
-                      <span>Piscina</span>
+                      <span>Piscina exterior</span>
                     </div>
                   </div>
                 </div>
@@ -113,13 +109,13 @@ function RoomDetailsOne() {
                   </div>
                 </div>
                 <p>
-                  Le nostre camere e suite arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
+                  Le nostre camere arredate con eleganza sono progettate per offrire il massimo comfort e stile. Ogni camera è dotata di comfort moderni, arredi raffinati e dettagli pensati per garantire un soggiorno rilassante.
                 </p>
               </div>
             </div>
 
         {/* Booking form */}
-<div className="col-xxl-4 col-xl-5 sticky-item">
+<div className="col-xxl-5 col-xl-5 sticky-item">
   <div className="rts__booking__form has__background is__room__details sticky-item">
     <RoomDetails />
   </div>

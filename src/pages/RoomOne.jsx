@@ -12,8 +12,8 @@ function RoomOne() {
             <TopBar />
             <HeaderDark />
             <BreadcrumbOne
-                title="Deluxe Room"
-                description="A step up from the standard room, often with better views, more space, and additional amenities."
+                title="Camera Singola"
+                description="Accogliente e funzionale, ideale per viaggiatori singoli. Dotata di climatizzazione, TV, cassaforte, frigobar, veranda e bagno privato."
             />
             
             <RoomSeven />

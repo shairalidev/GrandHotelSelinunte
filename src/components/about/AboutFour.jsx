@@ -13,7 +13,7 @@ function AboutFour() {
                                     <img
                                         height={474}
                                         width={450}
-                                        src="/assets/images/index-4/about/1.webp"
+                                        src="/assets/images/about/about-1.webp"
                                         alt=""
                                     />
                                 </div>
@@ -21,7 +21,7 @@ function AboutFour() {
                                     <img
                                         width={365}
                                         height={385}
-                                        src="/assets/images/index-4/about/2.webp"
+                                        src="/assets/images/about/about-main3.webp"
                                         alt=""
                                     />
                                 </div>

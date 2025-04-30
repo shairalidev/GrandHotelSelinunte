@@ -27,6 +27,7 @@ function RoomDetails({ inline = false }) {
           }
 
           const adults = parseInt(document.getElementById("adults")?.value || "1");
+          const childrenUnder6 = parseInt(document.getElementById("children0to5")?.value || "0");
           const children = parseInt(document.getElementById("children612")?.value || "0");
           const pet = document.getElementById("pet")?.checked;
           const crib = document.getElementById("crib")?.checked;
@@ -44,11 +45,13 @@ function RoomDetails({ inline = false }) {
           Data del soggiorno: ${slotDate}
           Notti: ${selectedSlot.nights}
           Adulti: ${adults}
+          Bambini (0-5): ${childrenUnder6}
           Bambini (6–12): ${children}
           Servizi extra: ${extras.length > 0 ? extras.join(", ") : "Nessuno"}
           Prezzo totale: ${total}
-          
+
           Per favore, conferma la mia prenotazione.`;
+
           
 
           setConfirmationMessage(message);
@@ -87,19 +90,36 @@ function RoomDetails({ inline = false }) {
           </div>
 
           {/* Children */}
-          <div className="query__input wow fadeInUp">
-            <label htmlFor="children612" className="query__label">Bambino</label>
-            <div className="query__input__position">
-              <select id="children612" className="form-select">
-                {[...Array(8)].map((_, i) => (
-                  <option key={i} value={i}>{i} Bambino</option>
-                ))}
-              </select>
-              <div className="query__input__icon">
-                <i className="flaticon-user"></i>
-              </div>
-            </div>
-          </div>
+          <div className="d-flex flex-wrap gap-3">
+  <div className="query__input wow fadeInUp" style={{ flex: '1 1 48%' }}>
+    <label htmlFor="children0to5" className="query__label">Bambini 0-5</label>
+    <div className="query__input__position">
+      <select id="children0to5" className="form-select">
+        {[...Array(8)].map((_, i) => (
+          <option key={i} value={i}>{i} Bambino</option>
+        ))}
+      </select>
+      <div className="query__input__icon">
+        <i className="flaticon-user"></i>
+      </div>
+    </div>
+  </div>
+
+  <div className="query__input wow fadeInUp" style={{ flex: '1 1 48%' }}>
+    <label htmlFor="children612" className="query__label">Bambini 6-12</label>
+    <div className="query__input__position">
+      <select id="children612" className="form-select">
+        {[...Array(8)].map((_, i) => (
+          <option key={i} value={i}>{i} Bambino</option>
+        ))}
+      </select>
+      <div className="query__input__icon">
+        <i className="flaticon-user"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           <h5 className="p-0 mt-20">Servizi aggiuntivi</h5>
 

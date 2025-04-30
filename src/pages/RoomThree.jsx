@@ -12,8 +12,8 @@ function RoomThree() {
         <TopBar />
         <HeaderDark />
         <BreadcrumbOne 
-            title="Deluxe Room"
-            description="A step up from the standard room, often with better views, more space, and additional amenities."
+            title="Camera Tripla"
+            description="Ideale per piccoli gruppi o famiglie. Dotata di tre comodi letti, climatizzazione, TV, cassaforte, frigobar, veranda e bagno privato."
         />
         <RoomEight />
         <TestimonialOne className="section__padding" />

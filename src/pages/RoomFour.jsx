@@ -12,8 +12,8 @@ function RoomFour() {
             <TopBar />
             <HeaderDark />
             <BreadcrumbOne
-                title="Deluxe Room"
-                description="A step up from the standard room, often with better views, more space, and additional amenities."
+                title="Camera Quadrupla"
+                description="Perfetta per famiglie o gruppi, con quattro posti letto comodi, climatizzazione, TV, cassaforte, frigobar, veranda e bagno privato."
             />
             <RoomNine />
             <TestimonialOne className="section__padding" />

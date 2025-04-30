@@ -43,10 +43,10 @@ function FacilitiesSeven() {
                                                     <img src="/assets/images/icon/bed.svg" alt="" />
                                                 </div>
                                                 <Link to="#">
-                                                    <h6 className="card-title h6 mb-15">Camere e Suite</h6>
+                                                    <h6 className="card-title h6 mb-15">Camere</h6>
                                                 </Link>
                                                 <p className="card-text">
-                                                    Tipologie varie di camere, dalle standard alle suite di lusso,
+                                                    Tipologie varie di camere, dalle standard alle di lusso,
                                                     dotate di tutti i comfort essenziali come letti.
                                                 </p>
                                             </div>
@@ -93,7 +93,7 @@ function FacilitiesSeven() {
                                     height={765}
                                     width={605}
                                     className="jarallax-img"
-                                    src="/assets/images/index-3/facility.webp"
+                                    src="/assets/images/index-3/2.webp"
                                     alt=""
                                 />
                             </div>

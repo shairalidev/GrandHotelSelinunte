@@ -55,7 +55,7 @@ function TestimonialOne() {
                   <div className="testimonial__item__content">
                     <div className="author__icon">
                       <img
-                        src="/assets/images/author/author-2x.webp"
+                        src="/assets/images/author/user.png"
                         alt=""
                       />
                     </div>
@@ -69,17 +69,14 @@ function TestimonialOne() {
                           <i className="flaticon-star-sharp-half-stroke" />
                         </div>
                         <span className="slider__text d-block">
-                          Scegliere il Grand Hotel Selinunte è stata una delle
-                          migliori decisioni che abbiamo mai preso. Si sono
-                          dimostrati un partner affidabile e innovativo, sempre
-                          pronti ad affrontare nuove sfide con competenza. Il
-                          loro impegno nel fornire soluzioni su misura è
-                          esemplare.
+                        Ottima esperienza, abbiamo trascorso questi tre giorni di pasqua e ci siamo trovati benissimo.
+                         L hotel è molto carino l animazione molto bravi sia i piccoli Ke noi grandi ci siamo divertiti.
+                          I ragazzi del bar davvero molto gentili il cibo ottimo.torneremo presto
                         </span>
                         <div className="slider__author__info">
                           <div className="slider__author__info__content">
-                            <h6 className="mb-0">Sarah Martinez</h6>
-                            <span>COO di Apex Solutions</span>
+                            <h6 className="mb-0">Denise Paparone</h6>
+                            
                           </div>
                         </div>
                       </div>
@@ -90,7 +87,7 @@ function TestimonialOne() {
                 <SwiperSlide>
                   <div className="testimonial__item__content">
                     <div className="author__icon">
-                      <img src="/assets/images/author/author-4.webp" alt="" />
+                      <img src="/assets/images/author/user.png" alt="" />
                     </div>
                     <div className="testimonial__content">
                       <div className="single__slider__item">
@@ -102,17 +99,15 @@ function TestimonialOne() {
                           <i className="flaticon-star-sharp-half-stroke" />
                         </div>
                         <span className="slider__text d-block">
-                          Scegliere il Grand Hotel Selinunte è stata una delle
-                          migliori decisioni che abbiamo mai preso. Si sono
-                          dimostrati un partner affidabile e innovativo, sempre
-                          pronti ad affrontare nuove sfide con competenza. Il
-                          loro impegno nel fornire soluzioni su misura è
-                          esemplare.
+                        Io e mio padre siamo ospiti fissi di questo meraviglioso hotel, che anno dopo anno, migliora sempre di più.
+                          Un grande abbraccio a tutto lo staff,
+                          Cucina strepitosa e buonissima.
+                          In particolare grazie ai ragazzi dell'animazione e, ai baristi super professionali e sorridenti, sono l'arma in più.
                         </span>
                         <div className="slider__author__info">
                           <div className="slider__author__info__content">
-                            <h6 className="mb-0">Sarah Martinez</h6>
-                            <span>COO di Apex Solutions</span>
+                            <h6 className="mb-0">Giuseppe Monteleone</h6>
+                            
                           </div>
                         </div>
                       </div>

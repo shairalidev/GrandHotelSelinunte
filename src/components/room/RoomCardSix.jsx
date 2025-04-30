@@ -13,34 +13,34 @@ function RoomCardSix(props) {
                                 src={`assets/images/pages/room/${roomImage}`}
                                 width={645}
                                 height={438}
-                                alt="room card"
+                                alt="scheda camera"
                             />
                         </Link>
                     </div>
                 </div>
                 <div className="room__card__meta">
                     <Link to={`/room/${roomID}`} className="room__card__title h4">
-                        {roomTitle ? roomTitle : 'Executive Room'}
+                        {roomTitle ? roomTitle : 'Camera Executive'}
                     </Link>
                     <div className="room__card__meta__info">
                         <span>
                             <i className="flaticon-construction" />
-                            Size: 35 sqm
+                            Dimensione: 35 mq
                         </span>
                         <span>
                             <i className="flaticon-user" />
-                            Person: 5 Person
+                            Persone: 5
                         </span>
                     </div>
                     <p className="font-sm">
-                        Our rooms offer a harmonious blend of comfort and elegance,
-                        designed to provide an exceptional stay for every guest.
+                        Le nostre camere offrono un mix armonioso di comfort ed eleganza,
+                        progettate per garantire un soggiorno eccezionale a ogni ospite.
                     </p>
                     <div className="room__price__tag">
-                        <span className="h5 d-block">{roomPrice ? roomPrice : '120$'}</span>
+                        <span className="h5 d-block">{roomPrice ? roomPrice : '120€'}</span>
                     </div>
                     <Link to={`/room/${roomID}`} className="room__card__link">
-                        Discover More
+                        Scopri di più
                     </Link>
                 </div>
             </div>
@@ -52,34 +52,34 @@ function RoomCardSix(props) {
                                 src={`assets/images/pages/room/${roomImage}`}
                                 width={645}
                                 height={438}
-                                alt="room card"
+                                alt="scheda camera"
                             />
                         </Link>
                     </div>
                 </div>
                 <div className="room__card__meta">
                     <Link to={`/room/${roomID}`} className="room__card__title h4">
-                        {roomTitle ? roomTitle : 'Single Room'}
+                        {roomTitle ? roomTitle : 'Camera Singola'}
                     </Link>
                     <div className="room__card__meta__info">
                         <span>
                             <i className="flaticon-construction" />
-                            Size: 35 sqm
+                            Dimensione: 35 mq
                         </span>
                         <span>
                             <i className="flaticon-user" />
-                            Person: 5 Person
+                            Persone: 5
                         </span>
                     </div>
                     <p className="font-sm">
-                        Also known as a Classic Room or Single Room, this is the most
-                        basic type of room, usually featuring essential amenities.
+                        Conosciuta anche come Camera Classica o Singola, questa è la tipologia
+                        più essenziale, generalmente dotata dei comfort di base.
                     </p>
                     <div className="room__price__tag">
-                        <span className="h5 d-block">{roomPrice ? roomPrice : '140$'}</span>
+                        <span className="h5 d-block">{roomPrice ? roomPrice : '140€'}</span>
                     </div>
                     <Link to={`/room/${roomID}`} className="room__card__link">
-                        Discover More
+                        Scopri di più
                     </Link>
                 </div>
             </div>

@@ -21,7 +21,7 @@ function ServiceOne() {
 
   return (
     <>
-      {/* our service */}
+      {/* nostri servizi */}
       <div className="rts__section service is__home__three has__background has__shape">
         <div className="section__shape wow fadeInRight" data-wow-delay=".5s">
           <img src="/assets/images/index-3/service/sec-bg.svg" alt="" />
@@ -33,12 +33,12 @@ function ServiceOne() {
                 I Nostri Servizi
               </span>
               <h2 className="content__title h2 lh-1 wow fadeInUp">
-                I Nostri Servizi
+                Cosa Offriamo al Grand Hotel Selinunte
               </h2>
             </div>
           </div>
           <div className="row">
-            {/* single service item */}
+            {/* piscina e idromassaggio */}
             <div className="single__service__item if__is__default">
               <div className="service__thumb jarallax">
                 <img
@@ -46,23 +46,21 @@ function ServiceOne() {
                   src="/assets/images/index-3/service/1.webp"
                   width={605}
                   height={535}
-                  alt=""
+                  alt="piscina"
                 />
               </div>
               <div className="service__content">
                 <div className="section__topbar">
                   <span className="h6 subtitle__icon__five d-block wow fadeInUp">
-                    Spa &amp; Benessere
+                    Piscina & Idromassaggio
                   </span>
                   <h2 className="content__title h3 lh-1 wow fadeInUp ">
-                    Spa &amp; Benessere
+                    Piscina all’aperto con zona bambini
                   </h2>
                 </div>
                 <p className="font-sm mt-30 wow fadeInUp">
-                  Nei nostri servizi di Fitness &amp; Yoga ci dedichiamo ad aiutarti a
-                  raggiungere i tuoi obiettivi di salute e benessere. Il nostro
-                  programma completo offre una varietà di corsi adatti a tutti i
-                  livelli, dai principianti ai praticanti avanzati.
+                  Ampia piscina all'aperto con idromassaggio, area dedicata ai bambini,
+                  lettini e gazebo per momenti di relax immersi nella natura.
                 </p>
                 <Link
                   to="#"
@@ -73,9 +71,8 @@ function ServiceOne() {
                 </Link>
               </div>
             </div>
-            {/* single service item end */}
 
-            {/* single service item */}
+            {/* spiaggia attrezzata */}
             <div className="single__service__item if__is__reverse">
               <div className="service__thumb jarallax">
                 <img
@@ -83,23 +80,21 @@ function ServiceOne() {
                   src="/assets/images/index-3/service/2.webp"
                   width={605}
                   height={535}
-                  alt="service"
+                  alt="spiaggia"
                 />
               </div>
               <div className="service__content">
                 <div className="section__topbar">
                   <span className="h6 subtitle__icon__five d-block wow fadeInUp">
-                    Fuga Romantica
+                    Spiaggia & Navetta
                   </span>
                   <h2 className="content__title h3 lh-1 wow fadeInUp ">
-                    Fuga Romantica
+                    Spiaggia attrezzata nella Riserva del Belice
                   </h2>
                 </div>
                 <p className="font-sm mt-30 wow fadeInUp">
-                  Nei nostri servizi di Fitness &amp; Yoga ci dedichiamo ad aiutarti a
-                  raggiungere i tuoi obiettivi di salute e benessere. Il nostro
-                  programma completo offre una varietà di corsi adatti a tutti i
-                  livelli, dai principianti ai praticanti avanzati.
+                  Goditi la spiaggia privata immersa nella riserva naturale, raggiungibile
+                  con servizio navetta gratuito. Ombrelloni, lettini e relax garantiti.
                 </p>
                 <Link
                   to="#"
@@ -110,11 +105,78 @@ function ServiceOne() {
                 </Link>
               </div>
             </div>
-            {/* single service item end */}
+
+            {/* terrazza panoramica */}
+            <div className="single__service__item if__is__default">
+              <div className="service__thumb jarallax">
+                <img
+                  className="jarallax-img"
+                  src="/assets/images/index-3/service/3.webp"
+                  width={605}
+                  height={535}
+                  alt="terrazza"
+                />
+              </div>
+              <div className="service__content">
+                <div className="section__topbar">
+                  <span className="h6 subtitle__icon__five d-block wow fadeInUp">
+                    Eventi & Relax
+                  </span>
+                  <h2 className="content__title h3 lh-1 wow fadeInUp ">
+                    Terrazza panoramica coperta
+                  </h2>
+                </div>
+                <p className="font-sm mt-30 wow fadeInUp">
+                  Spazio perfetto per feste, aperitivi, serate musicali e spettacoli
+                  d’animazione con vista mare mozzafiato.
+                </p>
+                <Link
+                  to="#"
+                  className="underline__style wow fadeInUp"
+                  data-wow-delay=".4s"
+                >
+                  Scopri di più
+                </Link>
+              </div>
+            </div>
+
+            {/* miniclub bambini */}
+            <div className="single__service__item if__is__reverse">
+              <div className="service__thumb jarallax">
+                <img
+                  className="jarallax-img"
+                  src="/assets/images/index-3/service/4.webp"
+                  width={605}
+                  height={535}
+                  alt="miniclub"
+                />
+              </div>
+              <div className="service__content">
+                <div className="section__topbar">
+                  <span className="h6 subtitle__icon__five d-block wow fadeInUp">
+                    Miniclub Bambini
+                  </span>
+                  <h2 className="content__title h3 lh-1 wow fadeInUp ">
+                    Area giochi e animazione
+                  </h2>
+                </div>
+                <p className="font-sm mt-30 wow fadeInUp">
+                  Spazio sicuro e attrezzato per il divertimento dei più piccoli, con
+                  animatori e attività pensate per ogni età.
+                </p>
+                <Link
+                  to="#"
+                  className="underline__style wow fadeInUp"
+                  data-wow-delay=".4s"
+                >
+                  Scopri di più
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* our service end */}
+      {/* fine servizi */}
     </>
   );
 }
