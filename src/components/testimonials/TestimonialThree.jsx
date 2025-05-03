@@ -56,7 +56,7 @@ function TestimonialThree({ className }) {
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
-                                                <i className="flaticon-star-sharp-half-stroke" />
+                                                <i className="flaticon-star " />
                                             </div>
                                             <span className="slider__text d-block">
                                             Ottima esperienza, abbiamo trascorso questi tre giorni di pasqua e ci siamo trovati benissimo.
@@ -82,7 +82,7 @@ function TestimonialThree({ className }) {
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
-                                                <i className="flaticon-star-sharp-half-stroke" />
+                                                <i className="flaticon-star " />
                                             </div>
                                             <span className="slider__text d-block">
                                             Io e mio padre siamo ospiti fissi di questo meraviglioso hotel, che anno dopo anno, migliora sempre di più.
@@ -109,7 +109,7 @@ function TestimonialThree({ className }) {
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
                                                 <i className="flaticon-star" />
-                                                <i className="flaticon-star-sharp-half-stroke" />
+                                                <i className="flaticon-star " />
                                             </div>
                                             <span className="slider__text d-block">
                                             Una bellissima esperienza buono il servizio è anche il cibo sono buoni di molte varietà e anche per celiaci veramente cortesi e poi ottimo l'intrattenimento un ragazzo eccezionale di nome vinzent. E brave le animatrici complimenti
@@ -125,6 +125,107 @@ function TestimonialThree({ className }) {
                                             </div>
                                         </div>
                                     </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="single__slider__item is__home ">
+                                            <div className="slider__rating mb-30">
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star " />
+                                            </div>
+                                            <span className="slider__text d-block">
+                                            Ci sono andato per far visita e ho trovato pulizia, ho dormito bene, ho mangiato bene e ho scoperto che tutti mi rispettavano molto. </span>
+                                            <div className="slider__author__info">
+                                                <div className="slider__author__info__image">
+                                                    <img src="/assets/images/author/user.png" alt="" />
+                                                </div>
+                                                <div className="slider__author__info__content">
+                                                    <h6 className="mb-0">Muhammad Jabbar Khan</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+
+                                    <SwiperSlide>
+                                        <div className="single__slider__item is__home ">
+                                            <div className="slider__rating mb-30">
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star " />
+                                            </div>
+                                            <span className="slider__text d-block">
+                                            Posto da consigliare, adatto alle famiglia. Servizi ottimi e animazione Kama Club fantastica!! (Dennis, Carla, Giada, Aura). Ottimi anche i ragazzi del bar Mike e Rachele. Ottima vacanza!! </span>
+                                            <div className="slider__author__info">
+                                                <div className="slider__author__info__image">
+                                                    <img src="/assets/images/author/user.png" alt="" />
+                                                </div>
+                                                <div className="slider__author__info__content">
+                                                    <h6 className="mb-0">Maria</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="single__slider__item is__home ">
+                                            <div className="slider__rating mb-30">
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star " />
+                                            </div>
+                                            <span className="slider__text d-block">
+                                            Esperienza fantastica!
+                                            Un grazie alla KAMA CLUB.
+                                            Dennis, Mike, Rachele, Carla, Aura, Giada.
+                                            Ristorante super.
+                                            Complimenti alla cucina e alla reception.
+                                            Camere pulite e piscina perfetta.
+                                            </span>
+                                            <div className="slider__author__info">
+                                                <div className="slider__author__info__image">
+                                                    <img src="/assets/images/author/user.png" alt="" />
+                                                </div>
+                                                <div className="slider__author__info__content">
+                                                    <h6 className="mb-0">Carmelo Gulino</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="single__slider__item is__home ">
+                                            <div className="slider__rating mb-30">
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star" />
+                                                <i className="flaticon-star " />
+                                            </div>
+                                            <span className="slider__text d-block">
+                                            Magari le stanze e il bar avrebbero bisogno di un ammodernamento, ma il personale è gentile e disponibile, la cucina molto buona, pronti e veloci a risolvere qualsiasi richiesta e/o problema. Le bimbe hanno passato un ottimo carnevale con un'animazione super. Nessuno è perfetto, ma ci siamo comunque trovati bene, per cui 5 stelle se le merita.
+                                            </span>
+                                            <div className="slider__author__info">
+                                                <div className="slider__author__info__image">
+                                                    <img src="/assets/images/author/user.png" alt="" />
+                                                </div>
+                                                <div className="slider__author__info__content">
+                                                    <h6 className="mb-0">tatanka72</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
                                 </div>
                             </Swiper>
                         </div>
