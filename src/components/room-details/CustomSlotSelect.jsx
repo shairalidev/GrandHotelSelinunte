@@ -94,6 +94,7 @@ function CustomSlotSelect({ slots, onSelect, required }) {
           <input
             type="text"
             placeholder="Search slot..."
+            color='black'
             className="form-control"
             style={{
               margin: '8px',

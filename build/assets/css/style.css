@@ -12204,7 +12204,7 @@ picture.jarallax-img img {
   border: 0;
   z-index: 1;
   cursor: pointer;
-  color: var(--rts-para);
+  text-decoration: bold;
   background-color: transparent;
 }
 
