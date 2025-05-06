@@ -117,15 +117,36 @@ function FooterOne() {
                                     Copyright © {new Date().getFullYear()} Grand Hotel Selinunte. Tutti i diritti riservati.
                                 </p>
                                 <div className="footer__social__link">
-                                    <Link to="https://www.facebook.com/GHSSelinunte/" aria-label="footer__social" className="link__item">
-                                        Facebook
-                                    </Link>
-                                    <Link to="#" aria-label="footer__social" className="link__item">
-                                        Linkedin
-                                    </Link>
-                                    <Link to="#" aria-label="footer__social" className="link__item">
-                                        Twitter
-                                    </Link>
+                                <a
+  href="https://www.facebook.com/GHSSelinunte/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="footer__social"
+  className="link__item"
+>
+  Facebook
+</a>
+
+                                    <a
+  href="https://api.whatsapp.com/send?phone=393288170176"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="footer__social"
+  className="link__item"
+>
+  Whatsapp
+</a>
+
+<a
+  href="https://www.instagram.com/grand_hotel_selinunte/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="footer__social"
+  className="link__item"
+>
+  Instagram
+</a>
+
                                 </div>
                             </div>
                         </div>
