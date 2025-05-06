@@ -38,7 +38,7 @@ function BannerOne() {
                                             <span className="h6 subtitle__icon">
                                                 Benvenuti nel Nostro Hotel
                                             </span>
-                                            <h1>Comfort ed eleganza nel cuore di &amp; Selinunte</h1>
+                                            <h1>Comfort ed eleganza nel cuore di Selinunte</h1>
                                             <p className="sub__text">
                                                 Scegliere il Grand Hotel Selinunte è stata una delle migliori decisioni
                                                 che abbiamo mai preso. Si sono dimostrati un partner affidabile e innovativo.

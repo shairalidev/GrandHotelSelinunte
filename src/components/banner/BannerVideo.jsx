@@ -26,7 +26,7 @@ function BannerVideo() {
                                             <div className="swiper-slide">
                                                 <div className="video__text__slider__item">
                                                     <h1 className="video__text__slider__title">
-                                                    Comfort ed eleganza nel cuore di  &amp; Selinunte
+                                                    Comfort ed eleganza nel cuore di Selinunte
                                                     </h1>
                                                 </div>
                                             </div>
