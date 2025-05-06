@@ -8,14 +8,14 @@ import HeaderDark from '../components/header/HeaderDark'
 function Contact() {
   return (
     <div>
-        <TopBar />
-        <HeaderDark />
-        <BreadcrumbOne 
-            title="Contact Us" 
-            description="Whether you have questions, need assistance, or simply want to share."
-        />
-        <ContactOne />
-        <FooterOne />
+      <TopBar />
+      <HeaderDark />
+      <BreadcrumbOne 
+        title="Contattaci" 
+        description="Che tu abbia domande, bisogno di assistenza o semplicemente voglia condividere qualcosa."
+      />
+      <ContactOne />
+      <FooterOne />
     </div>
   )
 }
