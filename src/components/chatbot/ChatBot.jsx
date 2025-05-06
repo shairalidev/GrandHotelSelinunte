@@ -140,7 +140,7 @@ Standard Rooms
 •	4 Triple rooms
 •	15 Quadruple rooms
 •	1 Quintuple room
-Superior Rooms
+Quintuple Rooms
 •	20 Double/Queen rooms
 •	5 Triple rooms
 •	10 Quadruple rooms

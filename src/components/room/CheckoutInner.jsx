@@ -427,7 +427,7 @@ function CheckoutInner() {
                                                                     name="hnumber"
                                                                     className="form-control-mod"
                                                                     type="text"
-                                                                    placeholder="Apartment, suite, unit etc. (optional)"
+                                                                    placeholder="Apartment, unit etc. (optional)"
                                                                 />
                                                             </div>
                                                         </div>

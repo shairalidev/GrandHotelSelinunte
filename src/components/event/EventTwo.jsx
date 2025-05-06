@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 
 function EventTwo() {
@@ -24,26 +24,11 @@ function EventTwo() {
                             </div>
                             <div className="single__event__meta">
                                 <h2 className="wow fadeInUp mb-20">
-                                    Serate in Terrazza: Musica dal Vivo & Aperitivi al Tramonto
+                                    Eventi Speciali sulla Terrazza Panoramica
                                 </h2>
                                 <p className="font-sm wow fadeInUp">
-                                    Ogni settimana, il Grand Hotel Selinunte ospita eventi speciali sulla nostra terrazza panoramica vista mare:
-                                    aperitivi al tramonto, musica dal vivo, animazione per tutta la famiglia e spettacoli sotto le stelle.
+                                    Durante il soggiorno al Grand Hotel Selinunte, gli ospiti possono godere di attività di animazione per adulti e bambini, come giochi, spettacoli e momenti di relax. Inoltre, offriamo la possibilità di organizzare eventi privati e celebrazioni speciali sulla nostra terrazza panoramica vista mare, ideale per matrimoni, aperitivi, spettacoli e altre occasioni. 
                                 </p>
-                                <div className="event__info mt-20 wow fadeInUp">
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">300+</span>
-                                        <p>Ospiti a Evento</p>
-                                    </div>
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">10+</span>
-                                        <p>Serate Settimanali</p>
-                                    </div>
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">15+</span>
-                                        <p>Artisti & Musicisti</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -59,26 +44,11 @@ function EventTwo() {
                             </div>
                             <div className="single__event__meta">
                                 <h2 className="wow fadeInUp mb-20">
-                                    Family Day: Giochi, Miniclub e Spettacoli per Bambini
+                                    Family Fun: Miniclub e Attività per Bambini
                                 </h2>
                                 <p className="font-sm wow fadeInUp">
-                                    Un'intera giornata dedicata ai più piccoli: attività di miniclub, baby dance, spettacoli teatrali e giochi all’aperto.
-                                    Mentre i bambini si divertono in sicurezza, i genitori possono rilassarsi e godersi i servizi dell’hotel.
+                                    Al Grand Hotel Selinunte, i più piccoli possono divertirsi con il nostro miniclub, giochi all’aperto, baby dance, e spettacoli teatrali. I genitori, nel frattempo, possono godersi la piscina, la spiaggia attrezzata, e il relax in uno dei nostri spazi comuni. Ogni attività è pensata per offrire intrattenimento sicuro e divertente per tutta la famiglia.
                                 </p>
-                                <div className="event__info mt-20 wow fadeInUp">
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">150+</span>
-                                        <p>Bambini Coinvolti</p>
-                                    </div>
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">20+</span>
-                                        <p>Animatori</p>
-                                    </div>
-                                    <div className="event__info__single">
-                                        <span className="h5 d-block">8+</span>
-                                        <p>Attività Diverse</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

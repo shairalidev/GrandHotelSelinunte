@@ -80,7 +80,7 @@ function FooterOne() {
                                 <ul>
                                     <li>Reception 24/7</li>
                                     <li>Parcheggio</li>
-                                    <li>Servizio in Camera</li>
+                                    <li>Ambiente tranquillo</li>
                                     <li>Wi-Fi Gratuito</li>
                                     <li>Servizio Concierge</li>
                                 </ul>

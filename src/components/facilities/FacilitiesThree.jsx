@@ -55,10 +55,10 @@ function FacilitiesThree() {
                                                     <img src="/assets/images/icon/bed.svg" alt="" />
                                                 </div>
                                                 <Link to="#">
-                                                    <h6 className="card-title h6 mb-15">Rooms and Suites</h6>
+                                                    <h6 className="card-title h6 mb-15">Rooms </h6>
                                                 </Link>
                                                 <p className="card-text">
-                                                    Varied types of rooms, from standard to luxury suites,
+                                                    Varied types of rooms, from standard to luxury,
                                                     equipped with essentials like beds.
                                                 </p>
                                             </div>
@@ -75,7 +75,7 @@ function FacilitiesThree() {
                                                 </Link>
                                                 <p className="card-text">
                                                     On-site security personnel and best surveillance. from
-                                                    standard to luxury suites,Secure storage for valuables.
+                                                    standard to luxury,Secure storage for valuables.
                                                 </p>
                                             </div>
                                         </div>

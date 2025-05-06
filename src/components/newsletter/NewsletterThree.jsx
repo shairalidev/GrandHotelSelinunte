@@ -10,7 +10,7 @@ function NewsletterThree() {
                         <div className="col-lg-6">
                             <div className="event__newsletter__text">
                                 <h2 className="mb-0">
-                                    Siamo qui per aiutarti. Contattaci oggi per informazioni o prenotazioni.
+                                contattaci per organizzare il tuo evento privato
                                 </h2>
                             </div>
                         </div>

@@ -22,7 +22,7 @@ function FooterTwo() {
                                 <span className="widget__title">Quick Links</span>
                                 <ul>
                                     <li>
-                                        <Link to="#">Rooms &amp; Suites</Link>
+                                        <Link to="#">Rooms </Link>
                                     </li>
                                     <li>
                                         <Link to="#">Dining</Link>

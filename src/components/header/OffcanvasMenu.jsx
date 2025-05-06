@@ -12,7 +12,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
         <div className={`offcanvas offcanvas-start ${isOpen ? "show" : ""}`} style={{ visibility: isOpen ? "visible" : "hidden" }}>
             <div className="rts__btstrp__offcanvase">
                 <div className="offcanvase__wrapper">
-                    {/* Left Side - Mobile Menu */}
+                    {/* Mobile Menu */}
                     <div className="left__side mobile__menu">
                         <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Chiudi"></button>
                         <div className="offcanvase__top">
@@ -30,12 +30,9 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                 <nav className="mobile__menu__nav">
                                     <ul className="list-unstyled" style={{ color: "#fff" }}>
                                         <li className="slide active">
-                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/home">
-                                                Home (Hotel Seaside)
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/" onClick={onClose}>
+                                                Home
                                             </Link>
-                                        </li>
-                                        <li className="slide">
-                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/about">Chi siamo</Link>
                                         </li>
                                         <li className={`slide has__children ${activeMenu === 2 ? "active" : ""}`}>
                                             <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(2)}>
@@ -43,29 +40,93 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                                 <span className="toggle" style={{ color: "#fff" }} />
                                             </Link>
                                             <ul className="slide__menu" style={{ display: activeMenu === 2 ? "block" : "none", color: "#fff" }}>
-                                                <li><Link to="/room-one">Camera Uno</Link></li>
-                                                <li><Link to="/room-two">Camera Due</Link></li>
-                                                <li><Link to="/room-three">Camera Tre</Link></li>
-                                                <li><Link to="/room-four">Camera Quattro</Link></li>
-                                                <li><Link to="/room-details-1">Dettagli Camera Uno</Link></li>
-                                                <li><Link to="/room-details-2">Dettagli Camera Due</Link></li>
+                                                <li className="has__children">
+                                                    <ul className="slide__menu" style={{ display: activeMenu === "type" ? "block" : "none", color: "#fff" }}>
+                                                        <li>
+                                                            <Link to="/room-one" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Camera singola
+                                                            </Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/room-two" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Camera matrimoniale
+                                                            </Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/room-three" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Camera tripla
+                                                            </Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/room-four" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Camera quadrupla
+                                                            </Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/room-five" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Camera quintupla
+                                                            </Link>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li className="has__children">
+                                                    <ul className="slide__menu" style={{ display: activeMenu === "details" ? "block" : "none", color: "#fff" }}>
+                                                        <li>
+                                                            <Link to="/room/1" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Dettagli Camera 1
+                                                            </Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/room/2" style={{ color: "#fff" }} onClick={onClose}>
+                                                                Dettagli Camera 2
+                                                            </Link>
+                                                        </li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
                                             <Link className="slide__menu__item" style={{ color: "#fff" }} to="#" onClick={() => toggleMenu(4)}>
                                                 Pagine
-                                                <span className="toggle" />
+                                                <span className="toggle" style={{ color: "#fff" }} />
                                             </Link>
                                             <ul className="slide__menu" style={{ display: activeMenu === 4 ? "block" : "none", color: "#fff" }}>
-                                                <li><Link to="/restaurant">Ristorante</Link></li>
-                                                <li><Link to="/gallery">Galleria</Link></li>
-                                                <li><Link to="/service">Servizi</Link></li>
-                                                <li><Link to="/event">Eventi</Link></li>
-                                                <li><Link to="/activities">Attività</Link></li>
+                                                <li>
+                                                    <Link to="/chat" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Assistenza via chat
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/about" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Chi Siamo
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/gallery" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Galleria
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/service" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Servizi
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/event" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Eventi
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/activities" style={{ color: "#fff" }} onClick={onClose}>
+                                                        Attività
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li className="slide">
-                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/contact">Contattaci</Link>
+                                            <Link className="slide__menu__item" style={{ color: "#fff" }} to="/contact" onClick={onClose}>
+                                                Contatto
+                                            </Link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -97,59 +158,87 @@ function OffcanvasMenu({ isOpen, onClose }) {
                         </div>
                     </div>
 
-                    {/* Right Side - Desktop Menu */}
+                    {/* Desktop Menu */}
                     <div className="right__side desktop__menu">
                         <button type="button" className="btn-close btn-close-white" onClick={onClose} aria-label="Chiudi"></button>
                         <div className="rts__desktop__menu">
                             <nav className="desktop__menu offcanvas__menu">
                                 <ul className="list-unstyled">
                                     <li className="slide active">
-                                        <Link className="slide__menu__item" to="/home">
+                                        <Link className="slide__menu__item" to="/" onClick={onClose}>
                                             Home
                                         </Link>
                                     </li>
-                                    <li className="slide">
-                                        <Link className="slide__menu__item" to="/about">Chi siamo</Link>
-                                    </li>
                                     <li className={`slide has__children ${activeMenu === 2 ? "active" : ""}`}>
                                         <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(2)}>
-                                            Camere
-                                            <span className="toggle" />
+                                            Camere<span className="toggle" />
                                         </Link>
                                         <ul className="slide__menu" style={{ display: activeMenu === 2 ? "block" : "none" }}>
-                                            <li><Link to="/room-one">Camera Uno</Link></li>
-                                            <li><Link to="/room-two">Camera Due</Link></li>
-                                            <li><Link to="/room-three">Camera Tre</Link></li>
-                                            <li><Link to="/room-four">Camera Quattro</Link></li>
-                                            <li><Link to="/room-details-1">Dettagli Camera Uno</Link></li>
-                                            <li><Link to="/room-details-2">Dettagli Camera Due</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className={`slide has__children ${activeMenu === 3 ? "active" : ""}`}>
-                                        <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(3)}>
-                                            Blog
-                                            <span className="toggle" />
-                                        </Link>
-                                        <ul className="slide__menu" style={{ display: activeMenu === 3 ? "block" : "none" }}>
-                                            <li><Link to="/blog">Blog</Link></li>
-                                            <li><Link to="/blog/1">Dettagli Blog</Link></li>
+                                            <li className="has__children">
+                                                <Link to="#" onClick={() => toggleMenu("type")} className="slide__menu__item">
+                                                    tipologia di camera<span className="toggle" />
+                                                </Link>
+                                                <ul className="slide__menu" style={{ display: activeMenu === "type" ? "block" : "none" }}>
+                                                    <li>
+                                                        <Link to="/room-one" onClick={onClose}>
+                                                            Camera singola
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/room-two" onClick={onClose}>
+                                                            Camera matrimoniale
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/room-three" onClick={onClose}>
+                                                            Camera tripla
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/room-four" onClick={onClose}>
+                                                            Camera quadrupla
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/room-five" onClick={onClose}>
+                                                            Camera quintupla
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li className="has__children">
+                                                <ul className="slide__menu" style={{ display: activeMenu === "details" ? "block" : "none" }}>
+                                                    <li>
+                                                        <Link to="/room/1" onClick={onClose}>
+                                                            Dettagli Camera 1
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/room/2" onClick={onClose}>
+                                                            Dettagli Camera 2
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
                                         <Link className="slide__menu__item" to="#" onClick={() => toggleMenu(4)}>
-                                            Pagine
-                                            <span className="toggle" />
+                                            Pagine<span className="toggle" />
                                         </Link>
                                         <ul className="slide__menu" style={{ display: activeMenu === 4 ? "block" : "none" }}>
-                                            <li><Link to="/restaurant">Ristorante</Link></li>
-                                            <li><Link to="/gallery">Galleria</Link></li>
-                                            <li><Link to="/service">Servizi</Link></li>
-                                            <li><Link to="/event">Eventi</Link></li>
-                                            <li><Link to="/activities">Attività</Link></li>
+                                            <li><Link to="/chat" onClick={onClose}>Assistenza via chat</Link></li>
+                                            <li><Link to="/about" onClick={onClose}>Chi Siamo</Link></li>
+                                            <li><Link to="/gallery" onClick={onClose}>Galleria</Link></li>
+                                            <li><Link to="/service" onClick={onClose}>Servizi</Link></li>
+                                            <li><Link to="/event" onClick={onClose}>Eventi</Link></li>
+                                            <li><Link to="/activities" onClick={onClose}>Attività</Link></li>
                                         </ul>
                                     </li>
                                     <li className="slide">
-                                        <Link className="slide__menu__item" to="/contact">Contattaci</Link>
+                                        <Link className="slide__menu__item" to="/contact" onClick={onClose}>
+                                            Contatto
+                                        </Link>
                                     </li>
                                 </ul>
                             </nav>
@@ -158,7 +247,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default OffcanvasMenu;

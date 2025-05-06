@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { jarallax } from 'jarallax';
-import { Link } from 'react-router-dom';
 
 function AboutOne() {
     useEffect(() => {
@@ -65,13 +64,11 @@ function AboutOne() {
                             <p className="content__subtitle wow fadeInUp" data-wow-delay=".3s">
                             Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
                                 Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
-                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere, 
                                 splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
                                 garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                             </p>
-                            <Link to="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
-                                <span>Saperne di più</span>
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>

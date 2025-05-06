@@ -24,10 +24,10 @@ function GalleryFive() {
                     <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
                         <div className="section__topbar">
                         <span className="h6 subtitle__icon__three mx-auto">Galleria</span>
-                        <h2 className="section__title">La Nostra Galleria del Ristorante</h2>
+                        <h2 className="section__title">La Nostra Galleria</h2>
                         </div>
                         <p>
-                        Le nostre camere offrono un’armoniosa combinazione di comfort ed eleganza, pensata per garantire un soggiorno eccezionale a ogni ospite. Ogni camera è dotata di biancheria da letto di lusso.
+                        Le nostre camere offrono un'armoniosa combinazione di comfort ed eleganza, pensate per garantire un soggiorno eccezionale a ogni ospite. Ogni camera è dotata di biancheria da letto della migliore qualità.
                         </p>
                     </div>
                     </div>

@@ -97,10 +97,10 @@ function ServiceFive() {
                   />
                 </div>
                 <Link href="#" className="h6">
-                  Camere e Suite
+                  Camere
                 </Link>
                 <p>
-                  Dalle camere standard alle suite di lusso, offriamo personale di sicurezza in loco, videosorveglianza e cassaforte per i vostri beni di valore.
+                  Dalle camere standard alle di lusso, offriamo personale di sicurezza in loco, videosorveglianza e cassaforte per i vostri beni di valore.
                 </p>
               </div>
               {/* single service item end */}
@@ -114,7 +114,7 @@ function ServiceFive() {
                   Doccia
                 </Link>
                 <p>
-                  L’acqua calda scendeva avvolgendomi in un abbraccio rilassante mentre stavo sotto la doccia. Ogni goccia danzava sulla pelle, rigenerandomi.
+                L'acqua calda scorre costantemente, offrendoti comfort e relax immediati dopo un lungo viaggio. In quell'acqua, ogni muscolo si rilassa e ti prepari per la giornata.
                 </p>
               </div>
               {/* single service item end */}

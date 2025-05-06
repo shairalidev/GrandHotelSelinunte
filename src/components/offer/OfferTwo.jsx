@@ -50,7 +50,7 @@ function OfferTwo() {
                                     <ul className="offer__included">
                                         <li>
                                             <i className="flaticon-check-circle" /> 15% off on family
-                                            suites
+                                            
                                         </li>
                                         <li>
                                             <i className="flaticon-check-circle" /> Free meals for kids
@@ -180,7 +180,7 @@ function OfferTwo() {
                                     <ul className="offer__included">
                                         <li>
                                             <i className="flaticon-check-circle" /> A two-night stay in a
-                                            deluxe suite
+                                            deluxe
                                         </li>
                                         <li>
                                             <i className="flaticon-check-circle" /> A bottle of champagne

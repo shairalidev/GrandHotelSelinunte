@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { jarallax } from 'jarallax';
 import WOW from 'wowjs';
-import { Link } from 'react-router-dom'
 
 function ActivitiesOne() {
     useEffect(() => {
@@ -49,6 +48,7 @@ function ActivitiesOne() {
                                 </div>
                                 <p className="font-sm mt-20 wow fadeInUp">
                                     Vivi l’estate con escursioni guidate, paesaggi mozzafiato e attività all’aperto per tutti i gusti.
+                                    Sia che tu voglia rilassarti o divertirti, le nostre attività estive sono pensate per ogni esigenza.
                                 </p>
                                 <div className="activity__feature wow fadeInUp mt-20">
                                     <ul className="list-unstyled">
@@ -57,88 +57,149 @@ function ActivitiesOne() {
                                             Piscina all’Aperto
                                         </li>
                                         <li>
-                                            <img src="/assets/images/icon/home-theater.svg" alt="Cinema all’aperto" />
-                                            Cinema all’Aperto
+                                            <img src="/assets/images/icon/home-theater.svg" alt="Teatro all’aperto" />
+                                            Teatro all'Aperto
                                         </li>
                                         <li>
-                                            <img src="/assets/images/icon/tenis.svg" alt="Campi da tennis e sportivi" />
-                                            Campi da Tennis e Sportivi
+                                            <img src="/assets/images/icon/tenis.svg" alt="Campo da calcio" />
+                                            Campo da Calcio
+                                        </li>
+                                        <li>
+                                            <img src="/assets/images/icon/tenis.svg" alt="Campi da paddle" />
+                                            Campi da Paddle (Esterni e Interni)
                                         </li>
                                     </ul>
                                 </div>
-                                <Link
-                                    to="/activities"
-                                    className="underline__style wow fadeInUp"
-                                    data-wow-delay=".4s"
-                                >
-                                    Scopri di più
-                                </Link>
+                              
                             </div>
                         </div>
                         {/* singola attività fine */}
                     </div>
                 </div>
+
+                {/* Nuove attività - Sezione Selinpadel */}
                 <div className="container pt-120">
-                    <div className="row g-30">
-                        <div className="col-xl-4 col-lg-6 col-md-6">
-                            <div className="activities__image__card">
-                                <div className="activities__thumb">
+                    <div className="row">
+                        {/* First Selinpadel Section - Image Left, Text Right */}
+                        <div className="col-xl-12">
+                            <div className="single__service__item if__activities">
+                                <div className="service__thumb jarallax">
                                     <img
-                                        src="/assets/images/pages/activities/3.webp"
-                                        width={420}
-                                        height={585}
-                                        alt="Tour culturali"
+                                        className="jarallax-img"
+                                        src="/assets/images/pages/activities/selinpadel1.webp" // Replace with the actual image you provide
+                                        width={605}
+                                        height={650}
+                                        alt="Selinpadel"
                                     />
                                 </div>
-                                <div className="activities__meta">
-                                    <Link to="" className="h4 title d-block">
-                                        Tour Culturali
-                                    </Link>
-                                    <Link to="" className="theme-btn btn-style border">
-                                        <span>Scopri di più</span>
-                                    </Link>
+                                <div className="service__content">
+                                    <div className="section__content__left">
+                                        <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                                            Selinpadel - Campi da Paddle
+                                        </span>
+                                        <h2 className="content__title h2 wow fadeInUp lh-1">
+                                            Campi da Paddle Esterni e Interni
+                                        </h2>
+                                    </div>
+                                    <p className="font-sm mt-20 wow fadeInUp">
+                                        Esattamente di fronte al nostro hotel, è nata una nuova realtà chiamata “Selinpadel”. Qui potrete scoprire i campi da paddle più moderni, sia esterni che interni, dove gli appassionati possono allenarsi sia al mattino che alla sera.
+                                    </p>
+                                    <a href="https://wa.me/393514279902?text=Ciao, vorrei maggiori informazioni sui campi da paddle di Selinpadel! Questo messaggio è per riferimento del Grand Hotel Selinunte." className="theme-btn btn-style border">
+                                        <span>Contatta Selinpadel</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-xl-4 col-lg-6 col-md-6">
-                            <div className="activities__image__card">
-                                <div className="activities__thumb">
+                        {/* Second Selinpadel Section - Image Right, Text Left */}
+                        <div className="col-xl-12">
+                            <div className="single__service__item if__activities if__is__reverse">
+                                <div className="service__thumb jarallax">
                                     <img
-                                        src="/assets/images/pages/activities/4.webp"
-                                        width={420}
-                                        height={585}
-                                        alt="Tour culturali"
+                                        className="jarallax-img"
+                                        src="/assets/images/pages/activities/selinpadel2.webp" // Replace with the actual image you provide
+                                        width={605}
+                                        height={650}
+                                        alt="Selinpadel"
                                     />
                                 </div>
-                                <div className="activities__meta">
-                                    <Link to="" className="h4 title d-block">
-                                        Tour Culturali
-                                    </Link>
-                                    <Link to="" className="theme-btn btn-style border">
-                                        <span>Scopri di più</span>
-                                    </Link>
+                                <div className="service__content">
+                                    <div className="section__content__left">
+                                        <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                                            Selinpadel - Attività Sportive
+                                        </span>
+                                        <h2 className="content__title h2 wow fadeInUp lh-1">
+                                            Sport, Divertimento e Relax
+                                        </h2>
+                                    </div>
+                                    <p className="font-sm mt-20 wow fadeInUp">
+                                        Con la sua ampia offerta di attività, Selinpadel non è solo per gli amanti del paddle: tennis, calcetto e molto altro sono disponibili per tutti coloro che vogliono divertirsi in compagnia.
+                                    </p>
+                                    <a href="https://wa.me/393514279902?text=Ciao, vorrei maggiori informazioni sulle attività sportive di Selinpadel! Questo messaggio è per riferimento del Grand Hotel Selinunte." className="theme-btn btn-style border">
+                                        <span>Contatta Selinpadel</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-xl-4 col-lg-6 col-md-6">
-                            <div className="activities__image__card">
-                                <div className="activities__thumb">
+                        {/* Third Selinpadel Section - Image Left, Text Right */}
+                        <div className="col-xl-12">
+                            <div className="single__service__item if__activities">
+                                <div className="service__thumb jarallax">
                                     <img
-                                        src="/assets/images/pages/activities/5.webp"
-                                        width={420}
-                                        height={585}
-                                        alt="Tour culturali"
+                                        className="jarallax-img"
+                                        src="/assets/images/pages/activities/selinpadel3.webp" // Replace with the actual image you provide
+                                        width={605}
+                                        height={650}
+                                        alt="Selinpadel"
                                     />
                                 </div>
-                                <div className="activities__meta">
-                                    <Link to="" className="h4 title d-block">
-                                        Tour Culturali
-                                    </Link>
-                                    <Link to="" className="theme-btn btn-style border">
-                                        <span>Scopri di più</span>
-                                    </Link>
+                                <div className="service__content">
+                                    <div className="section__content__left">
+                                        <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                                            Sport e Relax al Selinpadel
+                                        </span>
+                                        <h2 className="content__title h2 wow fadeInUp lh-1">
+                                            Un’Esperienza Completa tra Sport e Relax
+                                        </h2>
+                                    </div>
+                                    <p className="font-sm mt-20 wow fadeInUp">
+                                        Un'esperienza completa tra sport e relax, per una giornata attiva e divertente, direttamente di fronte al Grand Hotel Selinunte.
+                                    </p>
+                                    <a href="https://wa.me/393514279902?text=Ciao, vorrei maggiori informazioni sull'esperienza sportiva al Selinpadel! Questo messaggio è per riferimento del Grand Hotel Selinunte." className="theme-btn btn-style border">
+                                        <span>Contatta Selinpadel</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Fourth Selinpadel Section - Image Right, Text Left */}
+                        <div className="col-xl-12">
+                            <div className="single__service__item if__activities if__is__reverse">
+                                <div className="service__thumb jarallax">
+                                    <img
+                                        className="jarallax-img"
+                                        src="/assets/images/pages/activities/selinpadel4.webp" // Replace with the actual image you provide
+                                        width={605}
+                                        height={650}
+                                        alt="Selinpadel"
+                                    />
+                                </div>
+                                <div className="service__content">
+                                    <div className="section__content__left">
+                                        <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                                            Divertimento per Tutti
+                                        </span>
+                                        <h2 className="content__title h2 wow fadeInUp lh-1">
+                                            Attività per Tutta la Famiglia
+                                        </h2>
+                                    </div>
+                                    <p className="font-sm mt-20 wow fadeInUp">
+                                        Che si tratti di una partita di paddle o una giornata di relax sulla spiaggia, il Selinpadel offre qualcosa per tutti, grandi e piccini.
+                                    </p>
+                                    <a href="https://wa.me/393514279902?text=Salve, questo è un messaggio di riferimento del Grand Hotel Selinunte. Vorrei maggiori informazioni sulle attività a Selinpadel!" className="theme-btn btn-style border">
+                                        <span>Contatta Selinpadel</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +208,7 @@ function ActivitiesOne() {
             </div>
             {/* Fine attività */}
         </>
-    )
+    );
 }
 
 export default ActivitiesOne;
