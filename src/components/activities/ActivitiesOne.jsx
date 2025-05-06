@@ -133,8 +133,7 @@ function ActivitiesOne() {
                                         </h2>
                                     </div>
                                     <p className="font-sm mt-20 wow fadeInUp">
-                                        Con la sua ampia offerta di attività, Selinpadel non è solo per gli amanti del paddle: tennis, calcetto e molto altro sono disponibili per tutti coloro che vogliono divertirsi in compagnia.
-                                    </p>
+                                    Con la sua ampia gamma di attività, Selinpadel è il posto ideale per gli amanti del paddle e delle attività sociali, perfetto per appassionati e gruppi che desiderano divertirsi e fare sport insieme.</p>
                                     <a href="https://wa.me/393514279902?text=Ciao, vorrei maggiori informazioni sulle attività sportive di Selinpadel! Questo messaggio è per riferimento del Grand Hotel Selinunte." className="theme-btn btn-style border">
                                         <span>Contatta Selinpadel</span>
                                     </a>
@@ -164,8 +163,7 @@ function ActivitiesOne() {
                                         </h2>
                                     </div>
                                     <p className="font-sm mt-20 wow fadeInUp">
-                                        Un'esperienza completa tra sport e relax, per una giornata attiva e divertente, direttamente di fronte al Grand Hotel Selinunte.
-                                    </p>
+                                    Un’esperienza completa tra sport e relax, per una giornata attiva e divertente, di fronte al Grand Hotel Selinunte. </p>
                                     <a href="https://wa.me/393514279902?text=Ciao, vorrei maggiori informazioni sull'esperienza sportiva al Selinpadel! Questo messaggio è per riferimento del Grand Hotel Selinunte." className="theme-btn btn-style border">
                                         <span>Contatta Selinpadel</span>
                                     </a>
@@ -195,8 +193,8 @@ function ActivitiesOne() {
                                         </h2>
                                     </div>
                                     <p className="font-sm mt-20 wow fadeInUp">
-                                        Che si tratti di una partita di paddle o una giornata di relax sulla spiaggia, il Selinpadel offre qualcosa per tutti, grandi e piccini.
-                                    </p>
+                                    Che tu voglia insegnare ai bambini il loro primo servizio o sfidare mamma e papà a una partita di doppio in famiglia, i campi da paddle di Selinpadel sono pensati per il divertimento e l'unione di persone di tutte le età.
+                                      </p>
                                     <a href="https://wa.me/393514279902?text=Salve, questo è un messaggio di riferimento del Grand Hotel Selinunte. Vorrei maggiori informazioni sulle attività a Selinpadel!" className="theme-btn btn-style border">
                                         <span>Contatta Selinpadel</span>
                                     </a>

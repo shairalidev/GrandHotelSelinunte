@@ -125,7 +125,7 @@ function ServiceTwo() {
                                     <h5>
                                         <Link to="/service">Romantic Getaway</Link>
                                     </h5>
-                                    <span className="d-block h4 price">100$</span>
+                                    <span className="d-block h4 price"></span>
                                 </div>
                             </div>
                         </SwiperSlide>

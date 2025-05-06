@@ -25,9 +25,9 @@ function NewsletterThree() {
                                 </div>
                                 <div className="contact__method">
                                     <span className="h6">Prenotazioni via Email</span>
-                                    <a href="mailto:booking@grandhotelselinunte.com">
+                                    <a href="mailto:ghsbooking23@gmail.com">
                                         <img src="/assets/images/icon/mail.svg" alt="email icon" />
-                                        booking@grandhotelselinunte.com
+                                        ghsbooking23@gmail.com
                                     </a>
                                 </div>
                             </div>

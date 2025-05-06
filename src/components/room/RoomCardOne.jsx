@@ -26,7 +26,7 @@ function RoomCardOne (props) {
                         <i className="flaticon-user" />2 Person
                     </span>
                 </div>
-                <span className="h4 rent mb-0 mt-15 d-block">{roomPrice ? roomPrice : '100$'}</span>
+                <span className="h4 rent mb-0 mt-15 d-block">{roomPrice ? roomPrice : ''}</span>
             </div>
         </div>
     )

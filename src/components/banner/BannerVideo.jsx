@@ -7,12 +7,13 @@ function BannerVideo() {
             <div className="rts__section banner__area is__home__video banner__height banner__center">
                 <div className="banner__video__section">
                     <div className="video__area">
-                        <video
-                            src="/assets/images/video/Moonlit.mp4"
-                            autoPlay
-                            loop
-                            muted
+                    <video
+                        src="/assets/images/video/Moonlit.mp4"
+                        autoPlay
+                        loop
+                        muted
                         />
+
                         <div className="video__area__overlay" />
                     </div>
                     <div className="container">
@@ -25,7 +26,7 @@ function BannerVideo() {
                                             <div className="swiper-slide">
                                                 <div className="video__text__slider__item">
                                                     <h1 className="video__text__slider__title">
-                                                        Soggiorno di Lusso: Comfort &amp; Eleganza Garantiti
+                                                    Comfort ed eleganza nel cuore di  &amp; Selinunte
                                                     </h1>
                                                 </div>
                                             </div>

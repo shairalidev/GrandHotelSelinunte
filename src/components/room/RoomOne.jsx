@@ -63,7 +63,7 @@ function RoomOne({ className }) {
                                     roomID={data.id}
                                     roomImage={data.image}
                                     roomTitle={data.title}
-                                    roomPrice={data.price}
+                                    roomPrice=""
                                 />
                             </SwiperSlide>
                         ))
