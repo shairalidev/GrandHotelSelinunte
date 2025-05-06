@@ -70,6 +70,8 @@ May:
 - May 18–21: 3 nights
 - May 23–25: 2 nights
 - May 25–28: 3 nights
+- May 31–June 2: 2 nights
+- May 30-June 2: 3 nights
 
 June:
 - June 1–8: 7 nights

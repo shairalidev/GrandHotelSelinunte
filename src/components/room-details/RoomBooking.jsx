@@ -37,13 +37,15 @@ export const slots = [
   */
 
   
-{ start: "2025-05-11", end: "2025-05-14", nights: 3, price: 159, description: "Dal 11 al 14 maggio 159€ a persona (3 notti)" },
-{ start: "2025-05-16", end: "2025-05-18", nights: 2, price: 119, description: "Dal 16 al 18 maggio 119€ a persona (2 notti)" },
-{ start: "2025-05-18", end: "2025-05-21", nights: 3, price: 159, description: "Dal 18 al 21 maggio 159€ a persona (3 notti)" },
-{ start: "2025-05-23", end: "2025-05-25", nights: 2, price: 119, description: "Dal 23 al 25 maggio 119€ a persona (2 notti)" },
-{ start: "2025-05-25", end: "2025-05-28", nights: 3, price: 159, description: "Dal 25 al 28 maggio 159€ a persona (3 notti)" },
+{ start: "2025-05-11", end: "2025-05-14", nights: 3, price: 159, description: "Dal 11 al 14 maggio 159€ (3 notti)" },
+{ start: "2025-05-16", end: "2025-05-18", nights: 2, price: 119, description: "Dal 16 al 18 maggio 119€ (2 notti)" },
+{ start: "2025-05-18", end: "2025-05-21", nights: 3, price: 159, description: "Dal 18 al 21 maggio 159€ (3 notti)" },
+{ start: "2025-05-23", end: "2025-05-25", nights: 2, price: 119, description: "Dal 23 al 25 maggio 119€ (2 notti)" },
+{ start: "2025-05-25", end: "2025-05-28", nights: 3, price: 159, description: "Dal 25 al 28 maggio 159€ (3 notti)" },
 
-  
+{ start: "2025-05-30", end: "2025-06-02", nights: 3, price: 240, description: "Dal 30 maggio al 2 giugno 240€ (3 notti)" },
+{ start: "2025-05-31", end: "2025-06-02", nights: 2, price: 180, description: "Dal 31 maggio al 2 giugno 180€ (2 notti)" },
+
 
    // JUNE
    { start: "2025-06-01", end: "2025-06-08", nights: 7, price: 425, description: "Dal 1 al 8 giugno 425€ (7 notti)" },
