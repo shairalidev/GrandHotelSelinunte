@@ -21,7 +21,7 @@ function AboutFive() {
                             >
                                 Benvenuti in Italia, dove il lusso incontra il comfort nel cuore di Marinella. 
                                 Da sempre ci dedichiamo a offrire un soggiorno eccezionale ai nostri ospiti, 
-                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere e suite, 
+                                unendo servizi moderni a un’eleganza senza tempo. Le nostre camere, 
                                 splendidamente arredate, offrono viste mozzafiato e sistemazioni raffinate, 
                                 garantendo un rifugio rilassante sia per viaggi di lavoro che di piacere.
                             </p>
