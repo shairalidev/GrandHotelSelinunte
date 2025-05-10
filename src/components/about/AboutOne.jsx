@@ -44,7 +44,7 @@ function AboutOne() {
                                 </div>
                                 <div className="content">
                                     <span className="h5">50+</span>
-                                    <p>Experience Staff</p>
+                                    <p>Personale di esperienza</p>
                                 </div>
                             </div>
                             <div className="image__card__image wow fadeInUp">
