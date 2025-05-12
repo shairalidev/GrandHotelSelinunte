@@ -78,8 +78,8 @@ function OfferFour() {
                                     crisp lettuce, juicy cherry tomatoes, crunchy cucumbers.
                                 </p>
                                 <div className="price__tag">
-                                    <span className="current__price h4">120$</span>
-                                    <span className="less__count font-20 h6">20$</span>
+                                    <span className="current__price h4"></span>
+                                    <span className="less__count font-20 h6"></span>
                                 </div>
                                 <Link to="/service" className="underline__style">
                                     Book Now

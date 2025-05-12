@@ -29,7 +29,7 @@ function RoomNine() {
                         {/* Load More Button */}
                         {visiblePosts < posts.length && (
                             <div className="load__more__link">
-                                <Link to="#" onClick={handleLoadMore}>Load More</Link>
+                                <Link to="#" onClick={handleLoadMore}>caricare di più</Link>
                             </div>
                         )}
                     </div>

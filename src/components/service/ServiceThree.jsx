@@ -96,7 +96,7 @@ function ServiceThree() {
                                         <h5>
                                             <Link to="/service">Spa Retreat</Link>
                                         </h5>
-                                        <span className="d-block h4 price">120$</span>
+                                        <span className="d-block h4 price"></span>
                                     </div>
                                 </div>
                             </SwiperSlide>

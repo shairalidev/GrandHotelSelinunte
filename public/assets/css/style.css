@@ -9088,7 +9088,10 @@ input:focus-visible {
 .page__hero__height.single img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
 
 @media screen and (max-width: 992px) {
   .page__hero__height {
@@ -9189,6 +9192,48 @@ input:focus-visible {
     height: 550px;
   }
 }
+.masonry-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+  grid-template-rows: repeat(2, 500px); /* exactly 2 rows */
+  gap: 24px;
+  padding: 10px;
+  max-width: 100%;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.masonry-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+/* Responsive Grid Columns */
+@media (max-width: 992px) {
+  .masonry-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .masonry-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+
 
 .room__card {
   border: 1px solid var(--rts-border);

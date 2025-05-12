@@ -18,7 +18,7 @@ function RoomCardFour(props) {
                         </Link>
                     </div>
                     <div className="room__price__tag">
-                        <span className="h6 d-block">{roomPrice ? roomPrice : '120$'}</span>
+                        <span className="h6 d-block">{roomPrice ? roomPrice : ''}</span>
                     </div>
                 </div>
                 <div className="room__card__meta">
@@ -39,7 +39,7 @@ function RoomCardFour(props) {
                         designed to provide an exceptional stay for every guest.
                     </p>
                     <Link to={`/room/${roomID}`} className="room__card__link">
-                        Discover More
+                    Scopri di più
                     </Link>
                 </div>
             </div>

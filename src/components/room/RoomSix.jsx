@@ -35,7 +35,7 @@ function RoomSix() {
                     {/* row end */}
                     {visiblePosts < posts.length && ( // Show "Load More" button only if there are more posts
                         <div className="load__more__link">
-                            <Link to="#" onClick={handleLoadMore}>Load More</Link>
+                            <Link to="#" onClick={handleLoadMore}>caricare di più</Link>
                         </div>
                     )}
                 </div>
