@@ -38,21 +38,23 @@ function TestimonialOne() {
 
           <div className="row">
             <div className="col-lg-11">
-              <Swiper
-                className="testimonial__slider overflow-hidden"
-                modules={[Navigation]}
-                direction="horizontal"
-                slidesPerView={1}
-                loop={true}
-                centeredSlides={true}
-                autoplay={{ delay: 5000 }}
-                navigation={{
-                  nextEl: '.button-next',
-                  prevEl: '.button-prev',
-                }}
-                speed={1000}
-                effect="slide"
-              >
+            <Swiper
+                  className="testimonial__slider overflow-hidden"
+                  modules={[Navigation]}
+                  direction="horizontal"
+                  slidesPerView={1}
+                  loop={false}
+                  centeredSlides={true}
+                  autoplay={{ delay: 5000 }}
+                  navigation={{
+                    nextEl: '.button-next',
+                    prevEl: '.button-prev',
+                  }}
+                  speed={1000}
+                  effect="slide"
+                  autoHeight={true} // ✅ ADD THIS
+                >
+
                 {reviews.map((rev, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="testimonial__item__content">

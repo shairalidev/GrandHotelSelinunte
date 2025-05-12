@@ -46,13 +46,13 @@ Un'ampia veranda, servizi completi e arredi moderni rendono questa camera ideale
           ]
         ]}
         features={[
-          'Cinque Letti Singoli o Combinazioni Modulari',
-          'Controllo del Clima',
-          'TV a Schermo Piatto',
-          'Macchina per Caffè/Tè',
-          'Ampio Bagno Privato',
-          'Spazi per Famiglie Numerose'
-        ]}
+            'Controllo del Clima',
+            'Biancheria di Alta Qualità',
+            'Mini Frigo',
+            'TV',
+            'Cassaforte'
+          ]}
+          
         featureImage="/assets/images/pages/room/quintupla/feature.webp"
       />
 

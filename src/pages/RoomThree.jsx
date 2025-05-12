@@ -46,13 +46,13 @@ L’arredamento moderno si combina con i servizi essenziali per garantire una pe
           ]
         ]}
         features={[
-          'Tre Letti Singoli o Matrimoniale + Singolo',
           'Controllo del Clima',
-          'TV a Schermo Piatto',
-          'Macchina per Caffè/Tè',
           'Biancheria di Alta Qualità',
-          'Vista Giardino o Interna'
+          'Mini Frigo',
+          'TV',
+          'Cassaforte'
         ]}
+        
         featureImage="/assets/images/pages/room/tripla/feature.webp"
       />
 

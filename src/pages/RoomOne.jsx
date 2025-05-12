@@ -44,13 +44,13 @@ Concediti un viaggio culinario nei nostri ristoranti in loco, dove i nostri tale
     ]
   ]}
   features={[
-    'Bambini e letti extra',
     'Controllo del Clima',
-    'Arte e Arredo',
-    'Macchina per Caffè/Tè',
     'Biancheria di Alta Qualità',
-    'Tecnologia Intelligente'
+    'Mini Frigo',
+    'TV',
+    'Cassaforte'
   ]}
+  
   featureImage="/assets/images/pages/room/r-d-5.webp"
 />
 

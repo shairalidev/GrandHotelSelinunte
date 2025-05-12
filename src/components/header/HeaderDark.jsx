@@ -61,37 +61,20 @@ function HeaderDark() {
                                                     Camere
                                                 </Link>
                                                 <ul className="submenu sub__style" role="menu">
-                                                    <li role="menuitem" className="has-child has-arrow">
-                                                        <Link to="/">tipologia di camera</Link>
-                                                        <ul className="sub__style" role="menu">
-                                                            <li role="menuitem">
-                                                                <Link to="/room-one">Camera singola</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link to="/room-two">Camera matrimoniale</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link to="/room-three">Camera tripla</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link to="/room-four">Camera quadrupla</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link to="/room-five">Camera quintupla</Link>
-                                                            </li>
-                                                            
-                                                        </ul>
+                                                    <li role="menuitem">
+                                                    <Link to="/room-one">Camera singola</Link>
                                                     </li>
-                                                    <li role="menuitem" className="has-child has-arrow">
-                                                        <Link to="/">Dettagli Camera</Link>
-                                                        <ul className="sub__style" role="menu">
-                                                            <li role="menuitem">
-                                                                <Link to="/room/1">Dettagli Camera 1</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link to="/room/2">Dettagli Camera 2</Link>
-                                                            </li>
-                                                        </ul>
+                                                    <li role="menuitem">
+                                                    <Link to="/room-two">Camera matrimoniale</Link>
+                                                    </li>
+                                                    <li role="menuitem">
+                                                    <Link to="/room-three">Camera tripla</Link>
+                                                    </li>
+                                                    <li role="menuitem">
+                                                    <Link to="/room-four">Camera quadrupla</Link>
+                                                    </li>
+                                                    <li role="menuitem">
+                                                    <Link to="/room-five">Camera quintupla</Link>
                                                     </li>
                                                 </ul>
                                             </li>

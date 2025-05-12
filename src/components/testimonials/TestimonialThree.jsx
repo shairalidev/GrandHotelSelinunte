@@ -29,7 +29,7 @@ function TestimonialThree({ className }) {
         </div>
 
         <div className="container">
-          <div className="row justify-content-center text-center mb-40">
+          <div className="row justify-content-center text-center">
             <div className="col-lg-6 wow fadeInUp">
               <div className="section__topbar is__home__two">
                 <span className="h6 subtitle__icon__three mx-auto text-white">
@@ -44,48 +44,41 @@ function TestimonialThree({ className }) {
 
           <div className="row position-relative justify-content-center">
             <div className="col-lg-10">
-              <Swiper
-                className="testimonial__slider overflow-hidden wow fadeInUp"
-                data-wow-delay=".3s"
-                modules={[Navigation]}
-                direction="horizontal"
-                slidesPerView={1}
-                loop={true}
-                centeredSlides={true}
-                autoplay={false}
-                navigation={{
-                  nextEl: '.slider-button-next',
-                  prevEl: '.slider-button-prev',
-                }}
-                speed={1000}
-                effect="slide"
-              >
+            <Swiper
+  className="testimonial__slider overflow-hidden wow fadeInUp"
+  data-wow-delay=".3s"
+  modules={[Navigation]}
+  direction="horizontal"
+  slidesPerView={1}
+  loop={false}
+  centeredSlides={true}
+  autoplay={false}
+  navigation={{
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  }}
+  speed={1000}
+  effect="slide"
+  autoHeight={true} // ✅ This line fixes the height issue
+>
+
                 {reviews.map((rev, idx) => (
-                  <SwiperSlide key={idx}>
-                    <div className="single__slider__item is__home">
-                      <div className="slider__rating mb-30">
-                        <i className="flaticon-star" />
-                        <i className="flaticon-star" />
-                        <i className="flaticon-star" />
-                        <i className="flaticon-star" />
-                        <i className="flaticon-star" />
-                      </div>
-                      <span className="slider__text d-block">
-                        {rev.text}
-                      </span>
-                      <div className="slider__author__info">
-                        <div className="slider__author__info__image">
-                          <img
-                            src="/assets/images/author/user.png"
-                            alt={rev.name}
-                          />
-                        </div>
-                        <div className="slider__author__info__content">
-                          <h6 className="mb-0">{rev.name}</h6>
-                        </div>
-                      </div>
+                  <SwiperSlide key={idx} className="single__slider__item is__home">
+                  <div className="slider__rating mb-30">
+                    {[...Array(5)].map((_, i) => (
+                      <i className="flaticon-star" key={i} />
+                    ))}
+                  </div>
+                  <span className="slider__text d-block">{rev.text}</span>
+                  <div className="slider__author__info">
+                    <div className="slider__author__info__image">
+                      <img src="/assets/images/author/user.png" alt={rev.name} />
                     </div>
-                  </SwiperSlide>
+                    <div className="slider__author__info__content">
+                      <h6 className="mb-0">{rev.name}</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>                
                 ))}
               </Swiper>
             </div>

@@ -46,13 +46,13 @@ Questa camera rappresenta la soluzione ideale per chi desidera condividere la va
           ]
         ]}
         features={[
-          'Quattro Letti Singoli o Due Letti Matrimoniali',
-          'Controllo del Clima',
-          'TV a Schermo Piatto',
-          'Macchina per Caffè/Tè',
-          'Biancheria di Alta Qualità',
-          'Ampia Veranda Privata'
-        ]}
+            'Controllo del Clima',
+            'Biancheria di Alta Qualità',
+            'Mini Frigo',
+            'TV',
+            'Cassaforte'
+          ]}
+          
         featureImage="/assets/images/pages/room/quadrupla/feature.webp"
       />
 

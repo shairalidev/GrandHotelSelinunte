@@ -28,8 +28,6 @@ function HomeDark() {
         <BannerOne />
         <AdvanceForm />
         <AboutFour />
-        <FacilitiesOne />
-        <RoomOne className="section__padding" />
         <TestimonialThree className="is__home__one" />
         <VideoOne />
         <GalleryOne />

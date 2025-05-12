@@ -46,13 +46,12 @@ Sono dotate di tutti i comfort moderni per assicurare un soggiorno rilassante e 
           ]
         ]}
         features={[
-          'Letto King Size',
-          'Controllo del Clima',
-          'TV a Schermo Piatto',
-          'Macchina per Caffè/Tè',
-          'Biancheria di Alta Qualità',
-          'Vista Giardino o Piscina'
-        ]}
+            'Controllo del Clima',
+            'Biancheria di Alta Qualità',
+            'Mini Frigo',
+            'TV',
+            'Cassaforte'
+          ]}          
         featureImage="/assets/images/pages/room/matrimoniale/feature.webp"
       />
 
