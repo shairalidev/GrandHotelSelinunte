@@ -1,14 +1,23 @@
 import React from 'react';
-// import './Modal.css';  // Add custom styles for the modal
 
 const Modal = ({ isOpen, closeModal, imageSrc }) => {
-  if (!isOpen) return null; // Don't render if the modal is closed
+  if (!isOpen) return null;
 
   return (
     <div className="modal-overlay" onClick={closeModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close-btn" onClick={closeModal}>&times;</span>
-        <img src={imageSrc} alt="Modal" className="modal-image" />
+        <div className="modal-image-wrapper">
+          <img src={imageSrc} alt="Modal" className="modal-image" />
+          <a
+            href="https://www.instagram.com/grand_hotel_selinunte/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="instagram-link"
+          >
+            Guarda su Instagram
+          </a>
+        </div>
       </div>
     </div>
   );

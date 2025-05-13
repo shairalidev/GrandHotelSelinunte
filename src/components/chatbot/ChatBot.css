@@ -116,6 +116,29 @@
     padding: 6px;
     transition: background 0.3s ease;
   }
+
+  .whatsapp-link svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .chat-input-box .whatsapp-link {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+
+  .chat-input-box .whatsapp-link:hover {
+    background-color: #128C7E;
+  }
   
   .whatsapp-link:hover {
     background-color: #128C7E;

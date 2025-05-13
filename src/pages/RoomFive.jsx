@@ -5,7 +5,6 @@ import TestimonialOne from '../components/testimonials/TestimonialOne';
 import FooterOne from '../components/footer/FooterOne';
 import HeaderDark from '../components/header/HeaderDark';
 import RoomDetailsGallery from './RoomDetailsGallery';
-import RoomNine from '../components/room/RoomNine';
 
 function RoomFive() {
   return (
@@ -56,7 +55,7 @@ Un'ampia veranda, servizi completi e arredi moderni rendono questa camera ideale
         featureImage="/assets/images/pages/room/quintupla/feature.webp"
       />
 
-      <RoomNine />
+
       <TestimonialOne className="section__padding" />
       <FooterOne />
     </div>

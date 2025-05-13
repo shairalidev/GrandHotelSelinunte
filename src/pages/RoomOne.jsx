@@ -1,7 +1,6 @@
 import React from 'react'
 import TopBar from '../components/header/TopBar'
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
-import RoomSeven from '../components/room/RoomSeven'
 import TestimonialOne from '../components/testimonials/TestimonialOne'
 import FooterOne from '../components/footer/FooterOne'
 import HeaderDark from '../components/header/HeaderDark'
@@ -53,8 +52,6 @@ Concediti un viaggio culinario nei nostri ristoranti in loco, dove i nostri tale
   
   featureImage="/assets/images/pages/room/r-d-5.webp"
 />
-
-            <RoomSeven />
             <TestimonialOne />
             <FooterOne />
         </div>

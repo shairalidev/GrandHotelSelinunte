@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { jarallax } from 'jarallax';
-import { Link } from 'react-router-dom';
 
 function ServiceOne() {
   useEffect(() => {
@@ -62,13 +61,7 @@ function ServiceOne() {
                   Ampia piscina all'aperto con idromassaggio, area dedicata ai bambini,
                   lettini e gazebo per momenti di relax immersi nella natura.
                 </p>
-                <Link
-                  to="#"
-                  className="underline__style wow fadeInUp"
-                  data-wow-delay=".4s"
-                >
-                  Scopri di più
-                </Link>
+                
               </div>
             </div>
 
@@ -96,13 +89,7 @@ function ServiceOne() {
                   Goditi la spiaggia privata immersa nella riserva naturale, raggiungibile
                   con servizio navetta gratuito. Ombrelloni, lettini e relax garantiti.
                 </p>
-                <Link
-                  to="#"
-                  className="underline__style wow fadeInUp"
-                  data-wow-delay=".4s"
-                >
-                  Scopri di più
-                </Link>
+                
               </div>
             </div>
 
@@ -130,13 +117,7 @@ function ServiceOne() {
                   Spazio perfetto per feste, aperitivi, serate musicali e spettacoli
                   d’animazione con vista mare mozzafiato.
                 </p>
-                <Link
-                  to="#"
-                  className="underline__style wow fadeInUp"
-                  data-wow-delay=".4s"
-                >
-                  Scopri di più
-                </Link>
+                
               </div>
             </div>
 
@@ -164,13 +145,7 @@ function ServiceOne() {
                   Spazio sicuro e attrezzato per il divertimento dei più piccoli, con
                   animatori e attività pensate per ogni età.
                 </p>
-                <Link
-                  to="#"
-                  className="underline__style wow fadeInUp"
-                  data-wow-delay=".4s"
-                >
-                  Scopri di più
-                </Link>
+               
               </div>
             </div>
           </div>

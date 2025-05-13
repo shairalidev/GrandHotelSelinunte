@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from '../components/header/TopBar';
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne';
-import RoomEight from '../components/room/RoomEight';
 import TestimonialOne from '../components/testimonials/TestimonialOne';
 import FooterOne from '../components/footer/FooterOne';
 import HeaderDark from '../components/header/HeaderDark';
@@ -56,7 +55,6 @@ L’arredamento moderno si combina con i servizi essenziali per garantire una pe
         featureImage="/assets/images/pages/room/tripla/feature.webp"
       />
 
-      <RoomEight />
       <TestimonialOne className="section__padding" />
       <FooterOne />
     </div>

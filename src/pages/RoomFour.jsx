@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from '../components/header/TopBar';
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne';
-import RoomNine from '../components/room/RoomNine';
 import TestimonialOne from '../components/testimonials/TestimonialOne';
 import FooterOne from '../components/footer/FooterOne';
 import HeaderDark from '../components/header/HeaderDark';
@@ -56,7 +55,7 @@ Questa camera rappresenta la soluzione ideale per chi desidera condividere la va
         featureImage="/assets/images/pages/room/quadrupla/feature.webp"
       />
 
-      <RoomNine />
+
       <TestimonialOne className="section__padding" />
       <FooterOne />
     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from '../components/header/TopBar';
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne';
-import RoomSeven from '../components/room/RoomSeven';
 import TestimonialOne from '../components/testimonials/TestimonialOne';
 import FooterOne from '../components/footer/FooterOne';
 import HeaderDark from '../components/header/HeaderDark';
@@ -55,7 +54,6 @@ Sono dotate di tutti i comfort moderni per assicurare un soggiorno rilassante e 
         featureImage="/assets/images/pages/room/matrimoniale/feature.webp"
       />
 
-      <RoomSeven />
       <TestimonialOne />
       <FooterOne />
     </div>

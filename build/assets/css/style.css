@@ -40,6 +40,10 @@ All CSS Structure Follow this Order
 29. form
 30. footer
 -------------*/
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
   /* Text Color */
   --rts-para: #65676B;
@@ -14001,6 +14005,30 @@ picture.jarallax-img img {
   width: 100%;
 }
 
+.modal-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.instagram-link {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #e1306c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.instagram-link:hover {
+  background-color: #c62e64;
+}
+
+
 .gallery__link {
   position: relative;
   display: block;
@@ -14289,13 +14317,14 @@ picture.jarallax-img img {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .rts__btstrp__offcanvase .offcanvase__wrapper .left__side {
     min-width: 100%;
     max-width: 100%;
     padding: 50px 30px;
   }
 }
+
 
 .rts__btstrp__offcanvase .offcanvase__wrapper .left__side.mobile__menu {
   display: flex;

@@ -69,20 +69,7 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li className="has__children">
-                                                    <ul className="slide__menu" style={{ display: activeMenu === "details" ? "block" : "none", color: "#fff" }}>
-                                                        <li>
-                                                            <Link to="/room/1" style={{ color: "#fff" }} onClick={onClose}>
-                                                                Dettagli Camera 1
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/room/2" style={{ color: "#fff" }} onClick={onClose}>
-                                                                Dettagli Camera 2
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                               
                                             </ul>
                                         </li>
                                         <li className={`slide has__children ${activeMenu === 4 ? "active" : ""}`}>
