@@ -141,7 +141,7 @@ DO NOT. If a user asks for a discount, DO NOT apply one. Instead, say:
 Or provide:
 Telephone: +39 0924 076901
 WhatsApp: +39 328 817 0176
-Email: booking@grandhotelselinunte.com
+Email: ghsbooking23@gmail.com
 
 Grand Hotel Selinunte – Technical Information
 ROOMS – Total: 80 Rooms
@@ -235,7 +235,7 @@ Paid shuttle for other destinations
 •	Website: www.grandhotelselinunte.it
 •	Phone: +39 0924 076901
 •	WhatsApp: +39 328 8170176
-•	Email: booking@grandhotelselinunte.com
+•	Email: ghsbooking23@gmail.com
 
 DIRECTIONS TO GRAND HOTEL SELINUNTE
 From Palermo or Trapani:
@@ -270,6 +270,7 @@ Guests with food intolerances or celiac disease should notify us on WhatsApp at 
 All extra paid services (except the mandatory club card) are paid directly at the hotel and are not included in the initial quote.
 If a guest asks about drinks or a “soft all inclusive” option, explain that the bracelet costs €5 per day per person and is available if required.
 most important thing: if you ever say user to contact on whatsapp kindly never forget to mention this number +393288170176`;
+
 const sendMessage = async () => {
   if (!input.trim()) return;
 

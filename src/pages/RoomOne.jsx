@@ -33,7 +33,7 @@ Concediti un viaggio culinario nei nostri ristoranti in loco, dove i nostri tale
       { icon: '/assets/images/icon/aeroplane.svg', text: 'Trasporto Aeroportuale' }
     ],
     [
-      { icon: '/assets/images/icon/balcony.svg', text: 'Balcone' },
+      
       { icon: '/assets/images/icon/refrigerator.svg', text: 'Frigorifero' },
       { icon: '/assets/images/icon/support.svg', text: 'Supporto 24/7' }
     ],

@@ -57,9 +57,9 @@ function FooterFour() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="mailto:booking@grandhotelselinunte.com">
+                                        <Link to="mailto:ghsbooking23@gmail.com">
                                             <i className="flaticon-envelope" />
-                                            booking@grandhotelselinunte.com
+                                            ghsbooking23@gmail.com
                                         </Link>
                                     </li>
                                     <li>

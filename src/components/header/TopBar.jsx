@@ -12,8 +12,8 @@ function TopBar() {
                                 <Link className="link__item gap-10" to="callto:+390924076901">
                                     <i className="flaticon-phone-flip" /> +390924076901
                                 </Link>
-                                <Link className="link__item gap-10" to="mailto:booking@grandhotelselinunte.com">
-                                    <i className="flaticon-envelope" /> booking@grandhotelselinunte.com
+                                <Link className="link__item gap-10" to="mailto:ghsbooking23@gmail.com">
+                                    <i className="flaticon-envelope" /> ghsbooking23@gmail.com
                                 </Link>
                             </div>
                         </div>

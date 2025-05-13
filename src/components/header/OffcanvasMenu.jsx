@@ -129,9 +129,9 @@ function OffcanvasMenu({ isOpen, onClose }) {
                                 </div>
                                 <div className="item">
                                     <span className="h6">Email</span>
-                                    <Link to="mailto:booking@grandhotelselinunte.com">
+                                    <Link to="mailto:ghsbooking23@gmail.com">
                                         <i className="flaticon-envelope" />
-                                        booking@grandhotelselinunte.com
+                                        ghsbooking23@gmail.com
                                     </Link>
                                 </div>
                                 <div className="item">
