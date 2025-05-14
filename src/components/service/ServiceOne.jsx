@@ -22,9 +22,7 @@ function ServiceOne() {
     <>
       {/* nostri servizi */}
       <div className="rts__section service is__home__three has__background has__shape">
-        <div className="section__shape wow fadeInRight" data-wow-delay=".5s">
-          <img src="/assets/images/index-3/service/sec-bg.svg" alt="" />
-        </div>
+        
         <div className="container">
           <div className="row mb-40">
             <div className="section__topbar">
@@ -36,6 +34,7 @@ function ServiceOne() {
               </h2>
             </div>
           </div>
+          
           <div className="row">
             {/* piscina e idromassaggio */}
             <div className="single__service__item if__is__default">
