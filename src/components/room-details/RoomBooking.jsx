@@ -60,7 +60,7 @@ export const slots = [
    { start: "2025-06-10", end: "2025-06-12", nights: 2, price: 130, description: "Dal 10 al 12 giugno 130€ (2 notti)" },
    
    { start: "2025-06-08", end: "2025-06-12", nights: 4, price: 240, description: "Dal 8 al 12 giugno 240€ (4 notti)" },
-   { start: "2025-06-12", end: "2025-06-15", nights: 3, price: 210, description: "Dal 12 al 15 giugno 210€ (3 notti)" },
+   { start: "2025-06-12", end: "2025-06-15", nights: 3, price: 195, description: "Dal 12 al 15 giugno 195€ (3 notti)" },
  
    { start: "2025-06-15", end: "2025-06-22", nights: 7, price: 470, description: "Dal 15 al 22 giugno 470€ (7 notti)" },
    { start: "2025-06-15", end: "2025-06-19", nights: 4, price: 220, description: "Dal 15 al 19 giugno 220€ (4 notti)" },
