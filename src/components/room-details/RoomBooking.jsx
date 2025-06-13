@@ -196,7 +196,7 @@ export function calculateTotalPrice() {
   total += children * slot.price * 0.5;
 
   if (!removeClubCard) {
-    total += 6 * (adults + children) * slot.nights;
+    total += 7 * (adults + children) * slot.nights;
   }
 
   if (pet) total += 30;
